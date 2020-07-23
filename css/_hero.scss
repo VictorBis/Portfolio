@@ -5,3 +5,7 @@
     color: white;
     @include flex(center, center, row);
 }
+
+.title {
+    margin: 1rem;
+}

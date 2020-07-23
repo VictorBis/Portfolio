@@ -4,6 +4,9 @@ $header3: 2rem;
 $header4: 1rem;
 $text: 1rem;
 
+/* Mobile */
+$header1: 2.3rem;
+
 @mixin flex($justify, $align, $direction) {
     display: flex;
     justify-content: $justify;
