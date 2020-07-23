@@ -1,0 +1,16 @@
+$header1: 4rem;
+$header2: 3rem;
+$header3: 2rem;
+$header4: 1rem;
+$text: 1rem;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import 'global';
+
+@import 'hero';
