@@ -74,4 +74,11 @@ a {
 .title {
   margin: 1rem;
 }
+
+.logo-wrapper {
+  margin: 2rem;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+}
 /*# sourceMappingURL=styles.css.map */
