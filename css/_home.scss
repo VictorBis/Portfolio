@@ -1,0 +1,80 @@
+/* Hero section */
+.hero {
+    background: #101011;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.introduction {
+    @include flex(center, center, column)
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.photo img {
+    width: 60%;
+}
+
+.description {
+    color: white;
+    text-align: center;
+    @include flex(center, center, column);
+
+    & h3 {
+        font-weight: normal;
+    }
+}
+
+/* Portfolio section */
+.portfolio {
+    padding: 1rem 1rem;
+}
+
+/* Tablet */
+@media screen and (min-width:959px) {
+
+    .portfolio,
+    .introduction {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 720px) {
+    .hero {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .introduction {
+        margin: auto;
+        @include flex(center, center, row);
+    }
+
+    .photo {
+        flex: 1 1 50%;
+        margin-bottom: 0;
+    }
+
+    .description {
+        flex: 1 1 50%;
+        text-align: left;
+
+        & h1 {
+            font-size: $desktop-h1;
+            @include line-height($desktop-h1);
+        }
+
+        h3 {
+            font-size: $desktop-h3;
+            @include line-height($desktop-h3);
+        }
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 2rem 2rem;
+    }
+}

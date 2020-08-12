@@ -2,7 +2,7 @@
 /* 1.200 - Minor Third */
 /* Desktop */
 /* 1.250 - Major Third */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +11,14 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   font-size: 2.488rem;
   line-height: 3.2344rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 li,
@@ -27,26 +29,36 @@ a,
 p {
   font-size: 1rem;
   line-height: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: 2.074rem;
   line-height: 2.6962rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h3 {
   font-size: 1.728rem;
   line-height: 2.2464rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 h4 {
   font-size: 1.44rem;
   line-height: 1.872rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 h5 {
   font-size: 1.2rem;
   line-height: 1.56rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -57,33 +69,162 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 720px) {
-  h1 {
-    font-size: 3.052rem;
-    line-height: 3.9676rem;
-  }
-  h2 {
-    font-size: 2.441rem;
-    line-height: 3.1733rem;
-  }
-  h3 {
-    font-size: 1.953rem;
-    line-height: 2.5389rem;
-  }
-  h4 {
-    font-size: 1.563rem;
-    line-height: 2.0319rem;
-  }
-  h5 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+/* Hero section */
+.hero {
+  background: #101011;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.photo img {
+  width: 60%;
+}
+
+.description {
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description h3 {
+  font-weight: normal;
+}
+
+/* Portfolio section */
+.portfolio {
+  padding: 1rem 1rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 959px) {
+  .portfolio,
+  .introduction {
+    width: 90%;
+    margin: auto;
   }
 }
 
-.title-wrapper {
-  background: black;
-  min-height: 100vh;
-  min-width: 100vw;
+/* Desktop */
+@media screen and (min-width: 720px) {
+  .hero {
+    padding: 0 2rem 2rem 2rem;
+  }
+  .introduction {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .photo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    margin-bottom: 0;
+  }
+  .description {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    text-align: left;
+  }
+  .description h1 {
+    font-size: 3.052rem;
+    line-height: 3.9676rem;
+  }
+  .description h3 {
+    font-size: 1.953rem;
+    line-height: 2.5389rem;
+  }
+  /* Portfolio */
+  .portfolio {
+    padding: 2rem 2rem;
+  }
+}
+
+nav {
+  min-height: 10vh;
+  padding: 1rem 1rem;
+}
+
+.night {
+  background: #101011;
+}
+
+.day {
+  background: white;
+}
+
+.nav-wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.logo-wrapper img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.options {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,14 +241,37 @@ a {
           flex-direction: row;
 }
 
-.title {
-  margin: 1rem;
+.options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.logo-wrapper {
-  margin: 2rem;
-  width: 4rem;
-  height: 4rem;
-  position: absolute;
+.options li {
+  padding: 0.5rem 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 720px) {
+  nav {
+    padding: 2rem 2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 959px) {
+  .nav-wrapper {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

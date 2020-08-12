@@ -1,6 +1,54 @@
+nav {
+    min-height: 10vh;
+    padding: 1rem 1rem;
+}
+
+.night {
+    background: #101011;
+}
+
+.day {
+    background: white;
+}
+
+.nav-wrapper {
+    margin: auto;
+    @include flex(center, center, row);
+}
+
 .logo-wrapper {
-    margin: 2rem;
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
+    flex: 1 1 50%;
+}
+
+.logo-wrapper img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.options {
+    color: white;
+    @include flex(center, center, row);
+}
+
+.options ul {
+    @include flex(center, center, row);
+}
+
+.options li {
+    padding: 0.5rem 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 720px) {
+    nav {
+        padding: 2rem 2rem;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width:959px) {
+    .nav-wrapper {
+        width: 90%;
+    }
 }

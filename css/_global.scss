@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 * {
     padding: 0;
@@ -7,12 +7,14 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
     font-size: $h1;
     @include line-height($h1);
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 li,
@@ -23,26 +25,36 @@ a,
 p {
     font-size: $body;
     @include line-height($body);
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 h2 {
     font-size: $h2;
     @include line-height($h2);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 h3 {
     font-size: $h3;
     @include line-height($h3);
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 h4 {
     font-size: $h4;
     @include line-height($h4);
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 h5 {
     font-size: $h5;
     @include line-height($h5);
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 ul {
@@ -51,31 +63,4 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-@media screen and (min-width: 720px) {
-    h1 {
-        font-size: $desktop-h1;
-        @include line-height($desktop-h1);
-    }
-
-    h2 {
-        font-size: $desktop-h2;
-        @include line-height($desktop-h2);
-    }
-
-    h3 {
-        font-size: $desktop-h3;
-        @include line-height($desktop-h3);
-    }
-
-    h4 {
-        font-size: $desktop-h4;
-        @include line-height($desktop-h4);
-    }
-
-    h5 {
-        font-size: $desktop-h5;
-        @include line-height($desktop-h5);
-    }
 }
