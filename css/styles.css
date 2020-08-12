@@ -1,4 +1,7 @@
 /* Mobile */
+/* 1.200 - Minor Third */
+/* Desktop */
+/* 1.250 - Major Third */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 * {
   padding: 0;
@@ -12,7 +15,8 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.488rem;
+  line-height: 3.2344rem;
 }
 
 li,
@@ -22,19 +26,27 @@ input,
 a,
 p {
   font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.074rem;
+  line-height: 2.6962rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.728rem;
+  line-height: 2.2464rem;
 }
 
-h4,
+h4 {
+  font-size: 1.44rem;
+  line-height: 1.872rem;
+}
+
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.56rem;
 }
 
 ul {
@@ -45,9 +57,26 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 720px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 3.052rem;
+    line-height: 3.9676rem;
+  }
+  h2 {
+    font-size: 2.441rem;
+    line-height: 3.1733rem;
+  }
+  h3 {
+    font-size: 1.953rem;
+    line-height: 2.5389rem;
+  }
+  h4 {
+    font-size: 1.563rem;
+    line-height: 2.0319rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
 

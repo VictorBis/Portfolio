@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-    font-size: $header1;
+    font-size: $h1;
+    @include line-height($h1);
 }
 
 li,
@@ -20,20 +21,28 @@ label,
 input,
 a,
 p {
-    font-size: $text;
+    font-size: $body;
+    @include line-height($body);
 }
 
 h2 {
-    font-size: $header2;
+    font-size: $h2;
+    @include line-height($h2);
 }
 
 h3 {
-    font-size: $header3;
+    font-size: $h3;
+    @include line-height($h3);
 }
 
-h4,
+h4 {
+    font-size: $h4;
+    @include line-height($h4);
+}
+
 h5 {
-    font-size: $header4;
+    font-size: $h5;
+    @include line-height($h5);
 }
 
 ul {
@@ -44,8 +53,29 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 720px) {
     h1 {
-        font-size: $mobile-header1;
+        font-size: $desktop-h1;
+        @include line-height($desktop-h1);
+    }
+
+    h2 {
+        font-size: $desktop-h2;
+        @include line-height($desktop-h2);
+    }
+
+    h3 {
+        font-size: $desktop-h3;
+        @include line-height($desktop-h3);
+    }
+
+    h4 {
+        font-size: $desktop-h4;
+        @include line-height($desktop-h4);
+    }
+
+    h5 {
+        font-size: $desktop-h5;
+        @include line-height($desktop-h5);
     }
 }
