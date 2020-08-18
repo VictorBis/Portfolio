@@ -1,6 +1,5 @@
 /* Hero section */
 .hero {
-    padding: 0 1rem 1rem 1rem;
     @include flex(center, center, row);
 }
 
@@ -21,9 +20,4 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 720px) {
-    .hero {
-        padding: 0rem 2rem;
-    }
-
-}
+@media screen and (min-width: 720px) {}

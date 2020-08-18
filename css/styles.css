@@ -72,54 +72,13 @@ a {
   color: #131212;
 }
 
-/* Hero section */
-.hero {
+main {
   padding: 0 1rem 1rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.information {
-  text-align: center;
-}
-
-.information h3 {
-  font-weight: 400;
-}
-
-.social {
-  margin-top: 0.5rem;
-}
-
-.social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 /* Desktop */
 @media screen and (min-width: 720px) {
-  .hero {
+  main {
     padding: 0rem 2rem;
   }
 }
@@ -200,4 +159,51 @@ nav {
     padding: 2rem 2rem;
   }
 }
+
+/* Hero section */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.information {
+  text-align: center;
+}
+
+.information h3 {
+  font-weight: 400;
+}
+
+.social {
+  margin-top: 0.5rem;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* Desktop */
+/* About */
 /*# sourceMappingURL=styles.css.map */
