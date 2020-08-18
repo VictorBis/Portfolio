@@ -1,79 +1,29 @@
 /* Hero section */
 .hero {
-    background: #101011;
     padding: 0 1rem 1rem 1rem;
+    @include flex(center, center, row);
 }
 
-.introduction {
-    @include flex(center, center, column)
-}
-
-.photo {
+.information {
     text-align: center;
-}
-
-.photo img {
-    width: 60%;
-}
-
-.description {
-    color: white;
-    text-align: center;
-    @include flex(center, center, column);
 
     & h3 {
-        font-weight: normal;
+        font-weight: 400;
     }
 }
 
-/* Portfolio section */
-.portfolio {
-    padding: 1rem 1rem;
-}
+.social {
+    margin-top: 0.5rem;
 
-/* Tablet */
-@media screen and (min-width:959px) {
-
-    .portfolio,
-    .introduction {
-        width: 90%;
-        margin: auto;
+    & ul {
+        @include flex(space-around, center, row);
     }
 }
 
 /* Desktop */
 @media screen and (min-width: 720px) {
     .hero {
-        padding: 0;
+        padding: 0rem 2rem;
     }
 
-    .introduction {
-        margin: auto;
-        @include flex(center, center, row);
-    }
-
-    .photo {
-        flex: 1 1 50%;
-        margin-bottom: 0;
-    }
-
-    .description {
-        flex: 1 1 50%;
-        text-align: left;
-
-        & h1 {
-            font-size: $desktop-h1;
-            @include line-height($desktop-h1);
-        }
-
-        h3 {
-            font-size: $desktop-h3;
-            @include line-height($desktop-h3);
-        }
-    }
-
-    /* Portfolio */
-    .portfolio {
-        padding: 2rem 2rem;
-    }
 }

@@ -12,6 +12,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #fafafafa;
+  color: #131212;
 }
 
 h1 {
@@ -67,15 +69,12 @@ ul {
 
 a {
   text-decoration: none;
+  color: #131212;
 }
 
 /* Hero section */
 .hero {
-  background: #101011;
   padding: 0 1rem 1rem 1rem;
-}
-
-.introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,114 +84,49 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.photo {
+.information {
   text-align: center;
 }
 
-.photo img {
-  width: 60%;
+.information h3 {
+  font-weight: 400;
 }
 
-.description {
-  color: white;
-  text-align: center;
+.social {
+  margin-top: 0.5rem;
+}
+
+.social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.description h3 {
-  font-weight: normal;
-}
-
-/* Portfolio section */
-.portfolio {
-  padding: 1rem 1rem;
-}
-
-/* Tablet */
-@media screen and (min-width: 959px) {
-  .portfolio,
-  .introduction {
-    width: 90%;
-    margin: auto;
-  }
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /* Desktop */
 @media screen and (min-width: 720px) {
   .hero {
-    padding: 0;
-  }
-  .introduction {
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .photo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-    margin-bottom: 0;
-  }
-  .description {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-    text-align: left;
-  }
-  .description h1 {
-    font-size: 3.052rem;
-    line-height: 3.9676rem;
-  }
-  .description h3 {
-    font-size: 1.953rem;
-    line-height: 2.5389rem;
-  }
-  /* Portfolio */
-  .portfolio {
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
   }
 }
 
 nav {
   min-height: 10vh;
   padding: 1rem 1rem;
-}
-
-.night {
-  background: #101011;
-}
-
-.day {
-  background: white;
 }
 
 .nav-wrapper {
@@ -224,7 +158,6 @@ nav {
 }
 
 .options {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,17 +193,11 @@ nav {
   padding: 0.5rem 1rem;
 }
 
+/* Tablet */
 /* Desktop */
 @media screen and (min-width: 720px) {
   nav {
     padding: 2rem 2rem;
-  }
-}
-
-/* Tablet */
-@media screen and (min-width: 959px) {
-  .nav-wrapper {
-    width: 90%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
