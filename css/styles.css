@@ -7,10 +7,14 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #fafafafa;
-  color: #262323;
+  color: #060511;
 }
 
 h1 {
@@ -31,21 +35,21 @@ h3 {
   font-size: 1.95312rem;
   line-height: 2.53906rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 h4 {
   font-size: 1.5625rem;
   line-height: 2.03125rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 h5 {
   font-size: 1.25rem;
   line-height: 1.625rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 li,
@@ -70,16 +74,10 @@ a {
 }
 
 main {
-  padding: 0 1rem 1rem 1rem;
+  min-height: 100vh;
 }
 
 /* Tablet */
-@media screen and (min-width: 720px) {
-  main {
-    padding: 0rem 2rem;
-  }
-}
-
 /* Desktop */
 @media screen and (min-width: 1440px) {
   h1 {
@@ -89,6 +87,18 @@ main {
   h2 {
     font-size: 2.74658rem;
     line-height: 3.57056rem;
+  }
+  h3 {
+    font-size: 2.19727rem;
+    line-height: 2.85645rem;
+  }
+  h4 {
+    font-size: 1.75781rem;
+    line-height: 2.28516rem;
+  }
+  h5 {
+    font-size: 1.40625rem;
+    line-height: 1.82812rem;
   }
   li,
   button,
@@ -102,8 +112,15 @@ main {
 }
 
 nav {
-  min-height: 10vh;
-  padding: 1rem 1rem;
+  padding: 1rem;
+}
+
+.night {
+  background: #060511;
+}
+
+.night a {
+  color: #fafafafa;
 }
 
 .nav-wrapper {
@@ -130,7 +147,6 @@ nav {
 }
 
 .logo-wrapper img {
-  height: 3rem;
   width: 3rem;
 }
 
@@ -171,15 +187,17 @@ nav {
 }
 
 /* Tablet */
-/* Desktop */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
   nav {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }
 
+/* Desktop */
 /* Hero section */
 .hero {
+  min-height: 70vh;
+  background: #060511;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,12 +213,21 @@ nav {
           flex-direction: row;
 }
 
+.info-container {
+  color: #fafafafa;
+  margin: 0 1rem;
+}
+
+.info-container a {
+  color: #fafafafa;
+}
+
 .information {
   text-align: center;
 }
 
-.information h3 {
-  font-weight: 400;
+.text h1 {
+  letter-spacing: 0;
 }
 
 .social {
@@ -211,8 +238,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -220,8 +248,89 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  padding: 0.5rem;
+}
+
+.social-icon img {
+  width: 2rem;
+}
+
+#linkedin {
+  width: 1.5rem;
+}
+
+.portfolio {
+  margin: 2rem 1rem;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.project .thumbnail {
+  min-height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+  background: #ac312033;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(146, 126, 123, 0.5);
+          box-shadow: 0 8px 16px 0 rgba(146, 126, 123, 0.5);
+}
+
+.project .desc {
+  margin-top: 1rem;
+}
+
+.project .desc p {
+  margin-top: 0.5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  .text h1 {
+    letter-spacing: 2px;
+  }
+  .social ul {
+    gap: 1rem;
+  }
+  .portfolio {
+    margin: 2rem;
+  }
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Desktop */
+@media screen and (min-width: 1440px) {
+  .info-container {
+    margin: 0;
+  }
+  .portfolio {
+    margin: 2rem 5rem;
+  }
+}
+
 /* About */
 /*# sourceMappingURL=styles.css.map */

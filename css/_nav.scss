@@ -1,6 +1,13 @@
 nav {
-    min-height: 10vh;
-    padding: 1rem 1rem;
+    padding: 1rem;
+}
+
+.night {
+    background: $black;
+
+    & a {
+        color: $background;
+    }
 }
 
 .nav-wrapper {
@@ -13,7 +20,6 @@ nav {
 }
 
 .logo-wrapper img {
-    height: 3rem;
     width: 3rem;
 }
 
@@ -30,12 +36,11 @@ nav {
 }
 
 /* Tablet */
-@media screen and (min-width:959px) {}
+@media screen and (min-width:600px) {
+    nav {
+        padding: 2rem;
+    }
+}
 
 /* Desktop */
-@media screen and (min-width: 720px) {
-    nav {
-        padding: 2rem 2rem;
-    }
-
-}
+@media screen and (min-width: 1440px) {}

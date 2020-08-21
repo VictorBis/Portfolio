@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background: $background;
@@ -14,37 +18,32 @@ body {
 
 h1 {
     @include font(6, $base-mobile);
-    //line-height: line-height(6, $base-mobile);
     font-weight: 600;
     letter-spacing: 2px;
 }
 
 h2 {
     @include font(5, $base-mobile);
-    //@include line-height($h2);
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 h3 {
     @include font(4, $base-mobile);
-    //@include line-height($h3);
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 h4 {
     @include font(3, $base-mobile);
-    //@include line-height($h4);
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 h5 {
     @include font(2, $base-mobile);
-    //@include line-height($h5);
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 li,
@@ -54,7 +53,6 @@ input,
 a,
 p {
     @include font(1, $base-mobile);
-    //@include line-height($body);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -69,17 +67,11 @@ a {
 }
 
 main {
-    padding: 0 1rem 1rem 1rem;
+    min-height: 100vh;
 }
 
 /* Tablet */
-@media screen and (min-width: 720px) {
-
-    main {
-        padding: 0rem 2rem;
-    }
-
-}
+@media screen and (min-width: 600px) {}
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
@@ -92,6 +84,18 @@ main {
         @include font(5, $base-desktop);
     }
 
+    h3 {
+        @include font(4, $base-desktop);
+    }
+
+    h4 {
+        @include font(3, $base-desktop);
+    }
+
+    h5 {
+        @include font(2, $base-desktop);
+    }
+
     li,
     button,
     label,
@@ -99,7 +103,6 @@ main {
     a,
     p {
         @include font(1, 1.125);
-        //@include line-height($body);
     }
 
 }

@@ -1,23 +1,106 @@
 /* Hero section */
 .hero {
+    min-height: 70vh;
+    background: $black;
     @include flex(center, center, row);
+}
+
+.info-container {
+    color: $background;
+    margin: 0 1rem;
+
+    & a {
+        color: $background;
+    }
 }
 
 .information {
     text-align: center;
+}
 
-    & h3 {
-        font-weight: 400;
-    }
+.text h1 {
+    letter-spacing: 0;
 }
 
 .social {
     margin-top: 0.5rem;
 
     & ul {
-        @include flex(space-around, center, row);
+        @include flex(center, center, row);
+        gap: 0.5rem;
+    }
+}
+
+.social-icon {
+    padding: 0.5rem;
+
+    & img {
+        width: 2rem;
+    }
+}
+
+#linkedin {
+    width: 1.5rem;
+}
+
+.portfolio {
+    margin: 2rem 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.project {
+
+    & .thumbnail {
+        min-height: 20rem;
+        @include flex(center, center, row);
+        border-radius: 10px;
+        background: #ac312033;
+        box-shadow: 0 8px 16px 0 rgba(146, 126, 123, 0.5);
+    }
+
+    & .desc {
+        margin-top: 1rem;
+
+        & p {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:600px) {
+    .text h1 {
+        letter-spacing: 2px;
+    }
+
+    .social {
+        & ul {
+            gap: 1rem;
+        }
+    }
+
+    .portfolio {
+        margin: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Desktop */
-@media screen and (min-width: 720px) {}
+@media screen and (min-width: 1440px) {
+    .info-container {
+        margin: 0;
+    }
+
+    .portfolio {
+        margin: 2rem 5rem;
+    }
+}
