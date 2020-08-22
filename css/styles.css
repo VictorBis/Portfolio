@@ -69,10 +69,6 @@ a {
   color: #131212;
 }
 
-main {
-  z-index: -2;
-}
-
 /* Tablet */
 /* Desktop */
 @media screen and (min-width: 1440px) {
@@ -155,19 +151,6 @@ nav {
   width: 3rem;
 }
 
-.hamburguer {
-  cursor: pointer;
-  z-index: 1;
-}
-
-.line {
-  width: 2rem;
-  height: 2px;
-  background: #FAFAFA;
-  margin: 0.5rem;
-  border-radius: 10px;
-}
-
 .options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +219,17 @@ nav {
   .options.open {
     -webkit-clip-path: circle(1050px at 100% -18%);
             clip-path: circle(1050px at 100% -18%);
+  }
+  .hamburguer {
+    cursor: pointer;
+    z-index: 1;
+  }
+  .line {
+    width: 2rem;
+    height: 2px;
+    background: #FAFAFA;
+    margin: 0.5rem;
+    border-radius: 10px;
   }
   body.open {
     overflow: hidden;
