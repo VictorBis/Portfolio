@@ -1,12 +1,13 @@
 nav {
     padding: 1rem;
+    position: relative;
 }
 
 .night {
     background: $black;
 
     & a {
-        color: $background;
+        color: $black;
     }
 }
 
@@ -17,29 +18,96 @@ nav {
 
 .logo-wrapper {
     flex: 1 1 50%;
+    z-index: 1;
+
+    & img {
+        width: 3rem;
+    }
 }
 
-.logo-wrapper img {
-    width: 3rem;
+.hamburguer {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.line {
+    width: 2rem;
+    height: 2px;
+    background: $background;
+    margin: 0.5rem;
+    border-radius: 10px;
 }
 
 .options {
-    @include flex(center, center, row);
+    position: fixed;
+    background: $background;
+    min-height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    @include flex(center, center, column);
+
+    & li {
+        padding: 0.5rem 1rem;
+
+        & a {
+            @include font(3, $base-mobile);
+        }
+    }
+
+    clip-path: circle(100px at 100% -15%);
+    transition: all 1s ease;
 }
 
-.options ul {
-    @include flex(center, center, row);
+.options a::after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    transition: all 0.3s linear 0s;
 }
 
-.options li {
-    padding: 0.5rem 1rem;
+.options a:hover::after {
+    width: 90%;
 }
+
+.options.open {
+    clip-path: circle(1050px at 100% -15%);
+}
+
 
 /* Tablet */
 @media screen and (min-width:600px) {
     nav {
         padding: 2rem;
     }
+
+    .night {
+        & a {
+            color: $background;
+        }
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .options {
+        position: unset;
+        background: unset;
+        min-height: unset;
+        width: unset;
+        @include flex(center, center, row);
+
+        & li a {
+            @include font(1, $base-desktop);
+        }
+
+        clip-path: unset;
+        transition: unset;
+    }
+
 }
 
 /* Desktop */
