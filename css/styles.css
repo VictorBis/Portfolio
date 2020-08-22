@@ -223,13 +223,67 @@ nav {
   .hamburguer {
     cursor: pointer;
     z-index: 1;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 2rem;
+    height: 2rem;
   }
   .line {
     width: 2rem;
     height: 2px;
     background: #FAFAFA;
-    margin: 0.5rem;
     border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .line::before,
+  .line::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .line::before {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  .line::after {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  /* Animation */
+  .hamburguer.open .line {
+    -webkit-transform: translate(2rem);
+            transform: translate(2rem);
+  }
+  .hamburguer.open .line::before {
+    -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background: #060511;
+  }
+  .hamburguer.open .line::after {
+    -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background: #060511;
   }
   body.open {
     overflow: hidden;

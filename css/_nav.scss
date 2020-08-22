@@ -72,14 +72,55 @@ nav {
     .hamburguer {
         cursor: pointer;
         z-index: 1;
+        position: relative;
+        display: flex;
+        @include flex(center, center, column);
+        transition: all 0.5s ease-in-out;
+        width: 2rem;
+        height: 2rem;
     }
 
     .line {
         width: 2rem;
         height: 2px;
         background: $background;
-        margin: 0.5rem;
         border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line::before,
+    .line::after {
+        content: '';
+        position: absolute;
+        width: 2rem;
+        height: 2px;
+        background: $background;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .line::before {
+        transform: translateY(-0.5rem);
+    }
+
+    .line::after {
+        transform: translateY(0.5rem);
+    }
+
+    /* Animation */
+    .hamburguer.open .line {
+        transform: translate(2rem);
+    }
+
+    .hamburguer.open .line::before {
+        transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+        background: $black;
+    }
+
+    .hamburguer.open .line::after {
+        transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+        background: $black;
     }
 
     body.open {
