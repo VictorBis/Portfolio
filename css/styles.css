@@ -7,10 +7,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   background: #FAFAFA;
@@ -111,6 +107,13 @@ main {
   }
 }
 
+/* Preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 nav {
   padding: 1rem;
   position: relative;
@@ -166,12 +169,6 @@ nav {
 }
 
 .options {
-  position: fixed;
-  background: #FAFAFA;
-  min-height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,23 +178,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-clip-path: circle(100px at 100% -15%);
-          clip-path: circle(100px at 100% -15%);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .options li {
   padding: 0.5rem 1rem;
-}
-
-.options li a {
-  font-size: 1.5625rem;
-  line-height: 2.03125rem;
 }
 
 .options a::after {
@@ -214,9 +202,44 @@ nav {
   width: 90%;
 }
 
-.options.open {
-  -webkit-clip-path: circle(1050px at 100% -15%);
-          clip-path: circle(1050px at 100% -15%);
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .options {
+    position: fixed;
+    background: #FAFAFA;
+    min-height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-clip-path: circle(100px at 100% -18%);
+            clip-path: circle(100px at 100% -18%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .options li a {
+    font-size: 1.5625rem;
+    line-height: 2.03125rem;
+  }
+  .options.open {
+    -webkit-clip-path: circle(1050px at 100% -18%);
+            clip-path: circle(1050px at 100% -18%);
+  }
+  body.open {
+    overflow: hidden;
+  }
 }
 
 /* Tablet */
@@ -229,29 +252,6 @@ nav {
   }
   .hamburguer {
     display: none;
-  }
-  .options {
-    position: unset;
-    background: unset;
-    min-height: unset;
-    width: unset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-clip-path: unset;
-            clip-path: unset;
-    -webkit-transition: unset;
-    transition: unset;
   }
   .options li a {
     font-size: 1.125rem;
@@ -294,6 +294,10 @@ nav {
 
 .text h1 {
   letter-spacing: 0;
+}
+
+.text h5 {
+  font-weight: 300;
 }
 
 .social {
@@ -373,6 +377,10 @@ nav {
 
 /* Tablet */
 @media screen and (min-width: 600px) {
+  .text {
+    width: 70%;
+    margin: auto;
+  }
   .text h1 {
     letter-spacing: 2px;
   }

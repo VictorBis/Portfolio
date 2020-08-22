@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     background: $background;
@@ -106,4 +102,11 @@ main {
         @include font(1, 1.125);
     }
 
+}
+
+/* Preferences */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }

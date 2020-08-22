@@ -39,24 +39,11 @@ nav {
 }
 
 .options {
-    position: fixed;
-    background: $background;
-    min-height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    @include flex(center, center, column);
+    @include flex(center, center, row);
 
     & li {
         padding: 0.5rem 1rem;
-
-        & a {
-            @include font(3, $base-mobile);
-        }
     }
-
-    clip-path: circle(100px at 100% -15%);
-    transition: all 1s ease;
 }
 
 .options a::after {
@@ -72,10 +59,33 @@ nav {
     width: 90%;
 }
 
-.options.open {
-    clip-path: circle(1050px at 100% -15%);
-}
+/* Mobile */
+@media screen and (max-width:600px) {
+    .options {
+        position: fixed;
+        background: $background;
+        min-height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        @include flex(center, center, column);
 
+        & li a {
+            @include font(3, $base-mobile);
+        }
+
+        clip-path: circle(100px at 100% -18%);
+        transition: all 1s ease;
+    }
+
+    .options.open {
+        clip-path: circle(1050px at 100% -18%);
+    }
+
+    body.open {
+        overflow: hidden;
+    }
+}
 
 /* Tablet */
 @media screen and (min-width:600px) {
@@ -94,18 +104,10 @@ nav {
     }
 
     .options {
-        position: unset;
-        background: unset;
-        min-height: unset;
-        width: unset;
-        @include flex(center, center, row);
 
         & li a {
             @include font(1, $base-desktop);
         }
-
-        clip-path: unset;
-        transition: unset;
     }
 
 }

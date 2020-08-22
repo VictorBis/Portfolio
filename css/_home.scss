@@ -18,8 +18,14 @@
     text-align: center;
 }
 
-.text h1 {
-    letter-spacing: 0;
+.text {
+    & h1 {
+        letter-spacing: 0;
+    }
+
+    & h5 {
+        font-weight: 300;
+    }
 }
 
 .social {
@@ -75,8 +81,13 @@
 
 /* Tablet */
 @media screen and (min-width:600px) {
-    .text h1 {
-        letter-spacing: 2px;
+    .text {
+        width: 70%;
+        margin: auto;
+
+        & h1 {
+            letter-spacing: 2px;
+        }
     }
 
     .social {
