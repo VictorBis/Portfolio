@@ -5,10 +5,6 @@ nav {
 
 .night {
     background: $black;
-
-    & a {
-        color: $black;
-    }
 }
 
 .nav-wrapper {
@@ -61,6 +57,14 @@ nav {
             @include font(3, $base-mobile);
         }
 
+        &.white {
+            background: $black;
+
+            & li a {
+                color: $background;
+            }
+        }
+
         clip-path: circle(100px at 100% -18%);
         transition: all 1s ease;
     }
@@ -86,41 +90,65 @@ nav {
         background: $background;
         border-radius: 10px;
         transition: all 0.5s ease-in-out;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2px;
+            background: $background;
+            border-radius: 10px;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        &::before {
+            transform: translateY(-0.5rem);
+        }
+
+        &::after {
+            transform: translateY(0.5rem);
+        }
     }
 
-    .line::before,
-    .line::after {
-        content: '';
-        position: absolute;
-        width: 2rem;
-        height: 2px;
-        background: $background;
-        border-radius: 10px;
-        transition: all 0.5s ease-in-out;
+    .line.white {
+        background: $black;
 
+        &::before,
+        &::after {
+            background: $black;
+
+        }
     }
 
-    .line::before {
-        transform: translateY(-0.5rem);
-    }
-
-    .line::after {
-        transform: translateY(0.5rem);
-    }
 
     /* Animation */
     .hamburguer.open .line {
         transform: translate(2rem);
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            background: $black;
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            background: $black;
+        }
     }
 
-    .hamburguer.open .line::before {
-        transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-        background: $black;
-    }
+    .hamburguer.open .line.white {
+        &::before {
+            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            background: $background;
+        }
 
-    .hamburguer.open .line::after {
-        transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-        background: $black;
+        &::after {
+            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            background: $background;
+        }
     }
 
     body.open {

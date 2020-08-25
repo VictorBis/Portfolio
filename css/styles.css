@@ -119,10 +119,6 @@ nav {
   background: #060511;
 }
 
-.night a {
-  color: #060511;
-}
-
 .nav-wrapper {
   margin: auto;
   display: -webkit-box;
@@ -216,6 +212,12 @@ nav {
     font-size: 1.5625rem;
     line-height: 2.03125rem;
   }
+  .options.white {
+    background: #060511;
+  }
+  .options.white li a {
+    color: #FAFAFA;
+  }
   .options.open {
     -webkit-clip-path: circle(1050px at 100% -18%);
             clip-path: circle(1050px at 100% -18%);
@@ -251,8 +253,7 @@ nav {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  .line::before,
-  .line::after {
+  .line::before, .line::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -270,10 +271,17 @@ nav {
     -webkit-transform: translateY(0.5rem);
             transform: translateY(0.5rem);
   }
+  .line.white {
+    background: #060511;
+  }
+  .line.white::before, .line.white::after {
+    background: #060511;
+  }
   /* Animation */
   .hamburguer.open .line {
     -webkit-transform: translate(2rem);
             transform: translate(2rem);
+    background: transparent;
   }
   .hamburguer.open .line::before {
     -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
@@ -284,6 +292,16 @@ nav {
     -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
             transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
     background: #060511;
+  }
+  .hamburguer.open .line.white::before {
+    -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background: #FAFAFA;
+  }
+  .hamburguer.open .line.white::after {
+    -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background: #FAFAFA;
   }
   body.open {
     overflow: hidden;
@@ -385,12 +403,12 @@ nav {
   width: 2rem;
 }
 
-#linkedin {
+#Linkedin {
   width: 1.5rem;
 }
 
 .portfolio {
-  margin: 2rem 1rem;
+  margin: 2rem 1rem 1rem 1rem;
   -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
           animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
@@ -494,9 +512,42 @@ nav {
 @media screen and (min-width: 1700px) {
   .projects-wrapper {
     max-width: 1700px;
-    margin: auto 5rem;
+    margin: auto;
+  }
+  .projects-wrapper h3,
+  .projects-wrapper .projects {
+    margin: 0 5rem;
   }
 }
 
 /* About */
+footer {
+  padding: 0 1rem 1rem 1rem;
+  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
+          animation: fadein 1.5s 0.3s backwards ease-in-out;
+}
+
+.footer-wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

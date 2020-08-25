@@ -46,12 +46,12 @@
     }
 }
 
-#linkedin {
+#Linkedin {
     width: 1.5rem;
 }
 
 .portfolio {
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
     animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
@@ -140,6 +140,11 @@
 @media screen and (min-width: 1700px) {
     .projects-wrapper {
         max-width: 1700px;
-        margin: auto 5rem;
+        margin: auto;
+
+        & h3,
+        .projects {
+            margin: 0 5rem;
+        }
     }
 }

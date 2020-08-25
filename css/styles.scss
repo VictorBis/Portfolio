@@ -34,7 +34,6 @@ $background: #FAFAFA;
     flex-direction: $direction;
 }
 
-// Vertical rhythm
 
 @import "global";
 
@@ -43,3 +42,5 @@ $background: #FAFAFA;
 @import "home";
 
 @import "about";
+
+@import "footer";
