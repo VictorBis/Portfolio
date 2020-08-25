@@ -63,11 +63,17 @@
 .project {
 
     & .thumbnail {
+        cursor: pointer;
         min-height: 20rem;
         @include flex(center, center, row);
         border-radius: 10px;
-        background: #ac312033;
-        box-shadow: 0 8px 16px 0 rgba(146, 126, 123, 0.5);
+        background: rgba(172, 49, 32, 0.2);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+        transition: all 0.5s ease;
+
+        &:hover {
+            box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.20);
+        }
     }
 
     & .desc {
