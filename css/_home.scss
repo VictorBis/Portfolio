@@ -16,6 +16,7 @@
 
 .information {
     text-align: center;
+    animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .text {
@@ -51,6 +52,7 @@
 
 .portfolio {
     margin: 2rem 1rem;
+    animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .projects {
@@ -69,7 +71,7 @@
         border-radius: 10px;
         background: rgba(172, 49, 32, 0.2);
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
 
         &:hover {
             box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.20);
@@ -82,6 +84,17 @@
         & p {
             margin-top: 0.5rem;
         }
+    }
+}
+
+/* Keyframes */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 

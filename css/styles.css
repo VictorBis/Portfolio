@@ -344,6 +344,8 @@ nav {
 
 .information {
   text-align: center;
+  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
+          animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .text h1 {
@@ -389,6 +391,8 @@ nav {
 
 .portfolio {
   margin: 2rem 1rem;
+  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
+          animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .projects {
@@ -420,8 +424,8 @@ nav {
   background: rgba(172, 49, 32, 0.2);
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project .thumbnail:hover {
@@ -435,6 +439,24 @@ nav {
 
 .project .desc p {
   margin-top: 0.5rem;
+}
+
+/* Keyframes */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Tablet */
