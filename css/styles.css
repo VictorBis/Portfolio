@@ -521,6 +521,30 @@ nav {
 }
 
 /* About */
+.about {
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  .about {
+    margin: 0 2rem;
+  }
+}
+
 footer {
   padding: 0 1rem 1rem 1rem;
   -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;

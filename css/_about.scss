@@ -1,1 +1,12 @@
 /* About */
+.about {
+    margin: 0 1rem;
+    @include flex(center, center, row);
+}
+
+/* Tablet */
+@media screen and (min-width:600px) {
+    .about {
+        margin: 0 2rem;
+    }
+}
