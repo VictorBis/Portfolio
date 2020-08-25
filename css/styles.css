@@ -308,6 +308,12 @@ nav {
 }
 
 /* Desktop */
+@media screen and (min-width: 1440px) {
+  .nav-wrapper {
+    max-width: 1700px;
+  }
+}
+
 /* Hero section */
 .hero {
   min-height: 70vh;
@@ -459,6 +465,14 @@ nav {
   }
   .portfolio {
     margin: 2rem 5rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1700px) {
+  .projects-wrapper {
+    max-width: 1700px;
+    margin: auto 5rem;
   }
 }
 
