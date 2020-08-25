@@ -172,18 +172,18 @@ nav {
         display: none;
     }
 
-    .options {
-
-        & li a {
-            @include font(1, $base-desktop);
-        }
-    }
-
 }
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
     .nav-wrapper {
         max-width: 1700px;
+    }
+
+    .options {
+
+        & li a {
+            @include font(1, $base-desktop);
+        }
     }
 }
