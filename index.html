@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="victor-molina.appcache">
+<html lang="en">
 
 <head>
   <meta charset=" UTF-8" />
@@ -17,12 +17,12 @@
   <meta property="og:title" content="Victor Molina" />
   <meta property="og:description"
     content="Victor Molina. I'm a UX/UI Designer & Front End developer from Mexico City." />
-  <meta property="og:image" content="https://victor-molina.com/images/Atom/Icon/Logo/BlackLogo.svg" />
+  <meta property="og:image" content="https://victor-molina.com/images/Atom/Icon/Logo/WhiteLogo.svg" />
   <meta property="og:url" content="https://victor-molina.com" />
   <meta property="twitter:title”" content="Victor Molina" />
   <meta property="twitter:description"
     content="Victor Molina. I'm a UX/UI Designer & Front End developer from Mexico City." />
-  <meta property="twitter:image" content="https://victor-molina.com/images/Atom/Icon/Logo/BlackLogo.svg" />
+  <meta property="twitter:image" content="https://victor-molina.com/images/Atom/Icon/Logo/WhiteLogo.svg" />
   <meta property="twitter:site" content="@victor_molina98" />
   <meta property="twitter:creator" content="@victor_molina98" />
   <meta name="theme-color" content="#ffffff">
@@ -30,7 +30,7 @@
   <!--  Icon -->
   <link rel="icon" href="images/Atom/Icon/Logo/WhiteLogo.svg" />
   <link rel="apple-touch-icon" href="images/Atom/Icon/Logo/WhiteLogo.svg" />
-  <link rel="mask-icon" href="images/Atom/Icon/Logo/WhiteLogo.svg" color=”#000000" />
+  <link rel="mask-icon" href="images/Atom/Icon/Logo/WhiteLogo.svg" />
 
   <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
@@ -162,6 +162,15 @@
     </div>
   </footer>
   <script src=" js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('js/sw.js')
+        .then(function () {
+          console.log("Service Worker Registered");
+        });
+    }
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
