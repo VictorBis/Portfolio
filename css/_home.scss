@@ -1,151 +1,151 @@
 /* Hero section */
 .hero {
-    min-height: 70vh;
-    background: $black;
-    @include flex(center, center, row);
+  min-height: 70vh;
+  background: $black;
+  @include flex(center, center, row);
 }
 
 .info-container {
-    color: $background;
-    margin: 0 1rem;
+  color: $background;
+  margin: 0 1rem;
 
-    & a {
-        color: $background;
-    }
+  & a {
+    color: $background;
+  }
 }
 
 .information {
-    text-align: center;
-    animation: fadein 1.5s 0.3s backwards ease-in-out;
+  text-align: center;
+  animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .text {
-    & h1 {
-        letter-spacing: 0;
-    }
+  & h1 {
+    letter-spacing: 0;
+  }
 
-    & h5 {
-        font-weight: 300;
-        padding: 0.5rem;
-    }
+  & h5 {
+    font-weight: 300;
+    padding: 0.5rem 0;
+  }
 }
 
 .social {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 
-    & ul {
-        @include flex(center, center, row);
-        gap: 0.5rem;
-    }
+  & ul {
+    @include flex(center, center, row);
+    gap: 0.5rem;
+  }
 }
 
 .social-icon {
-    padding: 0.5rem;
+  padding: 0.5rem;
 
-    & img {
-        width: 2rem;
-    }
+  & img {
+    width: 2rem;
+  }
 }
 
 #Linkedin {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .portfolio {
-    margin: 2rem 1rem 1rem 1rem;
-    animation: fadein 1.5s 0.3s backwards ease-in-out;
+  margin: 2rem 1rem 1rem 1rem;
+  animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-    margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  margin: 1.5rem 0;
 }
 
 .project {
+  & .thumbnail {
+    cursor: pointer;
+    min-height: 20rem;
+    @include flex(center, center, row);
+    border-radius: 10px;
+    background: rgba(172, 49, 32, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
 
-    & .thumbnail {
-        cursor: pointer;
-        min-height: 20rem;
-        @include flex(center, center, row);
-        border-radius: 10px;
-        background: rgba(172, 49, 32, 0.2);
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-            box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.20);
-        }
+    &:hover {
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
     }
+  }
 
-    & .desc {
-        margin-top: 1rem;
+  & .desc {
+    margin-top: 1rem;
 
-        & p {
-            margin-top: 0.5rem;
-        }
+    & p {
+      margin-top: 0.5rem;
     }
+  }
 }
 
 /* Keyframes */
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Tablet */
-@media screen and (min-width:600px) {
-    .text {
-        width: 70%;
-        margin: auto;
+@media screen and (min-width: 600px) {
+  .text {
+    width: 70%;
+    margin: auto;
 
-        & h1 {
-            letter-spacing: 2px;
-        }
+    & h1 {
+      letter-spacing: 2px;
     }
+  }
 
-    .social {
-        & ul {
-            gap: 1rem;
-        }
+  .social {
+    & ul {
+      gap: 1rem;
     }
+  }
 
-    .portfolio {
-        margin: 2rem;
-    }
+  .portfolio {
+    margin: 2rem;
+  }
 
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-    .info-container {
-        margin: 0;
-    }
+  .info-container {
+    margin: 0;
+  }
 
-    .portfolio {
-        margin: 2rem 5rem;
-    }
+  .portfolio {
+    margin: 2rem 5rem;
+  }
 }
-
 
 /* Desktop */
 @media screen and (min-width: 1700px) {
-    .projects-wrapper {
-        max-width: 1700px;
-        margin: auto;
+  .projects-wrapper {
+    max-width: 1700px;
+    margin: auto;
 
-        & h3,
-        .projects {
-            margin: 1.5rem 5rem;
-        }
+    & h3,
+    .projects {
+      margin: 1.5rem 5rem;
     }
+  }
 }
