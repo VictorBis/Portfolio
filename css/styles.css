@@ -15,35 +15,35 @@ body {
 
 h1 {
   font-size: 3.05176rem;
-  line-height: 3.96729rem;
+  line-height: 4.27246rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: 2.44141rem;
-  line-height: 3.17383rem;
+  line-height: 3.41797rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 h3 {
   font-size: 1.95312rem;
-  line-height: 2.53906rem;
+  line-height: 2.73438rem;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
 h4 {
   font-size: 1.5625rem;
-  line-height: 2.03125rem;
+  line-height: 2.1875rem;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
 h5 {
   font-size: 1.25rem;
-  line-height: 1.625rem;
+  line-height: 1.75rem;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -55,9 +55,9 @@ input,
 a,
 p {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  max-width: 70ch;
 }
 
 ul {
@@ -69,28 +69,41 @@ a {
   color: #131212;
 }
 
+section:not(.hero) {
+  margin: 0 1rem;
+}
+
 /* Tablet */
+@media screen and (min-width: 600px) {
+  section:not(.hero) {
+    margin: 0 2rem;
+  }
+  h1 {
+    letter-spacing: 2px;
+  }
+}
+
 /* Desktop */
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 3.43323rem;
-    line-height: 4.4632rem;
+    line-height: 4.80652rem;
   }
   h2 {
     font-size: 2.74658rem;
-    line-height: 3.57056rem;
+    line-height: 3.84521rem;
   }
   h3 {
     font-size: 2.19727rem;
-    line-height: 2.85645rem;
+    line-height: 3.07617rem;
   }
   h4 {
     font-size: 1.75781rem;
-    line-height: 2.28516rem;
+    line-height: 2.46094rem;
   }
   h5 {
     font-size: 1.40625rem;
-    line-height: 1.82812rem;
+    line-height: 1.96875rem;
   }
   li,
   button,
@@ -99,7 +112,36 @@ a {
   a,
   p {
     font-size: 1.125rem;
-    line-height: 1.4625rem;
+    line-height: 1.575rem;
+  }
+  section:not(.hero) {
+    margin: 0 5rem;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1700px) {
+  section:not(.hero) {
+    max-width: 1700px;
+    margin: auto;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -107,6 +149,10 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+  .information {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -181,6 +227,10 @@ nav {
   width: 90%;
 }
 
+.options .active::after {
+  width: 90%;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
   .options {
@@ -210,7 +260,7 @@ nav {
   }
   .options li a {
     font-size: 1.5625rem;
-    line-height: 2.03125rem;
+    line-height: 2.1875rem;
   }
   .options.white {
     background: #060511;
@@ -321,14 +371,14 @@ nav {
   }
 }
 
-/* Desktop */
+/* Large Desktop */
 @media screen and (min-width: 1440px) {
   .nav-wrapper {
     max-width: 1700px;
   }
   .options li a {
     font-size: 1.125rem;
-    line-height: 1.4625rem;
+    line-height: 1.575rem;
   }
 }
 
@@ -362,17 +412,16 @@ nav {
 
 .information {
   text-align: center;
-  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
-          animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
-.text h1 {
-  letter-spacing: 0;
+.fadein {
+  -webkit-animation: fadein 1.5s backwards ease-in-out;
+          animation: fadein 1.5s backwards ease-in-out;
 }
 
-.text h5 {
-  font-weight: 300;
-  padding: 0.5rem 0;
+.text h4 {
+  color: #FAFAFABF;
+  padding: 0.25rem 0;
 }
 
 .social {
@@ -402,16 +451,12 @@ nav {
 
 .social-icon img {
   width: 2rem;
+  height: auto;
 }
 
 #Linkedin {
   width: 1.5rem;
-}
-
-.portfolio {
-  margin: 2rem 1rem 1rem 1rem;
-  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
-          animation: fadein 1.5s 0.3s backwards ease-in-out;
+  height: auto;
 }
 
 .projects {
@@ -420,7 +465,7 @@ nav {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 
 .project .thumbnail {
@@ -460,38 +505,24 @@ nav {
   margin-top: 0.5rem;
 }
 
-/* Keyframes */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
+/* Mobile */
+@media screen and (max-width: 450px) {
+  .text h5 {
+    width: 70%;
+    margin: auto;
   }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  .portfolio {
+    padding: 2rem 0;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  .text {
-    width: 70%;
-    margin: auto;
-  }
-  .text h1 {
-    letter-spacing: 2px;
-  }
   .social ul {
     gap: 1rem;
   }
   .portfolio {
-    margin: 2rem;
+    padding: 2rem 0;
   }
   .projects {
     -ms-grid-columns: (1fr)[2];
@@ -505,19 +536,15 @@ nav {
     margin: 0;
   }
   .portfolio {
-    margin: 2rem 5rem;
+    padding: 2rem 0;
   }
 }
 
-/* Desktop */
+/* Large Desktop */
 @media screen and (min-width: 1700px) {
-  .projects-wrapper {
-    max-width: 1700px;
-    margin: auto;
-  }
-  .projects-wrapper h3,
-  .projects-wrapper .projects {
-    margin: 1.5rem 5rem;
+  section h3,
+  section .projects {
+    margin: 1.5rem 3rem 0 3rem;
   }
 }
 
@@ -539,6 +566,28 @@ nav {
           flex-direction: row;
 }
 
+.personal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.personal-info img {
+  width: 10.25rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
 /* Tablet */
 @media screen and (min-width: 600px) {
   .about {
@@ -546,10 +595,16 @@ nav {
   }
 }
 
+/* Large Desktop */
+@media screen and (min-width: 1700px) {
+  .about h1,
+  .about .personal-info {
+    margin: 0rem 3rem;
+  }
+}
+
 footer {
   padding: 0 1rem 1rem 1rem;
-  -webkit-animation: fadein 1.5s 0.3s backwards ease-in-out;
-          animation: fadein 1.5s 0.3s backwards ease-in-out;
 }
 
 .footer-wrapper {

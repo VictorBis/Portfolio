@@ -4,9 +4,30 @@
     @include flex(center, center, row);
 }
 
+.personal-info {
+    @include flex(center, center, column);
+}
+
+.personal-info img {
+    width: 10.25rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
 /* Tablet */
 @media screen and (min-width:600px) {
     .about {
         margin: 0 2rem;
+    }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1700px) {
+    .about {
+
+        & h1,
+        .personal-info {
+            margin: 0rem 3rem;
+        }
     }
 }

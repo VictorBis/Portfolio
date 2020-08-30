@@ -16,17 +16,17 @@
 
 .information {
   text-align: center;
-  animation: fadein 1.5s 0.3s backwards ease-in-out;
+}
+
+
+.fadein {
+  animation: fadein 1.5s backwards ease-in-out;
 }
 
 .text {
-  & h1 {
-    letter-spacing: 0;
-  }
-
-  & h5 {
-    font-weight: 300;
-    padding: 0.5rem 0;
+  & h4 {
+    color: #FAFAFABF;
+    padding: 0.25rem 0;
   }
 }
 
@@ -44,23 +44,20 @@
 
   & img {
     width: 2rem;
+    height: auto;
   }
 }
 
 #Linkedin {
   width: 1.5rem;
-}
-
-.portfolio {
-  margin: 2rem 1rem 1rem 1rem;
-  animation: fadein 1.5s 0.3s backwards ease-in-out;
+  height: auto;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 
 .project {
@@ -89,27 +86,20 @@
   }
 }
 
-/* Keyframes */
-@keyframes fadein {
-  from {
-    opacity: 0;
+/* Mobile */
+@media screen and (max-width:450px) {
+  .text h5 {
+    width: 70%;
+    margin: auto;
   }
 
-  to {
-    opacity: 1;
+  .portfolio {
+    padding: 2rem 0;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  .text {
-    width: 70%;
-    margin: auto;
-
-    & h1 {
-      letter-spacing: 2px;
-    }
-  }
 
   .social {
     & ul {
@@ -118,7 +108,7 @@
   }
 
   .portfolio {
-    margin: 2rem;
+    padding: 2rem 0;
   }
 
   .projects {
@@ -133,19 +123,17 @@
   }
 
   .portfolio {
-    margin: 2rem 5rem;
+    padding: 2rem 0;
   }
 }
 
-/* Desktop */
+/* Large Desktop */
 @media screen and (min-width: 1700px) {
-  .projects-wrapper {
-    max-width: 1700px;
-    margin: auto;
+  section {
 
     & h3,
     .projects {
-      margin: 1.5rem 5rem;
+      margin: 1.5rem 3rem 0 3rem;
     }
   }
 }

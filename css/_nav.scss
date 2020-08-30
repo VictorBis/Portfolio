@@ -42,6 +42,11 @@ nav {
     width: 90%;
 }
 
+.options .active::after {
+    width: 90%;
+}
+
+
 /* Mobile */
 @media screen and (max-width:600px) {
     .options {
@@ -174,7 +179,7 @@ nav {
 
 }
 
-/* Desktop */
+/* Large Desktop */
 @media screen and (min-width: 1440px) {
     .nav-wrapper {
         max-width: 1700px;
