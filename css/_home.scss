@@ -25,7 +25,8 @@
 
 .text {
   & h4 {
-    color: #FAFAFABF;
+    color: #FAFAFAD9;
+    ;
     padding: 0.25rem 0;
   }
 }
@@ -129,7 +130,7 @@
 
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
-  section {
+  .portfolio {
 
     & h3,
     .projects {

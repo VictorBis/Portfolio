@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-size: 2.44141rem;
   line-height: 3.41797rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -191,6 +191,7 @@ nav {
 
 .logo-wrapper img {
   width: 3rem;
+  height: auto;
 }
 
 .options {
@@ -420,7 +421,7 @@ nav {
 }
 
 .text h4 {
-  color: #FAFAFABF;
+  color: #FAFAFAD9;
   padding: 0.25rem 0;
 }
 
@@ -542,8 +543,8 @@ nav {
 
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
-  section h3,
-  section .projects {
+  .portfolio h3,
+  .portfolio .projects {
     margin: 1.5rem 3rem 0 3rem;
   }
 }
@@ -586,6 +587,16 @@ nav {
   width: 10.25rem;
   height: auto;
   margin-bottom: 1.5rem;
+}
+
+.about-me {
+  margin: 1rem 0;
+}
+
+.resume {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0.5rem 0;
 }
 
 /* Tablet */
