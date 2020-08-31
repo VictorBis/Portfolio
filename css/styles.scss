@@ -2,13 +2,12 @@
 $base-mobile: 1; //16px
 $base-desktop: 1.125; //18px;
 $ratio: 1.25;
-$line-height: 1.4;
 $black: #060511;
 $background: #FAFAFA;
 
 //Font style
 /* 1.250 - Major Third */
-@mixin font($value, $ms-base, $ms-ratio: $ratio) {
+@mixin font($value, $ms-base, $line-height, $ms-ratio: $ratio) {
     $size: pow($ms-ratio, $value) * $ms-base;
     font-size: #{$size + "rem"};
     line-height: #{$size * $line-height + "rem"};

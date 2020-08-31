@@ -15,37 +15,32 @@ body {
 
 h1 {
   font-size: 3.05176rem;
-  line-height: 4.27246rem;
+  line-height: 3.43323rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 h2 {
-  font-size: 2.44141rem;
-  line-height: 3.41797rem;
+  font-size: 1.95312rem;
+  line-height: 2.44141rem;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 
 h3 {
-  font-size: 1.95312rem;
-  line-height: 2.73438rem;
+  font-size: 1.5625rem;
+  line-height: 2.14844rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 h4 {
-  font-size: 1.5625rem;
-  line-height: 2.1875rem;
+  font-size: 1.25rem;
+  line-height: 1.71875rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 h5 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 li,
@@ -79,7 +74,7 @@ section:not(.hero) {
     margin: 0 2rem;
   }
   h1 {
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -87,23 +82,23 @@ section:not(.hero) {
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 3.43323rem;
-    line-height: 4.80652rem;
+    line-height: 3.86238rem;
   }
   h2 {
-    font-size: 2.74658rem;
-    line-height: 3.84521rem;
+    font-size: 2.19727rem;
+    line-height: 2.74658rem;
   }
   h3 {
-    font-size: 2.19727rem;
-    line-height: 3.07617rem;
+    font-size: 1.75781rem;
+    line-height: 2.41699rem;
   }
   h4 {
-    font-size: 1.75781rem;
-    line-height: 2.46094rem;
+    font-size: 1.40625rem;
+    line-height: 1.93359rem;
   }
   h5 {
-    font-size: 1.40625rem;
-    line-height: 1.96875rem;
+    font-size: 1.125rem;
+    line-height: 1.575rem;
   }
   li,
   button,
@@ -261,7 +256,7 @@ nav {
   }
   .options li a {
     font-size: 1.5625rem;
-    line-height: 2.1875rem;
+    line-height: 2.14844rem;
   }
   .options.white {
     background: #060511;
@@ -420,9 +415,9 @@ nav {
           animation: fadein 1.5s backwards ease-in-out;
 }
 
-.text h4 {
-  color: #FAFAFAD9;
-  padding: 0.25rem 0;
+.text h2 {
+  color: #FAFAFAA8;
+  padding: 0.5rem 0;
 }
 
 .social {

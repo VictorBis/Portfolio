@@ -60,7 +60,7 @@ nav {
         @include flex(center, center, column);
 
         & li a {
-            @include font(3, $base-mobile);
+            @include font(3, $base-mobile, 1.375);
         }
 
         &.white {
@@ -189,7 +189,7 @@ nav {
     .options {
 
         & li a {
-            @include font(1, $base-desktop);
+            @include font(1, $base-desktop, 1.4);
         }
     }
 }

@@ -13,33 +13,28 @@ body {
 }
 
 h1 {
-    @include font(6, $base-mobile);
+    @include font(6, $base-mobile, 1.125);
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 h2 {
-    @include font(5, $base-mobile);
+    @include font(4, $base-mobile, 1.25);
     font-weight: 500;
-    letter-spacing: 1px;
 }
 
 h3 {
-    @include font(4, $base-mobile);
+    @include font(3, $base-mobile, 1.375);
     font-weight: 500;
-    letter-spacing: 0.5px;
 }
 
 h4 {
-    @include font(3, $base-mobile);
+    @include font(2, $base-mobile, 1.375);
     font-weight: 500;
-    letter-spacing: 0.5px;
 }
 
 h5 {
-    @include font(2, $base-mobile);
+    @include font(1, $base-mobile, 1.4);
     font-weight: 500;
-    letter-spacing: 0.5px;
 }
 
 li,
@@ -48,7 +43,7 @@ label,
 input,
 a,
 p {
-    @include font(1, $base-mobile);
+    @include font(1, $base-mobile, 1.4);
     font-weight: 400;
     max-width: 70ch;
 }
@@ -73,7 +68,7 @@ section:not(.hero) {
     }
 
     h1 {
-        letter-spacing: 2px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -81,23 +76,23 @@ section:not(.hero) {
 @media screen and (min-width: 1440px) {
 
     h1 {
-        @include font(6, $base-desktop);
+        @include font(6, $base-desktop, 1.125);
     }
 
     h2 {
-        @include font(5, $base-desktop);
+        @include font(4, $base-desktop, 1.25);
     }
 
     h3 {
-        @include font(4, $base-desktop);
+        @include font(3, $base-desktop, 1.375);
     }
 
     h4 {
-        @include font(3, $base-desktop);
+        @include font(2, $base-desktop, 1.375);
     }
 
     h5 {
-        @include font(2, $base-desktop);
+        @include font(1, $base-desktop, 1.4);
     }
 
     li,
@@ -106,7 +101,7 @@ section:not(.hero) {
     input,
     a,
     p {
-        @include font(1, 1.125);
+        @include font(1, $base-desktop, 1.4);
     }
 
     section:not(.hero) {
