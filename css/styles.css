@@ -416,7 +416,7 @@ nav {
 }
 
 .text h2 {
-  color: #FAFAFAA8;
+  color: rgba(250, 250, 250, 0.7);
   padding: 0.5rem 0;
 }
 
@@ -599,10 +599,27 @@ nav {
   margin: 1rem 0;
 }
 
-.resume {
+.experience {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 0.5rem 0;
+  position: relative;
+}
+
+.experience-content {
+  margin: 1rem 0;
+}
+
+.experience-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.experience-item img {
+  width: 5rem;
+  height: auto;
+  margin: 0 0.5rem;
 }
 
 /* Tablet */

@@ -18,13 +18,28 @@
     margin: 1rem 0;
 }
 
-.resume {
+.experience {
     align-self: flex-start;
     margin: 0.5rem 0;
+    position: relative;
+}
+
+.experience-content {
+    margin: 1rem 0;
+}
+
+.experience-item {
+    display: flex;
+
+    & img {
+        width: 5rem;
+        height: auto;
+        margin: 0 0.5rem;
+    }
 }
 
 /* Tablet */
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
     .about {
         margin: 0 2rem;
     }
