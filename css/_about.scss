@@ -11,24 +11,33 @@
 .personal-info img {
     width: 10.25rem;
     height: auto;
-    margin-bottom: 1rem;
 }
 
 .about-me {
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.title {
+    margin: 1rem 0;
+}
+
+.resume {
+    margin: 1rem 0;
 }
 
 .resume-section {
-    align-self: flex-start;
-    margin: 1rem 0;
     position: relative;
+
+    & h2 {
+        padding: 1rem 0;
+    }
 }
 
-.experience-content {
-    margin-top: 1.5rem;
+.resume-content {
+    padding: 0.5rem 0;
 }
 
-.experience-item {
+.resume-item {
     display: flex;
 
     & img {
@@ -54,7 +63,7 @@
 }
 
 .education {
-    padding: 0.5rem 0 1rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 
 /* Tablet */

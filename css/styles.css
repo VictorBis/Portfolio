@@ -11,6 +11,20 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #FAFAFA;
   color: #060511;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1 {
@@ -592,31 +606,39 @@ nav {
 .personal-info img {
   width: 10.25rem;
   height: auto;
-  margin-bottom: 1rem;
 }
 
 .about-me {
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.resume {
+  margin: 1rem 0;
 }
 
 .resume-section {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin: 1rem 0;
   position: relative;
 }
 
-.experience-content {
-  margin-top: 1.5rem;
+.resume-section h2 {
+  padding: 1rem 0;
 }
 
-.experience-item {
+.resume-content {
+  padding: 0.5rem 0;
+}
+
+.resume-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.experience-item img {
+.resume-item img {
   width: 5rem;
   height: auto;
   margin-right: 1.5rem;
@@ -625,21 +647,21 @@ nav {
           box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.5);
 }
 
-.experience-item .date {
+.resume-item .date {
   color: rgba(6, 5, 17, 0.68);
   font-weight: 400;
 }
 
-.experience-item p {
+.resume-item p {
   margin-top: 0.5rem;
 }
 
-.experience-item.secondary-item {
+.resume-item.secondary-item {
   margin-top: 3rem;
 }
 
 .education {
-  padding: 0.5rem 0 1rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 /* Tablet */
@@ -659,6 +681,7 @@ nav {
 
 footer {
   padding: 0 1rem 1rem 1rem;
+  margin-top: auto;
 }
 
 .footer-wrapper {
