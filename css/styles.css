@@ -639,9 +639,9 @@ nav {
 }
 
 .resume-item img {
-  width: 4.8125rem;
+  width: 4.125rem;
   height: auto;
-  margin-right: 2rem;
+  margin-right: 1rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.5);
           box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.5);
@@ -668,6 +668,15 @@ nav {
 @media screen and (min-width: 600px) {
   .about {
     margin: 0 2rem;
+  }
+  .resume-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .resume-item img {
+    width: 4.8125rem;
+    margin-right: 2rem;
   }
 }
 
