@@ -9,7 +9,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #FAFAFA;
+  background: #fafafa;
   color: #060511;
   min-height: 100vh;
   display: -webkit-box;
@@ -245,7 +245,7 @@ nav {
 @media screen and (max-width: 600px) {
   .options {
     position: fixed;
-    background: #FAFAFA;
+    background: #fafafa;
     min-height: 100vh;
     width: 100vw;
     top: 0;
@@ -276,7 +276,7 @@ nav {
     background: #060511;
   }
   .options.white li a {
-    color: #FAFAFA;
+    color: #fafafa;
   }
   .options.open {
     -webkit-clip-path: circle(1050px at 100% -18%);
@@ -308,7 +308,7 @@ nav {
   .line {
     width: 2rem;
     height: 2px;
-    background: #FAFAFA;
+    background: #fafafa;
     border-radius: 10px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -318,7 +318,7 @@ nav {
     position: absolute;
     width: 2rem;
     height: 2px;
-    background: #FAFAFA;
+    background: #fafafa;
     border-radius: 10px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -356,12 +356,12 @@ nav {
   .hamburguer.open .line.white::before {
     -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
             transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-    background: #FAFAFA;
+    background: #fafafa;
   }
   .hamburguer.open .line.white::after {
     -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
             transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-    background: #FAFAFA;
+    background: #fafafa;
   }
   body.open {
     overflow: hidden;
@@ -374,7 +374,7 @@ nav {
     padding: 2rem;
   }
   .night a {
-    color: #FAFAFA;
+    color: #fafafa;
   }
   .hamburguer {
     display: none;
@@ -412,12 +412,12 @@ nav {
 }
 
 .info-container {
-  color: #FAFAFA;
+  color: #fafafa;
   margin: 0 1rem;
 }
 
 .info-container a {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .information {
@@ -630,6 +630,18 @@ nav {
 
 .resume-content {
   padding: 0.5rem 0;
+  position: relative;
+}
+
+.resume-content.experience::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 35%;
+  left: 2.0625rem;
+  width: 2px;
+  background-color: rgba(200, 200, 200, 0.77);
+  z-index: -1;
 }
 
 .resume-item {
@@ -643,12 +655,12 @@ nav {
   height: auto;
   margin-right: 1rem;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.5);
-          box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.5);
+  -webkit-box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.77);
+          box-shadow: 0 0 0.25rem 2px rgba(200, 200, 200, 0.77);
 }
 
 .resume-item .date {
-  color: rgba(6, 5, 17, 0.68);
+  color: #060511ad;
   font-weight: 400;
 }
 
@@ -668,6 +680,13 @@ nav {
 @media screen and (min-width: 600px) {
   .about {
     margin: 0 2rem;
+  }
+  .resume-content {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  .resume-content.experience::before {
+    left: 2.40625rem;
   }
   .resume-item {
     display: -webkit-box;
