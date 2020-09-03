@@ -429,8 +429,13 @@ nav {
           animation: fadein 1.5s backwards ease-in-out;
 }
 
-.text h2 {
-  color: rgba(250, 250, 250, 0.7);
+.text .big-text {
+  font-size: 3.05176rem;
+  line-height: 3.43323rem;
+}
+
+.text .medium-text {
+  color: rgba(250, 250, 250, 0.9);
   padding: 0.5rem 0;
 }
 
@@ -479,7 +484,6 @@ nav {
 }
 
 .project .thumbnail {
-  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,13 +498,14 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background: rgba(172, 49, 32, 0.2);
-  cursor: pointer;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .project .thumbnail h3 {
@@ -508,14 +513,21 @@ nav {
 }
 
 .project .thumbnail img {
-  width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project .thumbnail:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.project .thumbnail:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .project .desc {
@@ -541,6 +553,21 @@ nav {
 @media screen and (min-width: 600px) {
   .social ul {
     gap: 1rem;
+  }
+  .text .big-text {
+    font-size: 4.76837rem;
+    line-height: 5.36442rem;
+  }
+  .text .medium-text {
+    font-size: 2.74658rem;
+    line-height: 3.0899rem;
+    padding: 1.25rem 0;
+  }
+  .social-icon.hero-icon img {
+    width: 2.5rem;
+  }
+  .social-icon.hero-icon #Linkedin {
+    width: 2rem;
   }
   .portfolio {
     padding: 2rem 0;

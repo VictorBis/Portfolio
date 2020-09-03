@@ -24,8 +24,12 @@
 }
 
 .text {
-  & h2 {
-    color: rgba(250, 250, 250, 0.7);
+  & .big-text {
+    @include font(6, $base-mobile, 1.125);
+  }
+
+  & .medium-text {
+    color: rgba(250, 250, 250, 0.9);
     padding: 0.5rem 0;
   }
 }
@@ -62,28 +66,33 @@
 
 .project {
   & .thumbnail {
-    position: relative;
     width: 100%;
     @include flex(center, center, row);
-    border-radius: 10px;
+    border-radius: 0.5rem;
     background: rgba(172, 49, 32, 0.2);
-    cursor: pointer;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 
     & h3 {
       position: absolute;
     }
 
     & img {
-      width: 100%;
+      max-width: 100%;
       object-fit: cover;
+      transition: all 0.5s ease-in-out;
     }
 
     &:hover {
       box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
         0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+
+      & img {
+        transform: scale(1.05);
+      }
     }
   }
 
@@ -114,6 +123,28 @@
   .social {
     & ul {
       gap: 1rem;
+    }
+  }
+
+  .text {
+    & .big-text {
+      @include font(8, $base-mobile, 1.125);
+    }
+
+    & .medium-text {
+      @include font(5, $base-desktop, 1.125);
+      padding: 1.25rem 0;
+    }
+  }
+
+  .social-icon.hero-icon {
+
+    & img {
+      width: 2.5rem;
+    }
+
+    & #Linkedin {
+      width: 2rem;
     }
   }
 
