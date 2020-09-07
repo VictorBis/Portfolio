@@ -54,7 +54,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .project {
@@ -86,10 +86,10 @@
   }
 
   & .desc {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     & p {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
   }
 }

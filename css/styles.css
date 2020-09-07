@@ -473,7 +473,7 @@ nav {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .project .thumbnail {
@@ -519,11 +519,11 @@ nav {
 }
 
 .project .desc {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .project .desc p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Mobile */
@@ -626,16 +626,20 @@ nav {
   height: auto;
 }
 
+.personal-info img.my-photo {
+  margin-top: 1rem;
+}
+
 .about-me {
   margin: 0.5rem 0;
 }
 
 .title {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .resume {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .resume-section {
@@ -647,14 +651,14 @@ nav {
 }
 
 .resume-content {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   position: relative;
 }
 
 .resume-content.experience::before {
   content: "";
   position: absolute;
-  top: 0.5rem;
+  top: 1rem;
   bottom: 35%;
   left: 2.0625rem;
   width: 2px;
@@ -700,10 +704,6 @@ nav {
   .about {
     margin: 0 2rem;
   }
-  .resume-content {
-    padding: 0.5rem 0;
-    position: relative;
-  }
   .resume-content.experience::before {
     left: 2.40625rem;
   }
@@ -715,14 +715,6 @@ nav {
   .resume-item img {
     width: 4.8125rem;
     margin-right: 2rem;
-  }
-}
-
-/* Large Desktop */
-@media screen and (min-width: 1700px) {
-  .about h1,
-  .about .personal-info {
-    margin: 0rem 3rem;
   }
 }
 

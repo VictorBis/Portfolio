@@ -11,6 +11,10 @@
 .personal-info img {
   width: 10.25rem;
   height: auto;
+
+  &.my-photo {
+    margin-top: 1rem;
+  }
 }
 
 .about-me {
@@ -18,11 +22,11 @@
 }
 
 .title {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .resume {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .resume-section {
@@ -34,14 +38,14 @@
 }
 
 .resume-content {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   position: relative;
 
   &.experience {
     &::before {
       content: "";
       position: absolute;
-      top: 0.5rem;
+      top: 1rem;
       bottom: 35%;
       left: 2.0625rem;
       width: 2px;
@@ -88,8 +92,6 @@
   }
 
   .resume-content {
-    padding: 0.5rem 0;
-    position: relative;
 
     &.experience {
       &::before {
@@ -104,17 +106,6 @@
     & img {
       width: 4.8125rem;
       margin-right: 2rem;
-    }
-  }
-}
-
-/* Large Desktop */
-@media screen and (min-width: 1700px) {
-  .about {
-
-    & h1,
-    .personal-info {
-      margin: 0rem 3rem;
     }
   }
 }
