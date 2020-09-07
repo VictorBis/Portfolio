@@ -96,6 +96,10 @@
 
 /* Mobile */
 @media screen and (max-width:450px) {
+  .hero {
+    min-height: 65vh;
+  }
+
   .text h5 {
     width: 70%;
     margin: auto;
