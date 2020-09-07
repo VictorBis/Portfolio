@@ -65,10 +65,11 @@
   & .date {
     color: #060511ad;
     font-weight: 400;
+    margin-top: 0.25rem;
   }
 
   & p {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   &.secondary-item {
@@ -110,6 +111,7 @@
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
   .about {
+
     & h1,
     .personal-info {
       margin: 0rem 3rem;

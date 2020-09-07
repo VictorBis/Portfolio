@@ -9,8 +9,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #fafafa;
-  color: #060511;
+  background: #ffffff;
+  color: #141414;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +171,7 @@ nav {
 }
 
 .night {
-  background: #060511;
+  background: #141414;
 }
 
 .nav-wrapper {
@@ -245,7 +245,7 @@ nav {
 @media screen and (max-width: 600px) {
   .options {
     position: fixed;
-    background: #fafafa;
+    background: #ffffff;
     min-height: 100vh;
     width: 100vw;
     top: 0;
@@ -273,10 +273,10 @@ nav {
     line-height: 2.14844rem;
   }
   .options.white {
-    background: #060511;
+    background: #141414;
   }
   .options.white li a {
-    color: #fafafa;
+    color: #ffffff;
   }
   .options.open {
     -webkit-clip-path: circle(1050px at 100% -18%);
@@ -308,7 +308,7 @@ nav {
   .line {
     width: 2rem;
     height: 2px;
-    background: #fafafa;
+    background: #ffffff;
     border-radius: 10px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -318,7 +318,7 @@ nav {
     position: absolute;
     width: 2rem;
     height: 2px;
-    background: #fafafa;
+    background: #ffffff;
     border-radius: 10px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -332,10 +332,10 @@ nav {
             transform: translateY(0.5rem);
   }
   .line.white {
-    background: #060511;
+    background: #141414;
   }
   .line.white::before, .line.white::after {
-    background: #060511;
+    background: #141414;
   }
   /* Animation */
   .hamburguer.open .line {
@@ -346,22 +346,22 @@ nav {
   .hamburguer.open .line::before {
     -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
             transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-    background: #060511;
+    background: #141414;
   }
   .hamburguer.open .line::after {
     -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
             transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-    background: #060511;
+    background: #141414;
   }
   .hamburguer.open .line.white::before {
     -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
             transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-    background: #fafafa;
+    background: #ffffff;
   }
   .hamburguer.open .line.white::after {
     -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
             transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-    background: #fafafa;
+    background: #ffffff;
   }
   body.open {
     overflow: hidden;
@@ -374,7 +374,7 @@ nav {
     padding: 2rem;
   }
   .night a {
-    color: #fafafa;
+    color: #ffffff;
   }
   .hamburguer {
     display: none;
@@ -395,7 +395,6 @@ nav {
 /* Hero section */
 .hero {
   min-height: 70vh;
-  background: #060511;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,12 +411,7 @@ nav {
 }
 
 .info-container {
-  color: #fafafa;
   margin: 0 1rem;
-}
-
-.info-container a {
-  color: #fafafa;
 }
 
 .information {
@@ -435,7 +429,6 @@ nav {
 }
 
 .text .medium-text {
-  color: rgba(250, 250, 250, 0.9);
   padding: 0.5rem 0;
 }
 
@@ -523,11 +516,6 @@ nav {
 .project .thumbnail:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-}
-
-.project .thumbnail:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .project .desc {
@@ -689,10 +677,11 @@ nav {
 .resume-item .date {
   color: #060511ad;
   font-weight: 400;
+  margin-top: 0.25rem;
 }
 
 .resume-item p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .resume-item.secondary-item {
