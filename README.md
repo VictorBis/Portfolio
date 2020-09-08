@@ -1,6 +1,6 @@
 # Victor Hugo Molina Bis
 
-Diseñador UI y Desarrollador Front End
+UX Engineer
 
 ---
 
@@ -12,4 +12,5 @@ Diseñador UI y Desarrollador Front End
 
 ## Experiencia
 
+* **2020 - Actualidad** Diseñador UI e Ingerniero de Software en el proyecto Moviteca, Creando Lectores.
 * **2019 - 2020** Desarrollador Front End en el Intituto de Investigaciones Estéticas de la UNAM, proyecto MUSICAT.
