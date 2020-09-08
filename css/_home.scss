@@ -1,6 +1,6 @@
 /* Hero section */
 .hero {
-  min-height: 60vh;
+  min-height: 55vh;
   @include flex(center, center, row);
 }
 
@@ -97,9 +97,6 @@
 
 /* Mobile */
 @media screen and (max-width:450px) {
-  .hero {
-    min-height: 65vh;
-  }
 
   .text h5 {
     width: 70%;

@@ -394,7 +394,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 60vh;
+  min-height: 55vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,9 +529,6 @@ nav {
 
 /* Mobile */
 @media screen and (max-width: 450px) {
-  .hero {
-    min-height: 65vh;
-  }
   .text h5 {
     width: 70%;
     margin: auto;
