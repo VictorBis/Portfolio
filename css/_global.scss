@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    @include font(4, $base-mobile, 1.25);
+    @include font(4, $base-mobile, 1.375);
     font-weight: 500;
 }
 
@@ -35,7 +35,7 @@ h4 {
 }
 
 h5 {
-    @include font(1, $base-mobile, 1.4);
+    @include font(1, $base-mobile, 1.5);
     font-weight: 500;
 }
 
@@ -45,7 +45,7 @@ label,
 input,
 a,
 p {
-    @include font(1, $base-mobile, 1.4);
+    @include font(1, $base-mobile, 1.5);
     font-weight: 400;
     max-width: 70ch;
 }
@@ -82,7 +82,7 @@ section:not(.hero) {
     }
 
     h2 {
-        @include font(4, $base-desktop, 1.25);
+        @include font(4, $base-desktop, 1.375);
     }
 
     h3 {
@@ -94,7 +94,7 @@ section:not(.hero) {
     }
 
     h5 {
-        @include font(1, $base-desktop, 1.4);
+        @include font(1, $base-desktop, 1.5);
     }
 
     li,
@@ -103,7 +103,7 @@ section:not(.hero) {
     input,
     a,
     p {
-        @include font(1, $base-desktop, 1.4);
+        @include font(1, $base-desktop, 1.5);
     }
 
     section:not(.hero) {

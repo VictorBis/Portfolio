@@ -1,6 +1,6 @@
 /* Hero section */
 .hero {
-  min-height: 70vh;
+  min-height: 60vh;
   @include flex(center, center, row);
 }
 
@@ -23,7 +23,9 @@
   }
 
   & .medium-text {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    margin: auto;
+    font-weight: 400;
   }
 }
 

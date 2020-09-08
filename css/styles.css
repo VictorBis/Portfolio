@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   font-size: 1.95312rem;
-  line-height: 2.44141rem;
+  line-height: 2.68555rem;
   font-weight: 500;
 }
 
@@ -53,7 +53,7 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   font-weight: 500;
 }
 
@@ -64,7 +64,7 @@ input,
 a,
 p {
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   font-weight: 400;
   max-width: 70ch;
 }
@@ -100,7 +100,7 @@ section:not(.hero) {
   }
   h2 {
     font-size: 2.19727rem;
-    line-height: 2.74658rem;
+    line-height: 3.02124rem;
   }
   h3 {
     font-size: 1.75781rem;
@@ -112,7 +112,7 @@ section:not(.hero) {
   }
   h5 {
     font-size: 1.125rem;
-    line-height: 1.575rem;
+    line-height: 1.6875rem;
   }
   li,
   button,
@@ -121,7 +121,7 @@ section:not(.hero) {
   a,
   p {
     font-size: 1.125rem;
-    line-height: 1.575rem;
+    line-height: 1.6875rem;
   }
   section:not(.hero) {
     margin: 0 5rem;
@@ -394,7 +394,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 70vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,7 +429,9 @@ nav {
 }
 
 .text .medium-text {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
+  margin: auto;
+  font-weight: 400;
 }
 
 .social {
