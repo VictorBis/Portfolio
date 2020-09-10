@@ -8,26 +8,17 @@ const logo = document.getElementById("WhiteLogo");
  * hamburguer menu
  */
 function hamburguerMenu() {
-  if (window.innerWidth < 600) {
-    [hamburguer, nav_links].forEach((item) => {
-      item.addEventListener("click", () => {
-        nav_links.classList.toggle("open");
-        document.getElementsByTagName("body")[0].classList.toggle("open");
-        hamburguer.classList.toggle("open");
-        source = logo.src;
-        if (source.includes("images/Atom/Icon/Logo/WhiteLogo.svg")) {
-          logo.src = "images/Atom/Icon/Logo/BlackLogo.svg";
-        } else {
-          logo.src = "images/Atom/Icon/Logo/WhiteLogo.svg";
-        }
-      });
-    });
-  }
-}
-
-/* Allow desktop small screen */
-window.addEventListener("resize", function () {
-  hamburguerMenu();
-});
+  hamburguer.addEventListener("click", () => {
+    nav_links.classList.toggle("open");
+    document.getElementsByTagName("body")[0].classList.toggle("open");
+    hamburguer.classList.toggle("open");
+    source = logo.src;
+    if (source.includes("images/Atom/Icon/Logo/WhiteLogo.svg")) {
+      logo.src = "images/Atom/Icon/Logo/BlackLogo.svg";
+    } else {
+      logo.src = "images/Atom/Icon/Logo/WhiteLogo.svg";
+    }
+  });
+};
 
 hamburguerMenu();
