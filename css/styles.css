@@ -457,7 +457,7 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 2.5rem 2rem;
   margin-top: 2rem;
 }
 
