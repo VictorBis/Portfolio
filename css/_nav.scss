@@ -1,5 +1,5 @@
 nav {
-    padding: 1rem;
+    padding: 2rem 0rem;
     position: relative;
 }
 
@@ -164,9 +164,6 @@ nav {
 
 /* Tablet */
 @media screen and (min-width:600px) {
-    nav {
-        padding: 2rem;
-    }
 
     .night {
         & a {

@@ -116,11 +116,11 @@
 
   .text {
     & .big-text {
-      @include font(9, $base-mobile, 1.125);
+      @include font(8, $base-mobile, 1.125);
     }
 
     & .medium-text {
-      @include font(5, $base-desktop, 1.125);
+      @include font(4, $base-desktop, 1.125);
       padding: 1.5rem 0;
     }
   }
@@ -152,15 +152,5 @@
 
   .portfolio {
     padding: 2rem 0;
-  }
-}
-
-/* Large Desktop */
-@media screen and (min-width: 1700px) {
-  .portfolio {
-    & h2,
-    .projects {
-      margin: 1.5rem 3rem 0 3rem;
-    }
   }
 }

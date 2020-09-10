@@ -25,6 +25,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 1rem;
 }
 
 h1 {
@@ -78,13 +79,9 @@ a {
   color: #131212;
 }
 
-section:not(.hero) {
-  margin: 0 1rem;
-}
-
 /* Tablet */
 @media screen and (min-width: 600px) {
-  section:not(.hero) {
+  body {
     margin: 0 2rem;
   }
   h1 {
@@ -123,14 +120,14 @@ section:not(.hero) {
     font-size: 1.125rem;
     line-height: 1.6875rem;
   }
-  section:not(.hero) {
+  body {
     margin: 0 5rem;
   }
 }
 
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
-  section:not(.hero) {
+  body {
     max-width: 1700px;
     margin: auto;
   }
@@ -166,7 +163,7 @@ section:not(.hero) {
 }
 
 nav {
-  padding: 1rem;
+  padding: 2rem 0rem;
   position: relative;
 }
 
@@ -370,9 +367,6 @@ nav {
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  nav {
-    padding: 2rem;
-  }
   .night a {
     color: #ffffff;
   }
@@ -544,12 +538,12 @@ nav {
     gap: 1rem;
   }
   .text .big-text {
-    font-size: 5.96046rem;
-    line-height: 6.70552rem;
+    font-size: 4.76837rem;
+    line-height: 5.36442rem;
   }
   .text .medium-text {
-    font-size: 2.74658rem;
-    line-height: 3.0899rem;
+    font-size: 2.19727rem;
+    line-height: 2.47192rem;
     padding: 1.5rem 0;
   }
   .social-icon.hero-icon img {
@@ -577,17 +571,8 @@ nav {
   }
 }
 
-/* Large Desktop */
-@media screen and (min-width: 1700px) {
-  .portfolio h2,
-  .portfolio .projects {
-    margin: 1.5rem 3rem 0 3rem;
-  }
-}
-
 /* About */
 .about {
-  margin: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,9 +684,6 @@ nav {
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  .about {
-    margin: 0 2rem;
-  }
   .resume-content.experience::before {
     left: 2.40625rem;
   }

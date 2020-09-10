@@ -12,6 +12,7 @@ body {
     color: $black;
     min-height: 100vh;
     @include flex(center, inherit, column);
+    margin: 0 1rem;
 }
 
 h1 {
@@ -59,13 +60,9 @@ a {
     color: rgb(19, 18, 18);
 }
 
-section:not(.hero) {
-    margin: 0 1rem;
-}
-
 /* Tablet */
 @media screen and (min-width: 600px) {
-    section:not(.hero) {
+    body {
         margin: 0 2rem;
     }
 
@@ -106,7 +103,7 @@ section:not(.hero) {
         @include font(1, $base-desktop, 1.5);
     }
 
-    section:not(.hero) {
+    body {
         margin: 0 5rem;
     }
 
@@ -115,7 +112,7 @@ section:not(.hero) {
 
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
-    section:not(.hero) {
+    body {
         max-width: 1700px;
         margin: auto;
     }
