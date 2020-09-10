@@ -388,13 +388,13 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 55vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -402,14 +402,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.info-container {
-  margin: 0 1rem;
-}
-
-.information {
-  text-align: center;
 }
 
 .fadein {
@@ -423,22 +415,19 @@ nav {
 }
 
 .text .medium-text {
+  font-size: 1.25rem;
+  line-height: 1.71875rem;
   padding: 1rem 0;
-  margin: auto;
   font-weight: 400;
-}
-
-.social {
-  margin-top: 0.5rem;
 }
 
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -446,10 +435,10 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0.5rem;
 }
 
 .social-icon {
+  margin-right: 0.5rem;
   padding: 0.5rem;
 }
 
@@ -534,23 +523,18 @@ nav {
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  .social ul {
-    gap: 1rem;
+  .social-icon {
+    margin-right: 1rem;
   }
   .text .big-text {
-    font-size: 4.76837rem;
-    line-height: 5.36442rem;
+    font-size: 3.8147rem;
+    line-height: 4.29153rem;
   }
   .text .medium-text {
-    font-size: 2.19727rem;
-    line-height: 2.47192rem;
+    font-size: 1.5625rem;
+    line-height: 2.14844rem;
+    width: 80%;
     padding: 1.5rem 0;
-  }
-  .social-icon.hero-icon img {
-    width: 2.5rem;
-  }
-  .social-icon.hero-icon #Linkedin {
-    width: 2rem;
   }
   .portfolio {
     padding: 2rem 0;
@@ -563,8 +547,8 @@ nav {
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-  .info-container {
-    margin: 0;
+  .text .medium-text {
+    width: 60%;
   }
   .portfolio {
     padding: 2rem 0;

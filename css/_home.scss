@@ -1,15 +1,7 @@
 /* Hero section */
 .hero {
-  min-height: 55vh;
-  @include flex(center, center, row);
-}
-
-.info-container {
-  margin: 0 1rem;
-}
-
-.information {
-  text-align: center;
+  min-height: 50vh;
+  @include flex(left, center, row);
 }
 
 .fadein {
@@ -22,22 +14,21 @@
   }
 
   & .medium-text {
+    @include font(2, $base-mobile, 1.375);
     padding: 1rem 0;
-    margin: auto;
     font-weight: 400;
   }
 }
 
 .social {
-  margin-top: 0.5rem;
 
   & ul {
-    @include flex(center, center, row);
-    gap: 0.5rem;
+    @include flex(left, center, row);
   }
 }
 
 .social-icon {
+  margin-right: 0.5rem;
   padding: 0.5rem;
 
   & img {
@@ -108,30 +99,19 @@
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-  .social {
-    & ul {
-      gap: 1rem;
-    }
+  .social-icon {
+    margin-right: 1rem;
   }
 
   .text {
     & .big-text {
-      @include font(8, $base-mobile, 1.125);
+      @include font(7, $base-mobile, 1.125);
     }
 
     & .medium-text {
-      @include font(4, $base-desktop, 1.125);
+      @include font(3, $base-mobile, 1.375);
+      width: 80%;
       padding: 1.5rem 0;
-    }
-  }
-
-  .social-icon.hero-icon {
-    & img {
-      width: 2.5rem;
-    }
-
-    & #Linkedin {
-      width: 2rem;
     }
   }
 
@@ -146,8 +126,11 @@
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-  .info-container {
-    margin: 0;
+  .text {
+
+    & .medium-text {
+      width: 60%;
+    }
   }
 
   .portfolio {
