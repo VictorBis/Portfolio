@@ -76,7 +76,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: #131212;
+  color: #141414;
+  display: inline-block;
 }
 
 /* Tablet */
