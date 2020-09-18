@@ -243,7 +243,7 @@ nav {
 @media screen and (max-width: 600px) {
   .options {
     position: fixed;
-    background: #ffffff;
+    background: #141414;
     min-height: 100vh;
     width: 100vw;
     top: 0;
@@ -269,11 +269,6 @@ nav {
   .options li a {
     font-size: 1.5625rem;
     line-height: 2.14844rem;
-  }
-  .options.white {
-    background: #141414;
-  }
-  .options.white li a {
     color: #ffffff;
   }
   .options.open {
