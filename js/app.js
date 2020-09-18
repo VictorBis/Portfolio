@@ -9,9 +9,9 @@ const logo = document.getElementById("WhiteLogo");
  */
 function hamburguerMenu() {
   hamburguer.addEventListener("click", () => {
-    nav_links.classList.toggle("open");
     document.getElementsByTagName("body")[0].classList.toggle("open");
     hamburguer.classList.toggle("open");
+    nav_links.classList.toggle("open");
     source = logo.src;
     if (source.includes("images/Atom/Icon/Logo/WhiteLogo.svg")) {
       logo.src = "images/Atom/Icon/Logo/BlackLogo.svg";
