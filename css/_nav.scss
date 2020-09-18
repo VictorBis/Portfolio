@@ -124,28 +124,28 @@ nav {
 
     /* Animation */
     .hamburguer.open .line {
-        transform: translate(2rem);
+        transform: translate(-2rem);
         background: transparent;
 
         &::before {
-            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            transform: rotate(45deg) translate(1.5rem, -1.5rem);
             background: $black;
         }
 
         &::after {
-            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
             background: $black;
         }
     }
 
     .hamburguer.open .line.white {
         &::before {
-            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            transform: rotate(45deg) translate(1.5rem, -1.5rem);
             background: $background;
         }
 
         &::after {
-            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
             background: $background;
         }
     }

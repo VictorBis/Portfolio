@@ -332,28 +332,28 @@ nav {
   }
   /* Animation */
   .hamburguer.open .line {
-    -webkit-transform: translate(2rem);
-            transform: translate(2rem);
+    -webkit-transform: translate(-2rem);
+            transform: translate(-2rem);
     background: transparent;
   }
   .hamburguer.open .line::before {
-    -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    -webkit-transform: rotate(45deg) translate(1.5rem, -1.5rem);
+            transform: rotate(45deg) translate(1.5rem, -1.5rem);
     background: #141414;
   }
   .hamburguer.open .line::after {
-    -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    -webkit-transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
     background: #141414;
   }
   .hamburguer.open .line.white::before {
-    -webkit-transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-            transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    -webkit-transform: rotate(45deg) translate(1.5rem, -1.5rem);
+            transform: rotate(45deg) translate(1.5rem, -1.5rem);
     background: #ffffff;
   }
   .hamburguer.open .line.white::after {
-    -webkit-transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-            transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    -webkit-transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
     background: #ffffff;
   }
   body.open {
