@@ -64,12 +64,12 @@ nav {
             color: $background;
         }
 
-        clip-path: circle(100px at 100% -18%);
-        transition: all 1s ease;
+        transition: all 0.7s ease;
+        opacity: 0;
     }
 
     .options.open {
-        clip-path: circle(1050px at 100% -8%);
+        opacity: 1;
     }
 
     .hamburguer {

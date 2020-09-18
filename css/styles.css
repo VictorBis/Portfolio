@@ -261,10 +261,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-clip-path: circle(100px at 100% -18%);
-            clip-path: circle(100px at 100% -18%);
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    opacity: 0;
   }
   .options li a {
     font-size: 1.5625rem;
@@ -272,8 +271,7 @@ nav {
     color: #ffffff;
   }
   .options.open {
-    -webkit-clip-path: circle(1050px at 100% -8%);
-            clip-path: circle(1050px at 100% -8%);
+    opacity: 1;
   }
   .hamburguer {
     cursor: pointer;
