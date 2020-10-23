@@ -55,7 +55,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 li,
@@ -474,6 +474,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background: #f0f0f0;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -680,8 +681,308 @@ nav {
   }
 }
 
+.project-thumbnail {
+  width: 100%;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.case-intro a {
+  margin-top: 1rem;
+}
+
+.brief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+.brief .column {
+  margin: 0.5rem 0;
+}
+
+.brief .column h4 + p, .brief .column h4 + .tool {
+  margin-top: 1rem;
+}
+
+.tools {
+  margin-top: 1rem;
+}
+
+.tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.tool img {
+  margin-right: 0.5rem;
+}
+
+.case-content {
+  padding: 1.75rem 0;
+}
+
+.case-content .subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ff3366;
+  margin-bottom: 1rem;
+}
+
+.case-content .summary {
+  padding: 0.5rem 0;
+}
+
+.case-content .summary + p {
+  padding-top: 0.5rem;
+}
+
+.case-content .bullet-list {
+  list-style: initial;
+  padding-top: 1.5rem;
+  margin-left: 1.1rem;
+}
+
+.case-content .bullet-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.columns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.columns-container.after-text {
+  padding-top: 0.5rem;
+}
+
+.columns-container.text-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.columns-container.text-left h5, .columns-container.text-left p {
+  text-align: left;
+}
+
+.columns-container .column {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.columns-container .column h5 {
+  margin: 0.5rem 0;
+}
+
+.columns-container .column h4 {
+  font-size: 3.05176rem;
+  line-height: 3.43323rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.columns-container .column .light-text {
+  margin-top: 0.5rem;
+  text-align: right;
+  color: #757575;
+  font-weight: 300;
+}
+
+.columns-container .column .image-container {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.columns-container .column .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.columns-container p + .column {
+  margin-top: 2rem;
+}
+
+.graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+.graph .bar:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.graph .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.graph .bar-line {
+  position: relative;
+  min-width: 12rem;
+  height: 1.5rem;
+  border: 1.5px solid #ff3366;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+.graph .bar-line .bar-fill {
+  position: absolute;
+  border-radius: 20px;
+  height: 100%;
+  background: #ff3366;
+}
+
+.graph .bar-line .bar-fill.all-bar {
+  width: 100%;
+}
+
+.graph .bar-line .bar-fill.ninety-bar {
+  width: 90%;
+}
+
+.graph .bar-line .bar-fill.sixty-bar {
+  width: 60%;
+}
+
+.graph .bar-line .bar-fill.thirty-bar {
+  width: 30%;
+}
+
+.graph .bar-line .bar-fill.twenty-bar {
+  width: 20%;
+}
+
+.graph .bar-line .bar-fill.ten-bar {
+  width: 10%;
+}
+
+.graph p {
+  margin: 0;
+}
+
+/* Small Phone */
+@media screen and (max-width: 340px) {
+  .graph .bar-line {
+    min-width: 8rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  .case-study {
+    max-width: 70ch;
+    margin: 2rem auto;
+  }
+  .brief {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .case-study {
+    max-width: 80ch;
+  }
+  .columns-container .column h4 {
+    font-size: 3.43323rem;
+    line-height: 3.86238rem;
+  }
+}
+
 footer {
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
   margin-top: auto;
 }
 
@@ -711,7 +1012,7 @@ footer {
 /* Tablet */
 @media screen and (min-width: 600px) {
   footer {
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
