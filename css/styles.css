@@ -767,14 +767,22 @@ nav {
   margin-top: 0.5rem;
 }
 
-.case-content .bullet-list {
+.case-content .design-image-container + a {
+  text-decoration: underline;
+}
+
+.case-content .bullet-list, .case-content .numbered-list {
   list-style: initial;
   padding-top: 1.5rem;
   margin-left: 1.1rem;
 }
 
-.case-content .bullet-list li:not(:last-child) {
+.case-content .bullet-list li:not(:last-child), .case-content .numbered-list li:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.case-content .numbered-list {
+  list-style: decimal;
 }
 
 .columns-container {

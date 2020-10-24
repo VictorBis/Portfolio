@@ -68,9 +68,13 @@
         & h4 + p{
             margin-top: 0.5rem;
         }
+
+        & + a{
+            text-decoration: underline;
+        }
     }
 
-    & .bullet-list{
+    & .bullet-list, .numbered-list{
         list-style: initial;
         padding-top: 1.5rem;
         margin-left: 1.1rem;
@@ -78,6 +82,10 @@
         & li:not(:last-child){
             margin-bottom: 1rem;
         }
+    }
+
+    & .numbered-list{
+        list-style: decimal;
     }
 
 }
