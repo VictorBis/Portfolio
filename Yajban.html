@@ -34,6 +34,7 @@
       
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/blurry-load.css">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js"></script>
       
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,7 +75,8 @@
     </header>
     <main class="fadein">
         <div class="project-thumbnail">
-            <img  width="762" height="453" class="no-lightense" src="images/Atom/Images/Projects/Yaj-ban/Thumbnail.png" alt="Yajban Thumbnail" >
+            <img  width="762" height="453" class="no-lightense blurry-load" src="images/Atom/Images/Projects/Yaj-ban/Tiny/Tiny-Thumbnail.png" 
+            data-large="images/Atom/Images/Projects/Yaj-ban/Thumbnail.png" alt="Yajban Thumbnail" >
         </div>
         <section class="case-study">
             <section class="case-intro">
@@ -604,5 +606,6 @@
           Lightense('img:not(.no-lightense),.lightense');
         }, false);
         </script>
+        <script src=" js/app.js"></script>
 </body>
 </html>
