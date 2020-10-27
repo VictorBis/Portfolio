@@ -1,3 +1,6 @@
+$yaj-ban-color: #ff3366;
+$moviteca-color: #ed4128;
+
 .project-thumbnail{
     width: 100%;
     text-align: center;
@@ -39,6 +42,18 @@
     }
 }
 
+.yaj-ban{
+    & .subtitle{
+        color: $yaj-ban-color;
+    }
+}
+
+.moviteca{
+    & .subtitle{
+        color: $moviteca-color;
+    }
+}
+
 .case-content{
     padding: 1.75rem 0;
 
@@ -46,7 +61,6 @@
         font-size: 1.25rem;
         font-weight: 600;
         line-height: 1.5;
-        color: #ff3366;
         margin-bottom: 1rem;
     }
 
@@ -89,6 +103,7 @@
     }
 
 }
+
 
 .columns-container{
     @include flex(space-around,center,row);

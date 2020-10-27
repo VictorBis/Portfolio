@@ -735,6 +735,14 @@ nav {
   margin-right: 0.5rem;
 }
 
+.yaj-ban .subtitle {
+  color: #ff3366;
+}
+
+.moviteca .subtitle {
+  color: #ed4128;
+}
+
 .case-content {
   padding: 1.75rem 0;
 }
@@ -743,7 +751,6 @@ nav {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5;
-  color: #ff3366;
   margin-bottom: 1rem;
 }
 
