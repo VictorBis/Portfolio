@@ -461,6 +461,7 @@ nav {
 
 .project .thumbnail {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +491,7 @@ nav {
 }
 
 .project .desc {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .project .desc p {
@@ -706,7 +707,8 @@ nav {
   margin: 0.5rem 0;
 }
 
-.brief .column h4 + p, .brief .column h4 + .tool {
+.brief .column h4 + p,
+.brief .column h4 + .tool {
   margin-top: 1rem;
 }
 
@@ -740,7 +742,7 @@ nav {
 }
 
 .moviteca .subtitle {
-  color: #ed4128;
+  color: #de2d12;
 }
 
 .case-content {
@@ -778,13 +780,15 @@ nav {
   text-decoration: underline;
 }
 
-.case-content .bullet-list, .case-content .numbered-list {
+.case-content .bullet-list,
+.case-content .numbered-list {
   list-style: initial;
   padding-top: 1.5rem;
   margin-left: 1.1rem;
 }
 
-.case-content .bullet-list li:not(:last-child), .case-content .numbered-list li:not(:last-child) {
+.case-content .bullet-list li:not(:last-child),
+.case-content .numbered-list li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -830,7 +834,8 @@ nav {
   padding-top: 0.5rem;
 }
 
-.columns-container.text-left h5, .columns-container.text-left p {
+.columns-container.text-left h5,
+.columns-container.text-left p {
   text-align: left;
 }
 
@@ -1002,6 +1007,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .project-thumbnail #moviteca-thumbnail {
+    padding: 4rem;
   }
 }
 

@@ -1,261 +1,263 @@
 $yaj-ban-color: #ff3366;
-$moviteca-color: #ed4128;
+$moviteca-color: #de2d12;
 
-.project-thumbnail{
+.project-thumbnail {
+  width: 100%;
+  text-align: center;
+  & img {
     width: 100%;
-    text-align: center;
-    & img{
-        width: 100%;
-        height: auto;
-    }
+    height: auto;
+  }
 }
 
-.case-intro a{
-    margin-top: 1rem;
+.case-intro a {
+  margin-top: 1rem;
 }
 
-.brief{
-    @include flex(space-between,flex-start,column);
-    flex-wrap: wrap;
-    margin: 1.25rem 0;
+.brief {
+  @include flex(space-between, flex-start, column);
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
 
-    & .column{
-        margin: 0.5rem 0;
+  & .column {
+    margin: 0.5rem 0;
 
-        & h4 + p, h4 + .tool{
-            margin-top: 1rem;
-        }
-        
+    & h4 + p,
+    h4 + .tool {
+      margin-top: 1rem;
     }
+  }
 }
 
-.tools{
-    margin-top: 1rem;
+.tools {
+  margin-top: 1rem;
 }
 
-.tool{
-    @include flex(flex-start,center,row);
-    margin-bottom: 0.5rem;
+.tool {
+  @include flex(flex-start, center, row);
+  margin-bottom: 0.5rem;
 
-    & img{
-        margin-right: 0.5rem;
-    }
+  & img {
+    margin-right: 0.5rem;
+  }
 }
 
-.yaj-ban{
-    & .subtitle{
-        color: $yaj-ban-color;
-    }
+.yaj-ban {
+  & .subtitle {
+    color: $yaj-ban-color;
+  }
 }
 
-.moviteca{
-    & .subtitle{
-        color: $moviteca-color;
-    }
+.moviteca {
+  & .subtitle {
+    color: $moviteca-color;
+  }
 }
 
-.case-content{
-    padding: 1.75rem 0;
+.case-content {
+  padding: 1.75rem 0;
 
-    & .subtitle{
-        font-size: 1.25rem;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-bottom: 1rem;
+  & .subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  & .summary {
+    padding: 0.5rem 0;
+
+    & + p {
+      padding-top: 0.5rem;
+    }
+  }
+
+  & .design-image-container {
+    padding: 1.5rem 0 2rem 0;
+
+    &.last-item {
+      padding-bottom: 0;
     }
 
-    & .summary{
-        padding: 0.5rem 0;
-
-        & + p{
-            padding-top: 0.5rem;
-        }
+    & h4 + p {
+      margin-top: 0.5rem;
     }
 
-    & .design-image-container{
-        padding: 1.5rem 0 2rem 0;
-
-        &.last-item{
-            padding-bottom: 0;
-        }
-
-        & h4 + p{
-            margin-top: 0.5rem;
-        }
-
-        & + a{
-            text-decoration: underline;
-        }
+    & + a {
+      text-decoration: underline;
     }
+  }
 
-    & .bullet-list, .numbered-list{
-        list-style: initial;
-        padding-top: 1.5rem;
-        margin-left: 1.1rem;
+  & .bullet-list,
+  .numbered-list {
+    list-style: initial;
+    padding-top: 1.5rem;
+    margin-left: 1.1rem;
 
-        & li:not(:last-child){
-            margin-bottom: 1rem;
-        }
+    & li:not(:last-child) {
+      margin-bottom: 1rem;
     }
+  }
 
-    & .numbered-list{
-        list-style: decimal;
-    }
-
+  & .numbered-list {
+    list-style: decimal;
+  }
 }
 
+.columns-container {
+  @include flex(space-around, center, row);
+  flex-wrap: wrap;
 
-.columns-container{
-    @include flex(space-around,center,row);
-    flex-wrap: wrap;
-    
-    &.after-text{
-        padding-top: 0.5rem;
-    }
-
-    &.text-left{
-        @include flex(space-between,center,row);
-        padding-top: 0.5rem;
-        & h5, p{
-            text-align: left;
-        }
-    }
-
-    & .column{
-        text-align: center;
-        margin-top: 1.5rem;
-
-
-        & h5{
-            margin: 0.5rem 0;
-        }
-
-        & h4{
-            @include font(6, $base-mobile, 1.125);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        & .light-text{
-            margin-top: 0.5rem;
-            text-align: right;
-            color: #757575;
-            font-weight: 300;
-        }
-
-
-        & .image-container{
-            @include flex(center,center,column);
-            width: 100%;
-            object-fit: contain;
-            
-            & img{
-                max-width: 100%;
-                height: auto;
-            }
-            
-            & a{
-                margin-top: 0.5rem;
-                font-size: 0.875rem;
-                font-weight: 300;
-            }
-        }
-    }
-
-    & p + .column{
-        margin-top: 2rem;
-    }
-}
-
-.graph{
-    @include flex(flex-start,center,column);
-    align-items: flex-start;
+  &.after-text {
     padding-top: 0.5rem;
+  }
 
-    & .bar:not(:last-child){
-            margin-bottom: 0.75rem;
+  &.text-left {
+    @include flex(space-between, center, row);
+    padding-top: 0.5rem;
+    & h5,
+    p {
+      text-align: left;
+    }
+  }
+
+  & .column {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    & h5 {
+      margin: 0.5rem 0;
     }
 
-    & .bar{
-        @include flex(flex-start, center, row);
+    & h4 {
+      @include font(6, $base-mobile, 1.125);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
-    & .bar-line{
-        position: relative;
-        min-width: 12rem;
-        height: 1.5rem;
-        border: 1.5px solid #ff3366;
-        border-radius: 20px;
-        margin-right: 1rem;
 
-        & .bar-fill{
-            position: absolute;
-            border-radius: 20px;
-            height: 100%;
-            background: #ff3366;
-
-            &.all-bar{
-                width: 100%;
-            }
-
-            &.ninety-bar{
-                width: 90%;
-            }
-
-            &.sixty-bar{
-                width: 60%;
-            }
-
-            &.thirty-bar{
-                width: 30%;
-            }
-
-            &.twenty-bar{
-                width: 20%;
-            }
-
-            &.ten-bar{
-                width: 10%;
-            }
-        }
+    & .light-text {
+      margin-top: 0.5rem;
+      text-align: right;
+      color: #757575;
+      font-weight: 300;
     }
-    & p{
-        margin: 0;
+
+    & .image-container {
+      @include flex(center, center, column);
+      width: 100%;
+      object-fit: contain;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      & a {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 300;
+      }
     }
+  }
+
+  & p + .column {
+    margin-top: 2rem;
+  }
+}
+
+.graph {
+  @include flex(flex-start, center, column);
+  align-items: flex-start;
+  padding-top: 0.5rem;
+
+  & .bar:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  & .bar {
+    @include flex(flex-start, center, row);
+  }
+  & .bar-line {
+    position: relative;
+    min-width: 12rem;
+    height: 1.5rem;
+    border: 1.5px solid #ff3366;
+    border-radius: 20px;
+    margin-right: 1rem;
+
+    & .bar-fill {
+      position: absolute;
+      border-radius: 20px;
+      height: 100%;
+      background: #ff3366;
+
+      &.all-bar {
+        width: 100%;
+      }
+
+      &.ninety-bar {
+        width: 90%;
+      }
+
+      &.sixty-bar {
+        width: 60%;
+      }
+
+      &.thirty-bar {
+        width: 30%;
+      }
+
+      &.twenty-bar {
+        width: 20%;
+      }
+
+      &.ten-bar {
+        width: 10%;
+      }
+    }
+  }
+  & p {
+    margin: 0;
+  }
 }
 
 /* Small Phone */
-@media screen and (max-width: 340px){
-    .graph{
-        & .bar-line{
-            min-width: 8rem;
-        }
+@media screen and (max-width: 340px) {
+  .graph {
+    & .bar-line {
+      min-width: 8rem;
     }
+  }
 }
 /* Tablet */
 @media screen and (min-width: 600px) {
-    .case-study{
-        max-width: 70ch;
-        margin: 2rem auto;
-    }
+  .case-study {
+    max-width: 70ch;
+    margin: 2rem auto;
+  }
 
-    .brief{
-        @include flex(space-between,flex-start,row);
+  .brief {
+    @include flex(space-between, flex-start, row);
+  }
+
+  .project-thumbnail {
+    & #moviteca-thumbnail {
+      padding: 4rem;
     }
   }
+}
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-    .case-study{
-        max-width: 80ch;
-    }
+  .case-study {
+    max-width: 80ch;
+  }
 
-    .columns-container{
-    
-        & .column{
-    
-            & h4{
-                @include font(6, $base-desktop, 1.125);
-            }
-        }
+  .columns-container {
+    & .column {
+      & h4 {
+        @include font(6, $base-desktop, 1.125);
+      }
     }
   }
+}
