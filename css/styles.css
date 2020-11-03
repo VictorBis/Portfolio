@@ -459,6 +459,10 @@ nav {
   margin-top: 2rem;
 }
 
+.project > a {
+  width: 100%;
+}
+
 .project .thumbnail {
   width: 100%;
   height: auto;

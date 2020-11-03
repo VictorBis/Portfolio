@@ -49,6 +49,9 @@
 }
 
 .project {
+  & > a {
+    width: 100%;
+  }
   & .thumbnail {
     width: 100%;
     height: auto;
