@@ -885,12 +885,6 @@ nav {
      object-fit: contain;
 }
 
-.columns-container .column .image-container.moviteca-high-fi {
-  max-width: 45%;
-  height: auto;
-  margin: auto;
-}
-
 .columns-container .column .image-container img {
   max-width: 100%;
   height: auto;
@@ -1024,6 +1018,14 @@ nav {
   }
   .project-thumbnail #moviteca-thumbnail {
     padding: 4rem;
+  }
+  .columns-container .column .image-container.moviteca-high-fi {
+    max-width: 45%;
+    height: auto;
+    margin: auto;
+  }
+  .columns-container p + .column {
+    margin-top: 2rem;
   }
 }
 

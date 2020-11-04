@@ -147,12 +147,6 @@ $moviteca-color: #de2d12;
       width: 100%;
       object-fit: contain;
 
-      &.moviteca-high-fi {
-        max-width: 45%;
-        height: auto;
-        margin: auto;
-      }
-
       & img {
         max-width: 100%;
         height: auto;
@@ -253,6 +247,22 @@ $moviteca-color: #de2d12;
   .project-thumbnail {
     & #moviteca-thumbnail {
       padding: 4rem;
+    }
+  }
+
+  .columns-container {
+    & .column {
+      & .image-container {
+        &.moviteca-high-fi {
+          max-width: 45%;
+          height: auto;
+          margin: auto;
+        }
+      }
+    }
+
+    & p + .column {
+      margin-top: 2rem;
     }
   }
 }
