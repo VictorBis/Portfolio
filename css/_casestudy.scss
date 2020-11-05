@@ -1,5 +1,6 @@
 $yaj-ban-color: #ff3366;
 $moviteca-color: #de2d12;
+$mequeda: hsl(208, 57%, 40%);
 
 .project-thumbnail {
   width: 100%;
@@ -51,6 +52,12 @@ $moviteca-color: #de2d12;
 .moviteca {
   & .subtitle {
     color: $moviteca-color;
+  }
+}
+
+.mequeda {
+  & .subtitle {
+    color: $mequeda;
   }
 }
 
