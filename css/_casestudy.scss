@@ -142,10 +142,13 @@ $mequeda: hsl(208, 57%, 40%);
       margin-bottom: 0.5rem;
     }
 
+    & .testimonial {
+      max-width: 32ch;
+    }
     & .light-text {
       margin-top: 0.5rem;
       text-align: right;
-      color: #757575;
+      color: #595959;
       font-weight: 300;
     }
 

@@ -863,10 +863,14 @@ nav {
   margin-bottom: 0.5rem;
 }
 
+.columns-container .column .testimonial {
+  max-width: 32ch;
+}
+
 .columns-container .column .light-text {
   margin-top: 0.5rem;
   text-align: right;
-  color: #757575;
+  color: #595959;
   font-weight: 300;
 }
 
