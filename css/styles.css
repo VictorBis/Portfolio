@@ -1032,6 +1032,9 @@ nav {
     height: auto;
     margin: auto;
   }
+  .columns-container .reduced-image {
+    width: 70%;
+  }
   .columns-container p + .column {
     margin-top: 2rem;
   }
