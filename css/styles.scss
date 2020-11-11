@@ -3,36 +3,36 @@ $base-mobile: 1; //16px
 $base-desktop: 1.125; //18px;
 $ratio: 1.25;
 $black: #141414;
+$text: hsl(0, 0%, 20%);
 $background: #ffffff;
 
 //Font style
 /* 1.250 - Major Third */
 @mixin font($value, $ms-base, $line-height, $ms-ratio: $ratio) {
-    $size: pow($ms-ratio, $value) * $ms-base;
-    font-size: #{$size + "rem"};
-    line-height: #{$size * $line-height + "rem"};
+  $size: pow($ms-ratio, $value) * $ms-base;
+  font-size: #{$size + "rem"};
+  line-height: #{$size * $line-height + "rem"};
 }
 
 //Pow function
 @function pow($n, $e) {
-    $value: 1;
+  $value: 1;
 
-    @if $e>0 {
-        @for $i from 1 to $e {
-            $value: $value * $n;
-        }
+  @if $e>0 {
+    @for $i from 1 to $e {
+      $value: $value * $n;
     }
+  }
 
-    @return $value;
+  @return $value;
 }
 
 @mixin flex($justify, $align, $direction) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
-
 
 @import "global";
 

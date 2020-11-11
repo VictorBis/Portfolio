@@ -70,6 +70,10 @@ p {
   max-width: 70ch;
 }
 
+p {
+  color: #333333;
+}
+
 ul {
   list-style: none;
 }

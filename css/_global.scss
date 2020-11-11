@@ -1,43 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background: $background;
-    color: $black;
-    min-height: 100vh;
-    @include flex(center, inherit, column);
-    margin: 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  background: $background;
+  color: $black;
+  min-height: 100vh;
+  @include flex(center, inherit, column);
+  margin: 0 1rem;
 }
 
 h1 {
-    @include font(6, $base-mobile, 1.125);
-    font-weight: 600;
+  @include font(6, $base-mobile, 1.125);
+  font-weight: 600;
 }
 
 h2 {
-    @include font(4, $base-mobile, 1.375);
-    font-weight: 500;
+  @include font(4, $base-mobile, 1.375);
+  font-weight: 500;
 }
 
 h3 {
-    @include font(3, $base-mobile, 1.375);
-    font-weight: 500;
+  @include font(3, $base-mobile, 1.375);
+  font-weight: 500;
 }
 
 h4 {
-    @include font(2, $base-mobile, 1.375);
-    font-weight: 500;
+  @include font(2, $base-mobile, 1.375);
+  font-weight: 500;
 }
 
 h5 {
-    @include font(1, $base-mobile, 1.5);
-    font-weight: 600;
+  @include font(1, $base-mobile, 1.5);
+  font-weight: 600;
 }
 
 li,
@@ -46,98 +46,98 @@ label,
 input,
 a,
 p {
-    @include font(1, $base-mobile, 1.5);
-    font-weight: 400;
-    max-width: 70ch;
+  @include font(1, $base-mobile, 1.5);
+  font-weight: 400;
+  max-width: 70ch;
+}
+
+p {
+  color: $text;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: $black;
-    display: inline-block;
-
+  text-decoration: none;
+  color: $black;
+  display: inline-block;
 }
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-    body {
-        margin: 0 2rem;
-    }
+  body {
+    margin: 0 2rem;
+  }
 
-    h1 {
-        letter-spacing: 0.5px;
-    }
+  h1 {
+    letter-spacing: 0.5px;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
+  h1 {
+    @include font(6, $base-desktop, 1.125);
+  }
 
-    h1 {
-        @include font(6, $base-desktop, 1.125);
-    }
+  h2 {
+    @include font(4, $base-desktop, 1.375);
+  }
 
-    h2 {
-        @include font(4, $base-desktop, 1.375);
-    }
+  h3 {
+    @include font(3, $base-desktop, 1.375);
+  }
 
-    h3 {
-        @include font(3, $base-desktop, 1.375);
-    }
+  h4 {
+    @include font(2, $base-desktop, 1.375);
+  }
 
-    h4 {
-        @include font(2, $base-desktop, 1.375);
-    }
+  h5 {
+    @include font(1, $base-desktop, 1.5);
+  }
 
-    h5 {
-        @include font(1, $base-desktop, 1.5);
-    }
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    @include font(1, $base-desktop, 1.5);
+  }
 
-    li,
-    button,
-    label,
-    input,
-    a,
-    p {
-        @include font(1, $base-desktop, 1.5);
-    }
-
-    body {
-        margin: 0 5rem;
-    }
-
+  body {
+    margin: 0 5rem;
+  }
 }
-
 
 /* Large Desktop */
 @media screen and (min-width: 1700px) {
-    body {
-        max-width: 1700px;
-        margin: auto;
-    }
+  body {
+    max-width: 1700px;
+    margin: auto;
+  }
 }
 
 /* Keyframes */
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Preferences */
 @media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    .information {
-        animation: none;
-    }
+  .information {
+    animation: none;
+  }
 }
