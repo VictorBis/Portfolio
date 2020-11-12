@@ -906,6 +906,10 @@ nav {
   padding: 0.5rem;
 }
 
+.columns-container .column .image-container .no-padding {
+  padding: 0.5rem 0;
+}
+
 .columns-container .column .image-container a {
   margin-top: 0.5rem;
   font-size: 0.875rem;
@@ -998,6 +1002,11 @@ nav {
 
 .graph p {
   margin: 0;
+}
+
+.file > h5 {
+  font-size: 1.40625rem;
+  line-height: 2.10938rem;
 }
 
 /* Small Phone */

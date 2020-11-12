@@ -166,6 +166,10 @@ $mequeda: #2c66a0;
         padding: 0.5rem;
       }
 
+      & .no-padding {
+        padding: 0.5rem 0;
+      }
+
       & a {
         margin-top: 0.5rem;
         font-size: 0.875rem;
@@ -235,6 +239,9 @@ $mequeda: #2c66a0;
   }
 }
 
+.file > h5 {
+  @include font(2, $base-desktop, 1.5);
+}
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph {
