@@ -104,7 +104,7 @@ a {
   input,
   a,
   p {
-    @include font(1, $base-desktop, 1.5);
+    @include font(1, $base-mobile, 1.5);
   }
 
   body {
