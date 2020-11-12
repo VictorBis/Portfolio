@@ -48,7 +48,7 @@ a,
 p {
   @include font(1, $base-mobile, 1.5);
   font-weight: 400;
-  max-width: 70ch;
+  max-width: 80ch;
 }
 
 p {
@@ -95,7 +95,7 @@ a {
   }
 
   h5 {
-    @include font(1, $base-desktop, 1.5);
+    @include font(1, $base-mobile, 1.5);
   }
 
   li,

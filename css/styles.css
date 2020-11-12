@@ -67,7 +67,7 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  max-width: 70ch;
+  max-width: 80ch;
 }
 
 p {
@@ -113,8 +113,8 @@ a {
     line-height: 1.93359rem;
   }
   h5 {
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   li,
   button,
