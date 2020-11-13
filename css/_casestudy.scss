@@ -142,6 +142,9 @@ $mequeda: #2c66a0;
       margin-bottom: 0.5rem;
     }
 
+    &.illustration-container {
+      width: 50%;
+    }
     & .testimonial {
       max-width: 32ch;
     }
@@ -160,6 +163,11 @@ $mequeda: #2c66a0;
       & img {
         max-width: 100%;
         height: auto;
+      }
+
+      & .illustration {
+        max-width: 100%;
+        max-height: 420px;
       }
 
       & video {

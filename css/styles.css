@@ -867,6 +867,10 @@ nav {
   margin-bottom: 0.5rem;
 }
 
+.columns-container .column.illustration-container {
+  width: 50%;
+}
+
 .columns-container .column .testimonial {
   max-width: 32ch;
 }
@@ -900,6 +904,11 @@ nav {
 .columns-container .column .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+.columns-container .column .image-container .illustration {
+  max-width: 100%;
+  max-height: 420px;
 }
 
 .columns-container .column .image-container video {
