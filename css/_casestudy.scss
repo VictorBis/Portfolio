@@ -1,6 +1,7 @@
 $yaj-ban-color: #ff3366;
 $moviteca-color: #de2d12;
 $mequeda: #2c66a0;
+$cinepolis: #212e5c;
 
 .project-thumbnail {
   width: 100%;
@@ -58,6 +59,12 @@ $mequeda: #2c66a0;
 .mequeda {
   & .subtitle {
     color: $mequeda;
+  }
+}
+
+.cinepolis {
+  & .subtitle {
+    color: $cinepolis;
   }
 }
 
