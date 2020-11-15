@@ -833,6 +833,12 @@ nav {
   padding-top: 0.5rem;
 }
 
+.columns-container.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .columns-container.text-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,6 +934,10 @@ nav {
 
 .columns-container p + .column {
   margin-top: 2rem;
+}
+
+.left-aligned {
+  text-align: left;
 }
 
 .graph {

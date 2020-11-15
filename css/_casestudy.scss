@@ -126,6 +126,10 @@ $cinepolis: #212e5c;
     padding-top: 0.5rem;
   }
 
+  &.space-between {
+    justify-content: space-between;
+  }
+
   &.text-left {
     @include flex(space-between, center, row);
     padding-top: 0.5rem;
@@ -194,6 +198,10 @@ $cinepolis: #212e5c;
   & p + .column {
     margin-top: 2rem;
   }
+}
+
+.left-aligned {
+  text-align: left;
 }
 
 .graph {
