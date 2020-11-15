@@ -872,10 +872,6 @@ nav {
   color: #ff6b90;
 }
 
-.columns-container .column.illustration-container {
-  width: 50%;
-}
-
 .columns-container .column .testimonial {
   max-width: 32ch;
 }
@@ -1058,6 +1054,13 @@ nav {
     max-width: 45%;
     height: auto;
     margin: auto;
+  }
+  .columns-container .column .image-container .big-screen {
+    max-width: 40%;
+    height: auto;
+  }
+  .columns-container .column.illustration-container {
+    width: 50%;
   }
   .columns-container .reduced-image {
     width: 70%;

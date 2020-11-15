@@ -150,9 +150,6 @@ $cinepolis: #212e5c;
       color: #ff6b90;
     }
 
-    &.illustration-container {
-      width: 50%;
-    }
     & .testimonial {
       max-width: 32ch;
     }
@@ -291,6 +288,15 @@ $cinepolis: #212e5c;
           height: auto;
           margin: auto;
         }
+
+        & .big-screen {
+          max-width: 40%;
+          height: auto;
+        }
+      }
+
+      &.illustration-container {
+        width: 50%;
       }
     }
 
