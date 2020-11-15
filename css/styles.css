@@ -837,6 +837,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .columns-container.text-left {
@@ -1066,7 +1069,7 @@ nav {
     margin: auto;
   }
   .columns-container .column .image-container .big-screen {
-    max-width: 40%;
+    max-width: 254px;
     height: auto;
   }
   .columns-container .column.illustration-container {
@@ -1078,6 +1081,10 @@ nav {
   .columns-container p + .column {
     margin-top: 2rem;
   }
+}
+
+.screen-desc {
+  max-width: 254px;
 }
 
 /* Desktop */

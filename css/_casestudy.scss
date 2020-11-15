@@ -128,6 +128,7 @@ $cinepolis: #212e5c;
 
   &.space-between {
     justify-content: space-between;
+    align-items: baseline;
   }
 
   &.text-left {
@@ -298,7 +299,7 @@ $cinepolis: #212e5c;
         }
 
         & .big-screen {
-          max-width: 40%;
+          max-width: 254px;
           height: auto;
         }
       }
@@ -316,6 +317,10 @@ $cinepolis: #212e5c;
       margin-top: 2rem;
     }
   }
+}
+
+.screen-desc {
+  max-width: 254px;
 }
 
 /* Desktop */
