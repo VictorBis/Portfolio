@@ -21,23 +21,4 @@ function hamburguerMenu() {
   });
 };
 
-
-/**
- * Displays blurred images while loading
- */
-function blurry(){
-  const images = document.querySelectorAll(".blurry-load");
-  for (let image of images) {
-    const currentImage = new Image();
-    currentImage.src = image.getAttribute("data-large");
-  
-    currentImage.onload = () => {
-      image.src = currentImage.src;
-      image.classList.add("blur-out");
-      image.classList.remove("blurry-load")
-    }
-  }
-}
-
 hamburguerMenu();
-blurry();
