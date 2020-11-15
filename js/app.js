@@ -21,7 +21,6 @@ function hamburguerMenu() {
   });
 };
 
-
 /**
  * Displays blurred images while loading
  */
