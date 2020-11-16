@@ -152,7 +152,7 @@ $cinepolis: #212e5c;
       @include font(6, $base-mobile, 1.125);
       font-weight: 600;
       margin-bottom: 0.5rem;
-      color: #ff6b90;
+      color: $yaj-ban-color;
     }
 
     & .testimonial {
