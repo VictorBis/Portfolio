@@ -842,6 +842,12 @@ nav {
           align-items: baseline;
 }
 
+.columns-container.align-top {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .columns-container.text-left {
   display: -webkit-box;
   display: -ms-flexbox;

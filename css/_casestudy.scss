@@ -131,6 +131,10 @@ $cinepolis: #212e5c;
     align-items: baseline;
   }
 
+  &.align-top {
+    align-items: baseline;
+  }
+
   &.text-left {
     @include flex(space-between, center, row);
     padding-top: 0.5rem;
