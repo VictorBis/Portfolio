@@ -12,5 +12,5 @@ UX Engineer
 
 ## Experiencia
 
-* **2020 - Actualidad** Diseñador UI e Ingerniero de Software en el proyecto Moviteca, Creando Lectores.
+* **2020 - Actualidad** Diseñador UX e Ingerniero de Software en el proyecto Moviteca, Creando Lectores.
 * **2019 - 2020** Desarrollador Front End en el Intituto de Investigaciones Estéticas de la UNAM, proyecto MUSICAT.
