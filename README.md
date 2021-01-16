@@ -4,13 +4,13 @@ UX Engineer
 
 ---
 
-## Educación
+## Education
 
-* Licenciatura en Ciencias de la Computación en la Facultad de Ciencias de la Universidad Nacional Autónoma de México.
+* Bachelor of Science in Computer Science.  
 
 ---
 
-## Experiencia
+## Work Experience
 
-* **2020 - Actualidad** Diseñador UX e Ingerniero de Software en el proyecto Moviteca, Creando Lectores.
-* **2019 - 2020** Desarrollador Front End en el Intituto de Investigaciones Estéticas de la UNAM, proyecto MUSICAT.
+* **2020 - Present** UX Designer & Software Engineer at LEAA A.C.
+* **2019 - 2021** Front End Developer at Musicat.
