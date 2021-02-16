@@ -268,6 +268,7 @@ $cinepolis: #212e5c;
 .file > h5 {
   @include font(2, $base-desktop, 1.5);
 }
+
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph {
