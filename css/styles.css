@@ -1,5 +1,6 @@
 /* 1.250 - Major Third */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,9 +9,9 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #ffffff;
-  color: #141414;
+  color: #333333;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,19 +32,22 @@ body {
 h1 {
   font-size: 3.05176rem;
   line-height: 3.43323rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: #262626;
 }
 
 h2 {
   font-size: 1.95312rem;
   line-height: 2.68555rem;
   font-weight: 500;
+  color: #262626;
 }
 
 h3 {
   font-size: 1.5625rem;
   line-height: 2.14844rem;
   font-weight: 500;
+  color: #262626;
 }
 
 h4 {
@@ -80,7 +84,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #141414;
+  color: #333333;
   display: inline-block;
 }
 
@@ -113,8 +117,8 @@ a {
     line-height: 1.93359rem;
   }
   h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
   }
   li,
   button,
@@ -122,8 +126,8 @@ a {
   input,
   a,
   p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
   }
   body {
     margin: 0 5rem;
@@ -173,7 +177,7 @@ nav {
 }
 
 .night {
-  background: #141414;
+  background: #262626;
 }
 
 .nav-wrapper {
@@ -247,7 +251,7 @@ nav {
 @media screen and (max-width: 600px) {
   .options {
     position: fixed;
-    background: #141414;
+    background: #262626;
     min-height: 100vh;
     width: 100vw;
     top: 0;
@@ -331,10 +335,10 @@ nav {
             transform: translateY(0.5rem);
   }
   .line.white {
-    background: #141414;
+    background: #262626;
   }
   .line.white::before, .line.white::after {
-    background: #141414;
+    background: #262626;
   }
   /* Animation */
   .hamburguer.open .line {
@@ -345,12 +349,12 @@ nav {
   .hamburguer.open .line::before {
     -webkit-transform: rotate(45deg) translate(1.5rem, -1.5rem);
             transform: rotate(45deg) translate(1.5rem, -1.5rem);
-    background: #141414;
+    background: #262626;
   }
   .hamburguer.open .line::after {
     -webkit-transform: rotate(-45deg) translate(1.5rem, 1.5rem);
             transform: rotate(-45deg) translate(1.5rem, 1.5rem);
-    background: #141414;
+    background: #262626;
   }
   .hamburguer.open .line.white::before {
     -webkit-transform: rotate(45deg) translate(1.5rem, -1.5rem);
@@ -390,7 +394,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 50vh;
+  min-height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,13 +418,15 @@ nav {
 .text .big-text {
   font-size: 3.05176rem;
   line-height: 3.43323rem;
+  color: #262626;
 }
 
 .text .medium-text {
   font-size: 1.25rem;
   line-height: 1.71875rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
   font-weight: 400;
+  color: #333333;
 }
 
 .social ul {
@@ -525,12 +531,32 @@ nav {
   .text .big-text {
     font-size: 3.8147rem;
     line-height: 4.29153rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
   }
   .text .medium-text {
     font-size: 1.5625rem;
     line-height: 2.14844rem;
-    width: 80%;
-    padding: 1.5rem 0;
+    width: 85%;
+    padding: 3rem 0;
+    text-align: center;
+    margin: auto;
+  }
+  .social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .portfolio {
     padding: 2rem 0;
@@ -543,6 +569,7 @@ nav {
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
+  .text .big-text,
   .text .medium-text {
     width: 60%;
   }
@@ -762,7 +789,7 @@ nav {
 }
 
 .case-content {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .case-content .subtitle {

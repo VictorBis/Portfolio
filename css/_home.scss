@@ -1,6 +1,6 @@
 /* Hero section */
 .hero {
-  min-height: 50vh;
+  min-height: 65vh;
   @include flex(left, center, row);
 }
 
@@ -11,12 +11,14 @@
 .text {
   & .big-text {
     @include font(6, $base-mobile, 1.125);
+    color: $black;
   }
 
   & .medium-text {
     @include font(2, $base-mobile, 1.375);
-    padding: 1rem 0;
+    padding: 2rem 0;
     font-weight: 400;
+    color: $text;
   }
 }
 
@@ -100,12 +102,23 @@
   .text {
     & .big-text {
       @include font(7, $base-mobile, 1.125);
+      width: 80%;
+      margin: auto;
+      text-align: center;
     }
 
     & .medium-text {
       @include font(3, $base-mobile, 1.375);
-      width: 80%;
-      padding: 1.5rem 0;
+      width: 85%;
+      padding: 3rem 0;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .social {
+    & ul {
+      @include flex(center, center, row);
     }
   }
 
@@ -121,7 +134,8 @@
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .text {
-    & .medium-text {
+    & .big-text,
+    .medium-text {
       width: 60%;
     }
   }
