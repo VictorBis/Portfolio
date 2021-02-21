@@ -179,6 +179,13 @@
     & .desc {
       & .see-more {
         margin-top: 3rem;
+        & img {
+          margin-left: 0.125rem;
+          transition: all ease-in-out 0.5s;
+        }
+        &:hover > img {
+          transform: translateX(0.5rem);
+        }
       }
     }
   }

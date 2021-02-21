@@ -635,6 +635,15 @@ nav {
   .project .desc .see-more {
     margin-top: 3rem;
   }
+  .project .desc .see-more img {
+    margin-left: 0.125rem;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+  }
+  .project .desc .see-more:hover > img {
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem);
+  }
   .portfolio {
     width: 80%;
     margin: auto;
