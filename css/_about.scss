@@ -86,9 +86,7 @@
 
 /* Tablet */
 @media screen and (min-width: 600px) {
-
   .resume-content {
-
     &.experience {
       &::before {
         left: 2.40625rem;
@@ -103,5 +101,12 @@
       width: 4.8125rem;
       margin-right: 2rem;
     }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .personal-info {
+    width: 80%;
   }
 }

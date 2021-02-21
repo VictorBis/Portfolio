@@ -52,7 +52,6 @@ a,
 p {
   @include font(1, $base-mobile, 1.5);
   font-weight: 400;
-  max-width: 80ch;
 }
 
 p {

@@ -280,7 +280,6 @@ $cinepolis: #212e5c;
 /* Tablet */
 @media screen and (min-width: 600px) {
   .case-study {
-    max-width: 70ch;
     margin: 2rem auto;
   }
 
@@ -331,7 +330,7 @@ $cinepolis: #212e5c;
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .case-study {
-    max-width: 80ch;
+    width: 80%;
   }
 
   .columns-container {

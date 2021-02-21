@@ -71,7 +71,6 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  max-width: 80ch;
 }
 
 p {
@@ -394,7 +393,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 65vh;
+  min-height: 84vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +407,10 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.hero .info-container {
+  margin: auto;
 }
 
 .fadein {
@@ -450,13 +453,17 @@ nav {
   padding: 0.5rem;
 }
 
+.social-icon:last-child {
+  margin-right: 0;
+}
+
 .social-icon img {
   width: 2rem;
   height: auto;
 }
 
 #Linkedin {
-  width: 1.5rem;
+  width: 1.625rem;
   height: auto;
 }
 
@@ -465,8 +472,18 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5rem 2rem;
-  margin-top: 2rem;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project > a {
@@ -501,7 +518,7 @@ nav {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.5rem;
 }
 
 .project .desc {
@@ -512,14 +529,21 @@ nav {
   margin-top: 0.5rem;
 }
 
+.project .desc .see-more {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
 /* Mobile */
 @media screen and (max-width: 450px) {
   .text h5 {
     width: 70%;
     margin: auto;
   }
-  .portfolio {
-    padding: 2rem 0;
+  .project.reverse .desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -558,12 +582,39 @@ nav {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .portfolio {
-    padding: 2rem 0;
-  }
   .projects {
+    gap: 8rem;
+  }
+  .projects .reverse {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+  .project {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .project .desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .project .desc .see-more {
+    margin-top: 2rem;
   }
 }
 
@@ -573,8 +624,21 @@ nav {
   .text .medium-text {
     width: 60%;
   }
+  .projects {
+    gap: 9rem;
+  }
+  .projects .reverse {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+  .project .desc .see-more {
+    margin-top: 3rem;
+  }
   .portfolio {
-    padding: 2rem 0;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0rem 4rem 0rem;
   }
 }
 
@@ -702,6 +766,13 @@ nav {
   .resume-item img {
     width: 4.8125rem;
     margin-right: 2rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .personal-info {
+    width: 80%;
   }
 }
 
@@ -1075,7 +1146,6 @@ nav {
 /* Tablet */
 @media screen and (min-width: 600px) {
   .case-study {
-    max-width: 70ch;
     margin: 2rem auto;
   }
   .brief {
@@ -1123,7 +1193,7 @@ nav {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .case-study {
-    max-width: 80ch;
+    width: 80%;
   }
   .columns-container .column h4 {
     font-size: 3.43323rem;
