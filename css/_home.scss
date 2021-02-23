@@ -1,6 +1,6 @@
 /* Hero section */
 .hero {
-  min-height: 84vh;
+  min-height: 82vh;
   @include flex(left, center, row);
   & .info-container {
     margin: auto;
@@ -13,7 +13,7 @@
 
 .text {
   & .big-text {
-    @include font(6, $base-mobile, 1.125);
+    @include font(5, $base-mobile, 1.125);
     color: $black;
   }
 
@@ -117,14 +117,14 @@
 
   .text {
     & .big-text {
-      @include font(7, $base-mobile, 1.125);
+      @include font(5, $base-mobile, 1.125);
       width: 80%;
       margin: auto;
       text-align: center;
     }
 
     & .medium-text {
-      @include font(3, $base-mobile, 1.375);
+      @include font(2, $base-mobile, 1.375);
       width: 85%;
       padding: 3rem 0;
       text-align: center;
@@ -165,6 +165,13 @@
     & .big-text,
     .medium-text {
       width: 60%;
+    }
+    & .big-text {
+      @include font(5, $base-desktop, 1.125);
+    }
+
+    & .medium-text {
+      @include font(2, $base-desktop, 1.375);
     }
   }
 

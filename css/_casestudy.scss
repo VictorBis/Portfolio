@@ -2,6 +2,7 @@ $yaj-ban-color: #ff3366;
 $moviteca-color: #de2d12;
 $mequeda: #2c66a0;
 $cinepolis: #212e5c;
+$ubook: #002b7a;
 
 .project-thumbnail {
   width: 100%;
@@ -12,6 +13,9 @@ $cinepolis: #212e5c;
   }
 }
 
+.case-intro {
+  margin-bottom: 3rem;
+}
 .case-intro a {
   margin-top: 1rem;
 }
@@ -68,6 +72,12 @@ $cinepolis: #212e5c;
   }
 }
 
+.ubook {
+  & .subtitle {
+    color: $ubook;
+  }
+}
+
 .case-content {
   padding: 3rem 0;
 
@@ -115,6 +125,22 @@ $cinepolis: #212e5c;
 
   & .numbered-list {
     list-style: decimal;
+  }
+
+  &.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    & .image-container {
+      width: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -331,6 +357,18 @@ $cinepolis: #212e5c;
 @media screen and (min-width: 1440px) {
   .case-study {
     width: 80%;
+  }
+  .case-content {
+    &.full-width {
+      & .image-container {
+        width: 100%;
+        & img {
+          width: 100%;
+          max-height: 100vh;
+          object-fit: fill;
+        }
+      }
+    }
   }
 
   .columns-container {

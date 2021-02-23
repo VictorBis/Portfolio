@@ -30,29 +30,29 @@ body {
 }
 
 h1 {
-  font-size: 3.05176rem;
-  line-height: 3.43323rem;
+  font-size: 3.15733rem;
+  line-height: 3.552rem;
   font-weight: 500;
   color: #262626;
 }
 
 h2 {
-  font-size: 1.95312rem;
-  line-height: 2.68555rem;
+  font-size: 2.36859rem;
+  line-height: 3.25682rem;
   font-weight: 500;
   color: #262626;
 }
 
 h3 {
-  font-size: 1.5625rem;
-  line-height: 2.14844rem;
+  font-size: 1.77689rem;
+  line-height: 2.44322rem;
   font-weight: 500;
   color: #262626;
 }
 
 h4 {
-  font-size: 1.25rem;
-  line-height: 1.71875rem;
+  font-size: 1.333rem;
+  line-height: 1.83288rem;
   font-weight: 500;
 }
 
@@ -100,20 +100,20 @@ a {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   h1 {
-    font-size: 3.43323rem;
-    line-height: 3.86238rem;
+    font-size: 3.552rem;
+    line-height: 3.996rem;
   }
   h2 {
-    font-size: 2.19727rem;
-    line-height: 3.02124rem;
+    font-size: 2.66467rem;
+    line-height: 3.66392rem;
   }
   h3 {
-    font-size: 1.75781rem;
-    line-height: 2.41699rem;
+    font-size: 1.999rem;
+    line-height: 2.74863rem;
   }
   h4 {
-    font-size: 1.40625rem;
-    line-height: 1.93359rem;
+    font-size: 1.49962rem;
+    line-height: 2.06198rem;
   }
   h5 {
     font-size: 1.125rem;
@@ -275,8 +275,8 @@ nav {
     visibility: hidden;
   }
   .options li a {
-    font-size: 1.5625rem;
-    line-height: 2.14844rem;
+    font-size: 1.77689rem;
+    line-height: 2.44322rem;
     color: #ffffff;
   }
   .options.open {
@@ -393,7 +393,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 84vh;
+  min-height: 82vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,14 +419,14 @@ nav {
 }
 
 .text .big-text {
-  font-size: 3.05176rem;
-  line-height: 3.43323rem;
+  font-size: 3.15733rem;
+  line-height: 3.552rem;
   color: #262626;
 }
 
 .text .medium-text {
-  font-size: 1.25rem;
-  line-height: 1.71875rem;
+  font-size: 1.333rem;
+  line-height: 1.83288rem;
   padding: 2rem 0;
   font-weight: 400;
   color: #333333;
@@ -553,15 +553,15 @@ nav {
     margin-right: 1rem;
   }
   .text .big-text {
-    font-size: 3.8147rem;
-    line-height: 4.29153rem;
+    font-size: 3.15733rem;
+    line-height: 3.552rem;
     width: 80%;
     margin: auto;
     text-align: center;
   }
   .text .medium-text {
-    font-size: 1.5625rem;
-    line-height: 2.14844rem;
+    font-size: 1.333rem;
+    line-height: 1.83288rem;
     width: 85%;
     padding: 3rem 0;
     text-align: center;
@@ -623,6 +623,14 @@ nav {
   .text .big-text,
   .text .medium-text {
     width: 60%;
+  }
+  .text .big-text {
+    font-size: 3.552rem;
+    line-height: 3.996rem;
+  }
+  .text .medium-text {
+    font-size: 1.49962rem;
+    line-height: 2.06198rem;
   }
   .projects {
     gap: 9rem;
@@ -795,6 +803,10 @@ nav {
   height: auto;
 }
 
+.case-intro {
+  margin-bottom: 3rem;
+}
+
 .case-intro a {
   margin-top: 1rem;
 }
@@ -868,6 +880,10 @@ nav {
   color: #212e5c;
 }
 
+.ubook .subtitle {
+  color: #002b7a;
+}
+
 .case-content {
   padding: 3rem 0;
 }
@@ -917,6 +933,24 @@ nav {
 
 .case-content .numbered-list {
   list-style: decimal;
+}
+
+.case-content.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.case-content.full-width .image-container {
+  width: 100%;
+}
+
+.case-content.full-width .image-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .columns-container {
@@ -987,8 +1021,8 @@ nav {
 }
 
 .columns-container .column h4 {
-  font-size: 3.05176rem;
-  line-height: 3.43323rem;
+  font-size: 4.20873rem;
+  line-height: 4.73482rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #ff3366;
@@ -1141,8 +1175,8 @@ nav {
 }
 
 .file > h5 {
-  font-size: 1.40625rem;
-  line-height: 2.10938rem;
+  font-size: 1.49962rem;
+  line-height: 2.24944rem;
 }
 
 /* Small Phone */
@@ -1204,9 +1238,18 @@ nav {
   .case-study {
     width: 80%;
   }
+  .case-content.full-width .image-container {
+    width: 100%;
+  }
+  .case-content.full-width .image-container img {
+    width: 100%;
+    max-height: 100vh;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
   .columns-container .column h4 {
-    font-size: 3.43323rem;
-    line-height: 3.86238rem;
+    font-size: 4.73482rem;
+    line-height: 5.32667rem;
   }
 }
 
