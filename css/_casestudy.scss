@@ -112,11 +112,15 @@ $ubook: #002b7a;
     }
   }
 
+  & .underlined {
+    text-decoration: underline;
+  }
+
   & .bullet-list,
   .numbered-list {
     list-style: initial;
     padding-top: 1.5rem;
-    margin-left: 1.1rem;
+    padding-left: 1.1rem;
 
     & li:not(:last-child) {
       margin-bottom: 1rem;
@@ -195,6 +199,15 @@ $ubook: #002b7a;
       font-weight: 300;
     }
 
+    &.half-width {
+      & ul li {
+        text-align: left;
+      }
+      & li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
     & .image-container {
       @include flex(center, center, column);
       width: 100%;
@@ -222,6 +235,15 @@ $ubook: #002b7a;
         margin-top: 0.5rem;
         font-size: 0.875rem;
         font-weight: 300;
+      }
+
+      & .reduced-illustration {
+        width: 15rem;
+        height: auto;
+      }
+
+      & .minus-margin-top {
+        margin-top: -1rem;
       }
     }
   }
@@ -336,6 +358,18 @@ $ubook: #002b7a;
 
       &.illustration-container {
         width: 50%;
+      }
+
+      &.half-width {
+        width: 50%;
+        & ul li {
+          width: 94%;
+          margin: auto;
+          text-align: left;
+        }
+        & li:not(:last-child) {
+          margin-bottom: 1rem;
+        }
       }
     }
 

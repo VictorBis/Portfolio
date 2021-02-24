@@ -919,11 +919,15 @@ nav {
   text-decoration: underline;
 }
 
+.case-content .underlined {
+  text-decoration: underline;
+}
+
 .case-content .bullet-list,
 .case-content .numbered-list {
   list-style: initial;
   padding-top: 1.5rem;
-  margin-left: 1.1rem;
+  padding-left: 1.1rem;
 }
 
 .case-content .bullet-list li:not(:last-child),
@@ -1039,6 +1043,14 @@ nav {
   font-weight: 300;
 }
 
+.columns-container .column.half-width ul li {
+  text-align: left;
+}
+
+.columns-container .column.half-width li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .columns-container .column .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,6 +1092,15 @@ nav {
   margin-top: 0.5rem;
   font-size: 0.875rem;
   font-weight: 300;
+}
+
+.columns-container .column .image-container .reduced-illustration {
+  width: 15rem;
+  height: auto;
+}
+
+.columns-container .column .image-container .minus-margin-top {
+  margin-top: -1rem;
 }
 
 .columns-container p + .column {
@@ -1220,6 +1241,17 @@ nav {
   }
   .columns-container .column.illustration-container {
     width: 50%;
+  }
+  .columns-container .column.half-width {
+    width: 50%;
+  }
+  .columns-container .column.half-width ul li {
+    width: 94%;
+    margin: auto;
+    text-align: left;
+  }
+  .columns-container .column.half-width li:not(:last-child) {
+    margin-bottom: 1rem;
   }
   .columns-container .reduced-image {
     width: 70%;
