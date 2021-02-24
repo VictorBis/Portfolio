@@ -1029,7 +1029,7 @@ nav {
   line-height: 4.73482rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #ff3366;
+  color: #262626;
 }
 
 .columns-container .column .testimonial {
@@ -1097,6 +1097,11 @@ nav {
 .columns-container .column .image-container .reduced-illustration {
   width: 15rem;
   height: auto;
+}
+
+.columns-container .column .image-container .reduced-illustration-comment {
+  height: 20rem;
+  width: auto;
 }
 
 .columns-container .column .image-container .minus-margin-top {
@@ -1229,6 +1234,22 @@ nav {
   }
   .project-thumbnail #moviteca-thumbnail {
     padding: 4rem;
+  }
+  .columns-container .column.width-15 {
+    width: 17rem;
+  }
+  .columns-container .column.width-100 {
+    width: 100%;
+  }
+  .columns-container .column.width-100 .left-aligned {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .columns-container .column.width-100 .right-aligned {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .columns-container .column .image-container.moviteca-high-fi {
     max-width: 45%;

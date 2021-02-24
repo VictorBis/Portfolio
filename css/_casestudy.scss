@@ -186,7 +186,7 @@ $ubook: #002b7a;
       @include font(6, $base-mobile, 1.125);
       font-weight: 600;
       margin-bottom: 0.5rem;
-      color: $yaj-ban-color;
+      color: $black;
     }
 
     & .testimonial {
@@ -240,6 +240,11 @@ $ubook: #002b7a;
       & .reduced-illustration {
         width: 15rem;
         height: auto;
+      }
+
+      & .reduced-illustration-comment {
+        height: 20rem;
+        width: auto;
       }
 
       & .minus-margin-top {
@@ -343,6 +348,18 @@ $ubook: #002b7a;
 
   .columns-container {
     & .column {
+      &.width-15 {
+        width: 17rem;
+      }
+      &.width-100 {
+        width: 100%;
+        & .left-aligned {
+          align-items: flex-start;
+        }
+        & .right-aligned {
+          align-items: flex-end;
+        }
+      }
       & .image-container {
         &.moviteca-high-fi {
           max-width: 45%;
