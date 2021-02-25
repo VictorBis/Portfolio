@@ -188,7 +188,15 @@ $ubook: #002b7a;
       margin-bottom: 0.5rem;
       color: $black;
     }
-
+    & .insight {
+      @include font(2, $base-mobile, 1.375);
+      font-weight: 500;
+      text-align: left;
+      margin-top: 0.5rem;
+      & + p {
+        text-align: left;
+      }
+    }
     & .testimonial {
       max-width: 32ch;
     }
@@ -426,6 +434,9 @@ $ubook: #002b7a;
     & .column {
       & h4 {
         @include font(6, $base-desktop, 1.125);
+      }
+      & .insight {
+        @include font(2, $base-desktop, 1.5);
       }
     }
   }

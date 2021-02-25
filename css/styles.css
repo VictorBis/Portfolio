@@ -102,6 +102,7 @@ a {
   h1 {
     font-size: 3.552rem;
     line-height: 3.996rem;
+    letter-spacing: -1px;
   }
   h2 {
     font-size: 2.66467rem;
@@ -1032,6 +1033,18 @@ nav {
   color: #262626;
 }
 
+.columns-container .column .insight {
+  font-size: 1.333rem;
+  line-height: 1.83288rem;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.columns-container .column .insight + p {
+  text-align: left;
+}
+
 .columns-container .column .testimonial {
   max-width: 32ch;
 }
@@ -1303,6 +1316,10 @@ nav {
   .columns-container .column h4 {
     font-size: 4.73482rem;
     line-height: 5.32667rem;
+  }
+  .columns-container .column .insight {
+    font-size: 1.49962rem;
+    line-height: 2.24944rem;
   }
 }
 

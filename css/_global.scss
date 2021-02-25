@@ -83,6 +83,7 @@ a {
 @media screen and (min-width: 1440px) {
   h1 {
     @include font(5, $base-desktop, 1.125);
+    letter-spacing: -1px;
   }
 
   h2 {
