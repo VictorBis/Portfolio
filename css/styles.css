@@ -114,7 +114,7 @@ a {
   }
   h4 {
     font-size: 1.49962rem;
-    line-height: 2.06198rem;
+    line-height: 2.24944rem;
   }
   h5 {
     font-size: 1.125rem;
@@ -896,6 +896,10 @@ nav {
   margin-bottom: 1rem;
 }
 
+.case-content .subtitle2 {
+  padding: 2.5rem 0 1rem 0;
+}
+
 .case-content .summary {
   padding: 0.5rem 0;
 }
@@ -1277,11 +1281,10 @@ nav {
     width: 50%;
   }
   .columns-container .column.half-width {
-    width: 50%;
+    width: 47%;
   }
-  .columns-container .column.half-width ul li {
-    width: 94%;
-    margin: auto;
+  .columns-container .column.half-width ul li,
+  .columns-container .column.half-width p {
     text-align: left;
   }
   .columns-container .column.half-width li:not(:last-child) {

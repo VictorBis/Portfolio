@@ -88,6 +88,9 @@ $ubook: #002b7a;
     margin-bottom: 1rem;
   }
 
+  & .subtitle2 {
+    padding: 2.5rem 0 1rem 0;
+  }
   & .summary {
     padding: 0.5rem 0;
 
@@ -386,10 +389,9 @@ $ubook: #002b7a;
       }
 
       &.half-width {
-        width: 50%;
-        & ul li {
-          width: 94%;
-          margin: auto;
+        width: 47%;
+        & ul li,
+        p {
           text-align: left;
         }
         & li:not(:last-child) {
