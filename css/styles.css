@@ -54,6 +54,7 @@ h4 {
   font-size: 1.333rem;
   line-height: 1.83288rem;
   font-weight: 500;
+  color: #262626;
 }
 
 h5 {
@@ -983,6 +984,12 @@ nav {
   padding-top: 0.5rem;
 }
 
+.columns-container.reverse .description {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .columns-container.space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1029,6 +1036,10 @@ nav {
   margin: 0.5rem 0;
 }
 
+.columns-container .column h3 + p {
+  margin-top: 1rem;
+}
+
 .columns-container .column h4 {
   font-size: 4.20873rem;
   line-height: 4.73482rem;
@@ -1060,7 +1071,8 @@ nav {
   font-weight: 300;
 }
 
-.columns-container .column.half-width ul li {
+.columns-container .column.half-width ul li,
+.columns-container .column.half-width p {
   text-align: left;
 }
 
@@ -1113,6 +1125,11 @@ nav {
 
 .columns-container .column .image-container .reduced-illustration {
   width: 15rem;
+  height: auto;
+}
+
+.columns-container .column .image-container .reduced-image {
+  width: 20rem;
   height: auto;
 }
 
@@ -1252,6 +1269,11 @@ nav {
   .project-thumbnail #moviteca-thumbnail {
     padding: 4rem;
   }
+  .columns-container.reverse .description {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
   .columns-container .column.width-15 {
     width: 17rem;
   }
@@ -1283,8 +1305,7 @@ nav {
   .columns-container .column.half-width {
     width: 47%;
   }
-  .columns-container .column.half-width ul li,
-  .columns-container .column.half-width p {
+  .columns-container .column.half-width ul li {
     text-align: left;
   }
   .columns-container .column.half-width li:not(:last-child) {
@@ -1315,6 +1336,9 @@ nav {
     max-height: 100vh;
     -o-object-fit: fill;
        object-fit: fill;
+  }
+  .case-content .design-image-container p {
+    width: 40%;
   }
   .columns-container .column h4 {
     font-size: 4.73482rem;

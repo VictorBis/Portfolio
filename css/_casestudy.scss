@@ -159,6 +159,12 @@ $ubook: #002b7a;
     padding-top: 0.5rem;
   }
 
+  &.reverse {
+    & .description {
+      order: 2;
+    }
+  }
+
   &.space-between {
     justify-content: space-between;
     align-items: baseline;
@@ -183,6 +189,10 @@ $ubook: #002b7a;
 
     & h5 {
       margin: 0.5rem 0;
+    }
+
+    & h3 + p {
+      margin-top: 1rem;
     }
 
     & h4 {
@@ -211,7 +221,8 @@ $ubook: #002b7a;
     }
 
     &.half-width {
-      & ul li {
+      & ul li,
+      p {
         text-align: left;
       }
       & li:not(:last-child) {
@@ -250,6 +261,11 @@ $ubook: #002b7a;
 
       & .reduced-illustration {
         width: 15rem;
+        height: auto;
+      }
+
+      & .reduced-image {
+        width: 20rem;
         height: auto;
       }
 
@@ -358,6 +374,11 @@ $ubook: #002b7a;
   }
 
   .columns-container {
+    &.reverse {
+      & .description {
+        order: 0;
+      }
+    }
     & .column {
       &.width-15 {
         width: 17rem;
@@ -390,8 +411,7 @@ $ubook: #002b7a;
 
       &.half-width {
         width: 47%;
-        & ul li,
-        p {
+        & ul li {
           text-align: left;
         }
         & li:not(:last-child) {
@@ -428,6 +448,11 @@ $ubook: #002b7a;
           max-height: 100vh;
           object-fit: fill;
         }
+      }
+    }
+    & .design-image-container {
+      & p {
+        width: 40%;
       }
     }
   }
