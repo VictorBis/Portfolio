@@ -1370,6 +1370,9 @@ nav {
   .case-content .design-image-container p {
     width: 40%;
   }
+  .case-content .design-image-container .full-width-p {
+    width: 100%;
+  }
   .columns-container .column h4 {
     font-size: 4.73482rem;
     line-height: 5.32667rem;
