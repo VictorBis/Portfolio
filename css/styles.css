@@ -1386,6 +1386,9 @@ nav {
   .case-content .design-image-container .full-width-p {
     width: 100%;
   }
+  .case-content .design-image-container .full-width-p.margin-top {
+    margin-top: 1rem;
+  }
   .columns-container .column h4 {
     font-size: 4.73482rem;
     line-height: 5.32667rem;

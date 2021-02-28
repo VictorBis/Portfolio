@@ -486,6 +486,9 @@ $ubook: #002b7a;
       }
       & .full-width-p {
         width: 100%;
+        &.margin-top {
+          margin-top: 1rem;
+        }
       }
     }
   }
