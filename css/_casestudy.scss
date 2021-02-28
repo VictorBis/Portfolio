@@ -345,8 +345,25 @@ $ubook: #002b7a;
   }
 }
 
+.btn-container {
+  width: 100%;
+  margin-top: 3rem;
+  @include flex(center, center, column);
+}
 .file > h5 {
   @include font(2, $base-desktop, 1.5);
+}
+
+.file.ubook-button {
+  padding: 1rem 1.5rem;
+  background: $ubook;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.file.scnd-button {
+  text-decoration: underline;
+  margin-top: 1rem;
 }
 
 /* Small Phone */
