@@ -354,11 +354,19 @@ $ubook: #002b7a;
   @include font(2, $base-desktop, 1.5);
 }
 
-.file.ubook-button {
+.file.ubook-button,
+.file.mitalla-button {
   padding: 1rem 1.5rem;
-  background: $ubook;
   color: white;
   border-radius: 0.5rem;
+}
+
+.ubook-button {
+  background: $ubook;
+}
+
+.mitalla-button {
+  background: $mequeda;
 }
 
 .file.scnd-button {

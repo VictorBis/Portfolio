@@ -1257,11 +1257,19 @@ nav {
   line-height: 2.24944rem;
 }
 
-.file.ubook-button {
+.file.ubook-button,
+.file.mitalla-button {
   padding: 1rem 1.5rem;
-  background: #002b7a;
   color: white;
   border-radius: 0.5rem;
+}
+
+.ubook-button {
+  background: #002b7a;
+}
+
+.mitalla-button {
+  background: #2c66a0;
 }
 
 .file.scnd-button {
