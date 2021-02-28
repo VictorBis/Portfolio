@@ -355,7 +355,8 @@ $ubook: #002b7a;
 }
 
 .file.ubook-button,
-.file.mitalla-button {
+.file.mitalla-button,
+.file.cinepolis-button {
   padding: 1rem 1.5rem;
   color: white;
   border-radius: 0.5rem;
@@ -367,6 +368,10 @@ $ubook: #002b7a;
 
 .mitalla-button {
   background: $mequeda;
+}
+
+.cinepolis-button {
+  background: $cinepolis;
 }
 
 .file.scnd-button {

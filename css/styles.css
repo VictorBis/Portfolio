@@ -1258,7 +1258,8 @@ nav {
 }
 
 .file.ubook-button,
-.file.mitalla-button {
+.file.mitalla-button,
+.file.cinepolis-button {
   padding: 1rem 1.5rem;
   color: white;
   border-radius: 0.5rem;
@@ -1270,6 +1271,10 @@ nav {
 
 .mitalla-button {
   background: #2c66a0;
+}
+
+.cinepolis-button {
+  background: #212e5c;
 }
 
 .file.scnd-button {
