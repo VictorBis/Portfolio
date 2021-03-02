@@ -1320,6 +1320,9 @@ nav {
   .columns-container .column.width-15 {
     width: 17rem;
   }
+  .columns-container .column.width-25 {
+    width: 25rem;
+  }
   .columns-container .column.width-100 {
     width: 100%;
   }
@@ -1332,6 +1335,9 @@ nav {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .columns-container .column .image-container.margin-top {
+    margin-top: 3rem;
   }
   .columns-container .column .image-container.moviteca-high-fi {
     max-width: 45%;

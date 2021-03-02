@@ -413,6 +413,9 @@ $ubook: #002b7a;
       &.width-15 {
         width: 17rem;
       }
+      &.width-25 {
+        width: 25rem;
+      }
       &.width-100 {
         width: 100%;
         & .left-aligned {
@@ -423,6 +426,9 @@ $ubook: #002b7a;
         }
       }
       & .image-container {
+        &.margin-top {
+          margin-top: 3rem;
+        }
         &.moviteca-high-fi {
           max-width: 45%;
           height: auto;
