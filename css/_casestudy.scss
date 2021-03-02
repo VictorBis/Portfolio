@@ -288,6 +288,9 @@ $ubook: #002b7a;
 .left-aligned {
   text-align: left;
 }
+.right-aligned {
+  text-align: right;
+}
 
 .graph {
   @include flex(flex-start, center, column);

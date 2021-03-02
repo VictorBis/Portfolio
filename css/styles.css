@@ -1150,6 +1150,10 @@ nav {
   text-align: left;
 }
 
+.right-aligned {
+  text-align: right;
+}
+
 .graph {
   display: -webkit-box;
   display: -ms-flexbox;
