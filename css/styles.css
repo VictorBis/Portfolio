@@ -651,8 +651,8 @@ nav {
     transition: all ease-in-out 0.5s;
   }
   .project .desc .see-more:hover > img {
-    -webkit-transform: translateX(0.5rem);
-            transform: translateX(0.5rem);
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
   }
   .portfolio {
     width: 80%;
