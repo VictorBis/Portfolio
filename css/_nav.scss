@@ -1,187 +1,183 @@
 nav {
-    padding: 2rem 0rem;
-    position: relative;
+  padding: 2rem 0rem;
+  position: relative;
 }
 
 .night {
-    background: $black;
+  background: $black;
 }
 
 .nav-wrapper {
-    margin: auto;
-    @include flex(center, center, row);
+  margin: auto;
+  @include flex(center, center, row);
 }
 
 .logo-wrapper {
-    flex: 1 1 50%;
-    z-index: 1;
+  flex: 1 1 50%;
+  z-index: 1;
 
-    & img {
-        width: 3rem;
-        height: auto;
-    }
+  & img {
+    width: 3rem;
+    height: auto;
+  }
 }
 
 .options {
-    @include flex(center, center, row);
+  @include flex(center, center, row);
 
-    & li {
-        padding: 0.5rem 1rem;
-    }
+  & li {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .options a::after {
-    content: "";
-    display: block;
-    width: 0;
-    border-bottom: 2px solid;
-    margin: 0 auto;
-    transition: all 0.3s linear 0s;
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  transition: all 0.3s linear 0s;
 }
 
 .options a:hover::after {
-    width: 90%;
+  width: 90%;
 }
 
 .options .active::after {
-    width: 90%;
+  width: 90%;
 }
 
-
 /* Mobile */
-@media screen and (max-width:600px) {
-    .options {
-        position: fixed;
-        background: $black;
-        min-height: 100vh;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        @include flex(center, center, column);
+@media screen and (max-width: 600px) {
+  .options {
+    position: fixed;
+    background: #000000;
+    min-height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    @include flex(center, center, column);
 
-        & li a {
-            @include font(3, $base-mobile, 1.375);
-            color: $background;
-        }
-
-        clip-path: circle(100px at 100% -18%);
-        transition: all 1s ease;
-        visibility: hidden;
+    & li a {
+      @include font(3, $base-mobile, 1.375);
+      color: $background;
     }
 
-    .options.open {
-        clip-path: circle(1050px at 100% -8%);
-        visibility: visible;
+    clip-path: circle(100px at 100% -18%);
+    transition: all 1s ease;
+    visibility: hidden;
+  }
+
+  .options.open {
+    clip-path: circle(1050px at 100% -8%);
+    visibility: visible;
+  }
+
+  .hamburguer {
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    @include flex(center, center, column);
+    transition: all 0.5s ease-in-out;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .line {
+    width: 2rem;
+    height: 2px;
+    background: $background;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 2px;
+      background: $background;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
     }
 
-    .hamburguer {
-        cursor: pointer;
-        z-index: 1;
-        position: relative;
-        display: flex;
-        @include flex(center, center, column);
-        transition: all 0.5s ease-in-out;
-        width: 2rem;
-        height: 2rem;
+    &::before {
+      transform: translateY(-0.5rem);
     }
 
-    .line {
-        width: 2rem;
-        height: 2px;
-        background: $background;
-        border-radius: 10px;
-        transition: all 0.5s ease-in-out;
+    &::after {
+      transform: translateY(0.5rem);
+    }
+  }
 
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 2rem;
-            height: 2px;
-            background: $background;
-            border-radius: 10px;
-            transition: all 0.5s ease-in-out;
+  .line.white {
+    background: $black;
 
-        }
+    &::before,
+    &::after {
+      background: $black;
+    }
+  }
 
-        &::before {
-            transform: translateY(-0.5rem);
-        }
+  /* Animation */
+  .hamburguer.open .line {
+    transform: translate(-2rem);
+    background: transparent;
 
-        &::after {
-            transform: translateY(0.5rem);
-        }
+    &::before {
+      transform: rotate(45deg) translate(1.5rem, -1.5rem);
+      background: $black;
     }
 
-    .line.white {
-        background: $black;
+    &::after {
+      transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+      background: $black;
+    }
+  }
 
-        &::before,
-        &::after {
-            background: $black;
-
-        }
+  .hamburguer.open .line.white {
+    &::before {
+      transform: rotate(45deg) translate(1.5rem, -1.5rem);
+      background: $background;
     }
 
-
-    /* Animation */
-    .hamburguer.open .line {
-        transform: translate(-2rem);
-        background: transparent;
-
-        &::before {
-            transform: rotate(45deg) translate(1.5rem, -1.5rem);
-            background: $black;
-        }
-
-        &::after {
-            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
-            background: $black;
-        }
+    &::after {
+      transform: rotate(-45deg) translate(1.5rem, 1.5rem);
+      background: $background;
     }
+  }
 
-    .hamburguer.open .line.white {
-        &::before {
-            transform: rotate(45deg) translate(1.5rem, -1.5rem);
-            background: $background;
-        }
-
-        &::after {
-            transform: rotate(-45deg) translate(1.5rem, 1.5rem);
-            background: $background;
-        }
+  body.open {
+    overflow: hidden;
+    & main {
+      display: none;
     }
-
-    body.open {
-        overflow: hidden;
-    }
+  }
 }
 
 /* Tablet */
-@media screen and (min-width:600px) {
-
-    .night {
-        & a {
-            color: $background;
-        }
+@media screen and (min-width: 600px) {
+  .night {
+    & a {
+      color: $background;
     }
+  }
 
-    .hamburguer {
-        display: none;
-    }
-
+  .hamburguer {
+    display: none;
+  }
 }
 
 /* Large Desktop */
 @media screen and (min-width: 1440px) {
-    .nav-wrapper {
-        max-width: 1700px;
-    }
+  .nav-wrapper {
+    max-width: 1700px;
+  }
 
-    .options {
-
-        & li a {
-            @include font(1, $base-desktop, 1.4);
-        }
+  .options {
+    & li a {
+      @include font(1, $base-desktop, 1.4);
     }
+  }
 }
