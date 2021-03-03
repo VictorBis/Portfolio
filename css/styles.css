@@ -642,6 +642,9 @@ nav {
         -ms-flex-order: initial;
             order: initial;
   }
+  .project .desc {
+    display: block;
+  }
   .project .desc .see-more {
     margin-top: 3rem;
   }
