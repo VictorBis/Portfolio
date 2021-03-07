@@ -512,4 +512,26 @@ $ubook: #002b7a;
       }
     }
   }
+
+  .file.ubook-button,
+  .file.mitalla-button,
+  .file.cinepolis-button {
+    transition: all ease-in-out 0.2s;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .ubook-button:hover {
+    color: $ubook;
+    box-shadow: 0px 0px 0px 2px $ubook inset;
+  }
+  .mitalla-button:hover {
+    color: $mequeda;
+    box-shadow: 0px 0px 0px 2px $mequeda inset;
+  }
+
+  .cinepolis-button:hover {
+    color: $cinepolis;
+    box-shadow: 0px 0px 0px 2px $ubook inset;
+  }
 }

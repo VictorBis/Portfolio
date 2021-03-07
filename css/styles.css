@@ -1413,6 +1413,32 @@ nav {
     font-size: 1.49962rem;
     line-height: 2.24944rem;
   }
+  .file.ubook-button,
+  .file.mitalla-button,
+  .file.cinepolis-button {
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+  }
+  .file.ubook-button:hover,
+  .file.mitalla-button:hover,
+  .file.cinepolis-button:hover {
+    background: transparent;
+  }
+  .ubook-button:hover {
+    color: #002b7a;
+    -webkit-box-shadow: 0px 0px 0px 2px #002b7a inset;
+            box-shadow: 0px 0px 0px 2px #002b7a inset;
+  }
+  .mitalla-button:hover {
+    color: #2c66a0;
+    -webkit-box-shadow: 0px 0px 0px 2px #2c66a0 inset;
+            box-shadow: 0px 0px 0px 2px #2c66a0 inset;
+  }
+  .cinepolis-button:hover {
+    color: #212e5c;
+    -webkit-box-shadow: 0px 0px 0px 2px #002b7a inset;
+            box-shadow: 0px 0px 0px 2px #002b7a inset;
+  }
 }
 
 footer {
