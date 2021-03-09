@@ -645,8 +645,8 @@ nav {
         -ms-flex-order: initial;
             order: initial;
   }
-  .project .desc {
-    display: block;
+  .project .desc a {
+    display: inline-table;
   }
   .project .desc .see-more {
     margin-top: 3rem;
