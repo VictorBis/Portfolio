@@ -382,6 +382,24 @@ $ubook: #002b7a;
   margin-top: 1rem;
 }
 
+.more-projects{
+  @include flex(end, end, column);
+  & .case-study-arrow{
+    @include flex(center, center, row);
+  }
+  & .see-more {
+    margin-top: 4rem;
+    & img {
+      margin-left: 0.5rem;
+      transition: all ease-in-out 0.5s;
+      width: 0.75rem;
+    }
+    &:hover > img {
+      transform: translateX(1rem);
+    }
+  }
+
+}
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph {

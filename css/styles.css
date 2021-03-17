@@ -1294,6 +1294,54 @@ nav {
   margin-top: 1rem;
 }
 
+.more-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more-projects .case-study-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.more-projects .see-more {
+  margin-top: 4rem;
+}
+
+.more-projects .see-more img {
+  margin-left: 0.5rem;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  width: 0.75rem;
+}
+
+.more-projects .see-more:hover > img {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph .bar-line {
