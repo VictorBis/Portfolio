@@ -382,9 +382,9 @@ $ubook: #002b7a;
   margin-top: 1rem;
 }
 
-.more-projects{
-  @include flex(end, end, column);
-  & .case-study-arrow{
+.more-projects {
+  @include flex(flex-end, flex-end, column);
+  & .case-study-arrow {
     @include flex(center, center, row);
   }
   & .see-more {
@@ -398,7 +398,6 @@ $ubook: #002b7a;
       transform: translateX(1rem);
     }
   }
-
 }
 /* Small Phone */
 @media screen and (max-width: 340px) {
