@@ -563,8 +563,8 @@ nav {
     width: 80%;
     margin: auto;
     text-align: center;
-    -webkit-transform: translateX(-1.5rem);
-            transform: translateX(-1.5rem);
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
   }
   .text .medium-text {
     font-size: 1.333rem;
