@@ -1103,6 +1103,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 0.5rem;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
