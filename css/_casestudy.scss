@@ -5,8 +5,9 @@ $cinepolis: #212e5c;
 $ubook: #002b7a;
 
 .project-thumbnail {
-  width: 100%;
+  width: 80%;
   text-align: center;
+  margin: auto;
   & img {
     max-width: 100%;
     height: auto;
