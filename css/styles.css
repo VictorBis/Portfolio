@@ -804,7 +804,6 @@ nav {
 }
 
 .project-thumbnail {
-  width: 80%;
   text-align: center;
   margin: auto;
 }
@@ -1372,7 +1371,7 @@ nav {
             flex-direction: row;
   }
   .project-thumbnail #moviteca-thumbnail {
-    padding: 4rem;
+    padding: 1rem 0;
   }
   .columns-container.reverse .description {
     -webkit-box-ordinal-group: 1;
@@ -1437,6 +1436,9 @@ nav {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .case-study {
+    width: 80%;
+  }
+  .project-thumbnail {
     width: 80%;
   }
   .case-content.full-width .image-container {

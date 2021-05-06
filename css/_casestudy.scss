@@ -5,7 +5,6 @@ $cinepolis: #212e5c;
 $ubook: #002b7a;
 
 .project-thumbnail {
-  width: 80%;
   text-align: center;
   margin: auto;
   & img {
@@ -421,7 +420,7 @@ $ubook: #002b7a;
 
   .project-thumbnail {
     & #moviteca-thumbnail {
-      padding: 4rem;
+      padding: 1rem 0;
     }
   }
 
@@ -497,6 +496,11 @@ $ubook: #002b7a;
   .case-study {
     width: 80%;
   }
+
+  .project-thumbnail {
+    width: 80%;
+  }
+
   .case-content {
     &.full-width {
       & .image-container {
