@@ -99,7 +99,7 @@ a {
 }
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   h1 {
     font-size: 3.552rem;
     line-height: 3.996rem;
@@ -386,7 +386,7 @@ nav {
 }
 
 /* Large Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .nav-wrapper {
     max-width: 1700px;
   }
@@ -626,7 +626,7 @@ nav {
 }
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .text .big-text,
   .text .medium-text {
     width: 60%;
@@ -797,7 +797,7 @@ nav {
 }
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .personal-info {
     width: 80%;
   }
@@ -1434,7 +1434,7 @@ nav {
 }
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .case-study {
     width: 80%;
   }
