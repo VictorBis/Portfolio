@@ -50,7 +50,8 @@ button,
 label,
 input,
 a,
-p {
+p,
+.company {
   @include font(1, $base-mobile, 1.5);
   font-weight: 400;
 }
@@ -69,6 +70,9 @@ a {
   display: inline-block;
 }
 
+.margin-bottom-4 {
+  margin-bottom: 4rem;
+}
 /* Tablet */
 @media screen and (min-width: 600px) {
   body {
@@ -108,7 +112,8 @@ a {
   label,
   input,
   a,
-  p {
+  p,
+  .company {
     @include font(1, $base-desktop, 1.5);
   }
 
