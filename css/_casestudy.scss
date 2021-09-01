@@ -1,8 +1,6 @@
-$yaj-ban-color: #ff3366;
-$moviteca-color: #de2d12;
 $mequeda: #2c66a0;
-$cinepolis: #212e5c;
 $ubook: #002b7a;
+$dfg: #c90000;
 
 .project-thumbnail {
   text-align: center;
@@ -48,27 +46,15 @@ $ubook: #002b7a;
   }
 }
 
-.yaj-ban {
+.dfg {
   & .subtitle {
-    color: $yaj-ban-color;
-  }
-}
-
-.moviteca {
-  & .subtitle {
-    color: $moviteca-color;
+    color: $dfg;
   }
 }
 
 .mequeda {
   & .subtitle {
     color: $mequeda;
-  }
-}
-
-.cinepolis {
-  & .subtitle {
-    color: $cinepolis;
   }
 }
 
@@ -270,6 +256,11 @@ $ubook: #002b7a;
         height: auto;
       }
 
+      & .reduced-image-25 {
+        width: 25rem;
+        height: auto;
+      }
+
       & .reduced-illustration-comment {
         height: 20rem;
         width: auto;
@@ -360,7 +351,7 @@ $ubook: #002b7a;
 
 .file.ubook-button,
 .file.mitalla-button,
-.file.cinepolis-button {
+.file.dfg-button {
   padding: 1rem 1.5rem;
   color: white;
   border-radius: 0.5rem;
@@ -374,8 +365,8 @@ $ubook: #002b7a;
   background: $mequeda;
 }
 
-.cinepolis-button {
-  background: $cinepolis;
+.dfg-button {
+  background: $dfg;
 }
 
 .file.scnd-button {
@@ -538,7 +529,7 @@ $ubook: #002b7a;
 
   .file.ubook-button,
   .file.mitalla-button,
-  .file.cinepolis-button {
+  .file.dfg-button {
     transition: all ease-in-out 0.2s;
     &:hover {
       background: transparent;
@@ -553,8 +544,8 @@ $ubook: #002b7a;
     box-shadow: 0px 0px 0px 2px $mequeda inset;
   }
 
-  .cinepolis-button:hover {
-    color: $cinepolis;
+  .dfg-button:hover {
+    color: $dfg;
     box-shadow: 0px 0px 0px 2px $ubook inset;
   }
 }
