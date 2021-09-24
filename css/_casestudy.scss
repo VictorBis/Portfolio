@@ -232,6 +232,16 @@ $dfg: #c90000;
         max-height: 420px;
       }
 
+      & .width-100 {
+        width: 100%;
+        height: auto;
+      }
+
+      & .gray-border {
+        border-radius: 4px;
+        border: 2px solid #f4f4f4;
+      }
+
       & video {
         padding: 0.5rem;
       }
@@ -450,6 +460,11 @@ $dfg: #c90000;
         & .big-screen {
           max-width: 254px;
           height: auto;
+        }
+
+        & .max-30 {
+          margin-top: -0.25rem;
+          max-width: 28ch;
         }
       }
 

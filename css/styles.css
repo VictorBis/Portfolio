@@ -1186,6 +1186,16 @@ nav {
   max-height: 420px;
 }
 
+.columns-container .column .image-container .width-100 {
+  width: 100%;
+  height: auto;
+}
+
+.columns-container .column .image-container .gray-border {
+  border-radius: 4px;
+  border: 2px solid #f4f4f4;
+}
+
 .columns-container .column .image-container video {
   padding: 0.5rem;
 }
@@ -1481,6 +1491,10 @@ nav {
   .columns-container .column .image-container .big-screen {
     max-width: 254px;
     height: auto;
+  }
+  .columns-container .column .image-container .max-30 {
+    margin-top: -0.25rem;
+    max-width: 28ch;
   }
   .columns-container .column.illustration-container {
     width: 50%;
