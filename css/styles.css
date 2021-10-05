@@ -93,6 +93,11 @@ a {
   margin-bottom: 4rem;
 }
 
+.emoji {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
 /* Tablet */
 @media screen and (min-width: 600px) {
   body {
@@ -1507,6 +1512,9 @@ nav {
   }
   .columns-container .column.half-width li:not(:last-child) {
     margin-bottom: 1rem;
+  }
+  .columns-container .column.left-aligned {
+    text-align: left;
   }
   .columns-container .reduced-image {
     width: 70%;

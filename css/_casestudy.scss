@@ -481,6 +481,10 @@ $dfg: #c90000;
           margin-bottom: 1rem;
         }
       }
+
+      &.left-aligned {
+        text-align: left;
+      }
     }
 
     & .reduced-image {
