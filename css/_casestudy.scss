@@ -466,6 +466,12 @@ $dfg: #c90000;
           margin-top: -0.25rem;
           max-width: 28ch;
         }
+
+        & .caption {
+          font-size: 1rem;
+          color: #757575;
+          margin-top: 0.5rem;
+        }
       }
 
       &.illustration-container {

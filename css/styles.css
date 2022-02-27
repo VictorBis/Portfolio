@@ -1501,6 +1501,11 @@ nav {
     margin-top: -0.25rem;
     max-width: 28ch;
   }
+  .columns-container .column .image-container .caption {
+    font-size: 1rem;
+    color: #757575;
+    margin-top: 0.5rem;
+  }
   .columns-container .column.illustration-container {
     width: 50%;
   }
