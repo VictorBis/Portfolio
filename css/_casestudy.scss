@@ -470,7 +470,7 @@ $dfg: #c90000;
         & .caption {
           font-size: 1rem;
           color: #757575;
-          margin-top: 0.5rem;
+          margin-top: 0.75rem;
         }
       }
 
@@ -571,6 +571,7 @@ $dfg: #c90000;
 
   .dfg-button:hover {
     color: $dfg;
-    box-shadow: 0px 0px 0px 2px $ubook inset;
+    box-shadow: 0px 0px 0px 2px $dfg inset;
+    border: yellow;
   }
 }
