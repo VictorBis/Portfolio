@@ -4,7 +4,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-words = ['Hi', 'Hola','你好','Salut','こんにちは','Olá','Ciao'];
+words = ['Hola', 'Hello','你好','Salut','こんにちは','Olá','Ciao'];
 
 words.forEach(element => {
     typewriter.typeString(element+'!')
