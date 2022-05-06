@@ -1,6 +1,6 @@
 /* Hero section */
 .hero {
-  min-height: 75vh;
+  min-height: 72vh;
   @include flex(left, center, row);
   & .info-container {
     margin: auto;

@@ -409,7 +409,7 @@ nav {
 
 /* Hero section */
 .hero {
-  min-height: 75vh;
+  min-height: 72vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
