@@ -181,7 +181,7 @@ $dfg: #ff8181;
     & h4 {
       @include font(6, $base-mobile, 1.125);
       margin-bottom: 0.5rem;
-      color: var(--text);
+      color: var(--white);
     }
     & .insight {
       @include font(2, $base-mobile, 1.375);

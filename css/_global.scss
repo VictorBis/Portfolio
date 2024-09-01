@@ -10,7 +10,7 @@
 body {
   font-family: --var(font-family-text);
   background: var(--background);
-  color: var(--text);
+  color: var(--gray);
   min-height: 100vh;
   @include flex(center, inherit, column);
   margin: 0 1rem;
@@ -20,30 +20,35 @@ h1 {
   @include font(5, $base-mobile, 1.125);
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
+  color: var(--white);
 }
 
 h2 {
   @include font(4, $base-mobile, 1.275);
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
+  color: var(--white);
 }
 
 h3 {
   @include font(3, $base-mobile, 1.275);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
+  color: var(--white);
 }
 
 h4 {
   @include font(2, $base-mobile, 1.375);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
+  color: var(--white);
 }
 
 h5 {
   @include font(1, $base-mobile, 1.5);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
+  color: var(--white);
 }
 
 li,
@@ -57,10 +62,6 @@ p,
   font-weight: 400;
   font-family: muli, sans-serif;
   font-style: normal;
-}
-
-p {
-  color: var(--text);
 }
 
 ul {

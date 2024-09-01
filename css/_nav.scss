@@ -23,6 +23,7 @@ nav {
 
   & li {
     padding: 0.5rem 1rem;
+    color: var(--white);
   }
 }
 
@@ -47,7 +48,7 @@ nav {
 @media screen and (max-width: 600px) {
   .options {
     position: fixed;
-    background: var(--text);
+    background: var(--white);
     min-height: 100vh;
     width: 100vw;
     top: 0;
@@ -83,7 +84,7 @@ nav {
   .line {
     width: 2rem;
     height: 2px;
-    background: var(--text);
+    background: var(--white);
     border-radius: var(--border-radius);
     transition: all 0.5s ease-in-out;
 
@@ -93,7 +94,7 @@ nav {
       position: absolute;
       width: 2rem;
       height: 2px;
-      background: var(--text);
+      background: var(--white);
       border-radius: var(--border-radius);
       transition: all 0.5s ease-in-out;
     }
@@ -108,11 +109,11 @@ nav {
   }
 
   .line.white {
-    background: var(--text);
+    background: var(--white);
 
     &::before,
     &::after {
-      background: var(--text);
+      background: var(--white);
     }
   }
 
@@ -123,12 +124,12 @@ nav {
 
     &::before {
       transform: rotate(45deg) translate(1.5rem, -1.5rem);
-      background: var(--text);
+      background: var(--white);
     }
 
     &::after {
       transform: rotate(-45deg) translate(1.5rem, 1.5rem);
-      background: var(--text);
+      background: var(--white);
     }
   }
 
@@ -156,7 +157,7 @@ nav {
 @media screen and (min-width: 600px) {
   .night {
     & a {
-      color: var(--text);
+      color: var(--white);
     }
   }
 
