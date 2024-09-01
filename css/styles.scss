@@ -2,10 +2,26 @@
 $base-mobile: 1; //16px
 $base-desktop: 1.125; //18px;
 $ratio: 1.333;
-$black: hsl(0, 0%, 15%);
-$text: hsl(0, 0%, 20%);
-$background: #ffffff;
 
+:root{
+  //colors
+  --background: #0d1117;
+  --text: #e6e1e3;
+  //border
+  --border-radius: 0.5rem;
+  //typography
+  --font-family-title: "Abril Fatface", serif;
+  --font-weight-title: 400;
+  --font-family-text: muli, sans-serif;;
+  --font-weight-text: 400;
+  --font-weight-text-semibold: 600;
+  --font-weight-text-bold: 700;
+  //sizes
+  --font-size-small-subtitle: 1.25rem;
+  --font-size-caption: 0.875rem;
+
+
+}
 //Font style
 /* 1.250 - Major Third */
 @mixin font($value, $ms-base, $line-height, $ms-ratio: $ratio) {

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://use.typekit.net/vlo0yph.css");
 
 * {
   padding: 0;
@@ -7,9 +8,9 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: $background;
-  color: $text;
+  font-family: --var(font-family-text);
+  background: var(--background);
+  color: var(--text);
   min-height: 100vh;
   @include flex(center, inherit, column);
   margin: 0 1rem;
@@ -17,31 +18,32 @@ body {
 
 h1 {
   @include font(5, $base-mobile, 1.125);
-  font-weight: 500;
-  color: $black;
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-title);
 }
 
 h2 {
-  @include font(4, $base-mobile, 1.375);
-  font-weight: 500;
-  color: $black;
+  @include font(4, $base-mobile, 1.275);
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-title);
 }
 
 h3 {
-  @include font(3, $base-mobile, 1.375);
-  font-weight: 500;
-  color: $black;
+  @include font(3, $base-mobile, 1.275);
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-text-bold);
 }
 
 h4 {
   @include font(2, $base-mobile, 1.375);
-  font-weight: 500;
-  color: $black;
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-text-bold);
 }
 
 h5 {
   @include font(1, $base-mobile, 1.5);
-  font-weight: 600;
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-text-bold);
 }
 
 li,
@@ -53,10 +55,12 @@ p,
 .company {
   @include font(1, $base-mobile, 1.5);
   font-weight: 400;
+  font-family: muli, sans-serif;
+  font-style: normal;
 }
 
 p {
-  color: $text;
+  color: var(--text);
 }
 
 ul {
@@ -65,7 +69,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: $text;
+  color: var(--text);
   display: inline-block;
 }
 
@@ -77,6 +81,11 @@ a {
   font-size: 3.5rem;
   line-height: 1.1;
 }
+
+.caption{
+  font-size: var(--font-size-caption);
+}
+
 /* Tablet */
 @media screen and (min-width: 600px) {
   body {
@@ -96,11 +105,11 @@ a {
   }
 
   h2 {
-    @include font(4, $base-desktop, 1.375);
+    @include font(4, $base-desktop, 1.2);
   }
 
   h3 {
-    @include font(3, $base-desktop, 1.375);
+    @include font(3, $base-desktop, 1.2);
   }
 
   h4 {

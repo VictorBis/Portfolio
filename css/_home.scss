@@ -14,14 +14,11 @@
 .text {
   & .big-text {
     @include font(5, $base-mobile, 1.125);
-    color: $black;
   }
 
   & .medium-text {
     @include font(2, $base-mobile, 1.375);
     padding: 2rem 0;
-    font-weight: 400;
-    color: $text;
   }
 
   & .company {
@@ -30,30 +27,6 @@
       margin-top: 0;
     }
   }
-}
-
-.social {
-  & ul {
-    @include flex(left, center, row);
-  }
-}
-
-.social-icon {
-  margin-right: 0.5rem;
-  &:last-child {
-    margin-right: 0;
-  }
-  padding: 0.5rem;
-
-  & img {
-    width: 2rem;
-    height: auto;
-  }
-}
-
-#Linkedin {
-  width: 1.625rem;
-  height: auto;
 }
 
 .projects {
@@ -83,7 +56,7 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      border-radius: 0.5rem;
+      border-radius: var(--border-radius);
     }
   }
 
@@ -96,7 +69,7 @@
 
     & .see-more {
       margin-top: 1rem;
-      font-weight: 500;
+      font-weight: var(--font-weight-text-bold);
     }
   }
 }
@@ -134,7 +107,7 @@
     & .medium-text {
       @include font(2, $base-mobile, 1.375);
       width: 85%;
-      padding: 3rem 0;
+      padding: 2rem 0;
       text-align: center;
       margin: auto;
     }
@@ -167,7 +140,8 @@
       @include flex(center, left, column);
       margin: 0;
       & .see-more {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
+        font-weight: var(--font-weight-text-bold);
       }
     }
   }
@@ -202,7 +176,7 @@
         display: inline-table;
       }
       & .see-more {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         & img {
           margin-left: 0.125rem;
           transition: all ease-in-out 0.5s;

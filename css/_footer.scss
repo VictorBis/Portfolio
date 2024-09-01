@@ -5,12 +5,25 @@ footer {
 
 .footer-wrapper {
     margin: auto;
-    @include flex(center, center, row);
-}
+    @include flex(center, center, column);
+    & .subtitle{
+        font-size: var(--font-size-small-subtitle);
+        font-weight: var(--font-weight-title);
+        line-height: 1;
+    }
 
-@media screen and (max-width:360px) {
-    footer .social-icon {
-        margin-right: 0;
+    & ul{
+        display: flex;
+        & li {
+            padding: 1rem 1rem;
+            &::after{
+                content: '';
+                display: inherit;
+                width: 90%;
+                margin: 0 auto;
+                border-bottom: 2px solid;
+            }
+          }
     }
 }
 
