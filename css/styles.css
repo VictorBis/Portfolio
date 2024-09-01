@@ -2,7 +2,7 @@
 @import url("https://use.typekit.net/vlo0yph.css");
 :root {
   --background: #0d1117;
-  --gray: #BDBDBD;
+  --gray: #bdbdbd;
   --white: #e6e1e3;
   --border-radius: 0.5rem;
   --font-family-title: "Abril Fatface", serif;
@@ -686,11 +686,11 @@ nav {
 }
 
 .mequeda .subtitle {
-  color: #2c66a0;
+  color: #bbd4ec;
 }
 
 .ubook .subtitle {
-  color: #002b7a;
+  color: #9ec0ff;
 }
 
 .case-content {
@@ -724,7 +724,6 @@ nav {
 .case-content .bullet-list,
 .case-content .numbered-list {
   list-style: initial;
-  padding-top: 1.5rem;
   padding-left: 1.1rem;
 }
 .case-content .bullet-list li:not(:last-child),
@@ -844,10 +843,6 @@ nav {
   width: 100%;
   height: auto;
 }
-.columns-container .column .image-container .gray-border {
-  border-radius: var(--border-radius);
-  border: 2px solid #f4f4f4;
-}
 .columns-container .column .image-container video {
   padding: 0.5rem;
 }
@@ -913,11 +908,11 @@ nav {
 }
 
 .ubook-button {
-  background: #002b7a;
+  background: #9ec0ff;
 }
 
 .mitalla-button {
-  background: #2c66a0;
+  background: #bbd4ec;
 }
 
 .dfg-button {
@@ -943,6 +938,9 @@ nav {
 }
 .more-projects .see-more {
   margin-top: 4rem;
+  font-size: 1.776889rem;
+  line-height: 2.265533475rem;
+  font-weight: var(--font-weight-text-bold);
 }
 .more-projects .see-more img {
   margin-left: 0.5rem;
@@ -1008,8 +1006,6 @@ nav {
     max-width: 28ch;
   }
   .columns-container .column .image-container .caption {
-    font-size: 1rem;
-    color: #757575;
     margin-top: 0.75rem;
   }
   .columns-container .column.illustration-container {
@@ -1083,12 +1079,12 @@ nav {
     background: transparent;
   }
   .ubook-button:hover {
-    color: #002b7a;
-    box-shadow: 0px 0px 0px 2px #002b7a inset;
+    color: #9ec0ff;
+    box-shadow: 0px 0px 0px 2px #9ec0ff inset;
   }
   .mitalla-button:hover {
-    color: #2c66a0;
-    box-shadow: 0px 0px 0px 2px #2c66a0 inset;
+    color: #bbd4ec;
+    box-shadow: 0px 0px 0px 2px #bbd4ec inset;
   }
   .dfg-button:hover {
     color: #ff8181;
