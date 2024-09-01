@@ -968,8 +968,9 @@ nav {
     align-items: flex-start;
     flex-direction: row;
   }
-  .project-thumbnail #moviteca-thumbnail {
-    padding: 1rem 0;
+  .project-thumbnail {
+    padding: 1rem;
+    border-radius: var(--border-radius);
   }
   .columns-container.reverse .description {
     order: 0;

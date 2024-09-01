@@ -355,31 +355,30 @@ $dfg: #ff8181;
     @include flex(space-between, flex-start, row);
   }
 
-  .project-thumbnail {
-    & #moviteca-thumbnail {
-      padding: 1rem 0;
-    }
+  .project-thumbnail{
+    padding: 1rem;
+    border-radius: var(--border-radius);
   }
 
-  .columns-container {
-    &.reverse {
-      & .description {
+  .columns-container{
+    &.reverse{
+      & .description{
         order: 0;
       }
     }
-    & .column {
-      &.width-15 {
+    & .column{
+      &.width-15{
         width: 17rem;
       }
-      &.width-25 {
+      &.width-25{
         width: 25rem;
       }
-      &.width-100 {
+      &.width-100{
         width: 100%;
-        & .left-aligned {
+        & .left-aligned{
           align-items: flex-start;
         }
-        & .right-aligned {
+        & .right-aligned{
           align-items: flex-end;
         }
       }
