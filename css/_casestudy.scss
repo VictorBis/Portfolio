@@ -1,18 +1,24 @@
 $mequeda: #bbd4ec;
 $ubook: #9ec0ff;
-$dfg: #ff8181;
+$dfg: #ff8080;
+$gray-bg: #333333;
 
 .project-thumbnail {
   text-align: center;
   margin: auto;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
   & img {
     max-width: 100%;
     height: auto;
   }
+  &.gray-bg{
+    background-color: $gray-bg;
+  }
 }
 
 .case-intro {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .case-intro a {
   margin-top: 1rem;
@@ -22,7 +28,7 @@ $dfg: #ff8181;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 0.5rem 1rem;
-  margin: 1.25rem 0;
+  margin-top: 1rem;
 
   & .column {
     & h4{
@@ -53,6 +59,21 @@ $dfg: #ff8181;
   & .subtitle {
     color: $dfg;
   }
+}
+
+.full-width-img-container, .card, .image-container{
+    background-color: $gray-bg;
+  }
+
+.image-container{
+    border-radius: var(--border-radius);
+    &.max-height-650{
+      max-height: 650px;
+      overflow-y: scroll;
+    }
+  }
+.block{
+  display: block;
 }
 
 .mequeda {
@@ -135,11 +156,9 @@ $dfg: #ff8181;
 
 .columns-container {
   @include flex(space-around, center, row);
+  gap: 2rem;
   flex-wrap: wrap;
-
-  &.after-text {
-    padding-top: 0.5rem;
-  }
+  margin-top: 1rem;
 
   &.reverse {
     & .description {
@@ -167,7 +186,20 @@ $dfg: #ff8181;
 
   & .column {
     text-align: center;
-    margin: 1.5rem 0;
+    &.card{
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      align-self: stretch;
+    }
+
+    &.full-width-img-container{
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      & .no-border-radius{
+        border-radius: 0;
+      }
+    }
 
     & h5 {
       margin: 0.5rem 0;
@@ -179,16 +211,12 @@ $dfg: #ff8181;
 
     & h4 {
       @include font(6, $base-mobile, 1.125);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
       color: var(--white);
     }
     & .insight {
       @include font(2, $base-mobile, 1.375);
-      text-align: left;
-      margin-top: 0.5rem;
-      & + p {
-        text-align: left;
-      }
+      margin-top: 0.25rem;
     }
     & .testimonial {
       max-width: 32ch;
@@ -201,10 +229,6 @@ $dfg: #ff8181;
     }
 
     &.half-width {
-      & ul li,
-      p {
-        text-align: left;
-      }
       & li:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -212,13 +236,17 @@ $dfg: #ff8181;
 
     & .image-container {
       @include flex(center, center, column);
-      margin-top: 0.5rem;
       width: 100%;
       object-fit: contain;
+
+      &.start{
+        justify-content: flex-start;
+      }
 
       & img {
         max-width: 100%;
         height: auto;
+        border-radius: 0.5rem;
       }
 
       & .illustration {
@@ -232,7 +260,7 @@ $dfg: #ff8181;
       }
 
       & video {
-        padding: 0.5rem;
+        border-radius: 0.5rem;
       }
 
       & .no-padding {
@@ -356,17 +384,25 @@ $dfg: #ff8181;
   }
 
   .project-thumbnail{
-    padding: 1rem;
-    border-radius: var(--border-radius);
+      padding: 3rem;
   }
 
   .columns-container{
+    margin: 2rem 0 0.5rem 0;
     &.reverse{
       & .description{
         order: 0;
       }
     }
     & .column{
+      &.full-width-img-container{
+        padding: 3rem;
+      }
+
+      &.card{
+        padding: 1.5rem;
+      }
+
       &.width-15{
         width: 17rem;
       }
@@ -400,10 +436,6 @@ $dfg: #ff8181;
         & .max-30 {
           margin-top: -0.25rem;
           max-width: 28ch;
-        }
-
-        & .caption {
-          margin-top: 0.75rem;
         }
       }
 
