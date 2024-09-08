@@ -21,6 +21,7 @@
   :root {
     /* Change base variable used for element variable */
     --border-radius: 0.5rem;
+    --font-size-small-subtitle: 1rem;
   }
 }
 * {
@@ -42,32 +43,32 @@ body {
 }
 
 h1 {
-  font-size: 3.1573345183rem;
-  line-height: 3.5520013331rem;
+  font-size: 2.368593037rem;
+  line-height: 2.6646671666rem;
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
   color: var(--white);
 }
 
 h2 {
-  font-size: 2.368593037rem;
-  line-height: 3.0199561222rem;
+  font-size: 1.776889rem;
+  line-height: 2.265533475rem;
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
   color: var(--white);
 }
 
 h3 {
-  font-size: 1.776889rem;
-  line-height: 2.265533475rem;
+  font-size: 1.333rem;
+  line-height: 1.832875rem;
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
   color: var(--white);
 }
 
 h4 {
-  font-size: 1.333rem;
-  line-height: 1.832875rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
   color: var(--white);
@@ -131,8 +132,8 @@ a {
     letter-spacing: 0.5px;
   }
 }
-/* Desktop */
-@media screen and (min-width: 1300px) {
+/* Tablet */
+@media screen and (min-width: 600px) {
   h1 {
     font-size: 3.5520013331rem;
     line-height: 3.9960014998rem;
@@ -164,6 +165,9 @@ a {
     font-size: 1.125rem;
     line-height: 1.6875rem;
   }
+}
+/* Desktop */
+@media screen and (min-width: 1300px) {
   body {
     margin: 0 5rem;
   }
@@ -668,6 +672,10 @@ nav {
   margin-top: 1rem;
 }
 
+.bullet-after-text {
+  margin: 0.5rem 0;
+}
+
 .brief {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -698,7 +706,11 @@ nav {
 }
 
 .dfg .subtitle {
-  color: #ff8080;
+  color: #ff9999;
+}
+
+.alightapp .subtitle {
+  color: #99beff;
 }
 
 .full-width-img-container, .card, .image-container {
@@ -706,7 +718,7 @@ nav {
 }
 
 .image-container {
-  border-radius: var(--border-radius);
+  border-radius: 0.5rem;
 }
 .image-container.max-height-650 {
   max-height: 650px;
@@ -715,14 +727,6 @@ nav {
 
 .block {
   display: block;
-}
-
-.mequeda .subtitle {
-  color: #bbd4ec;
-}
-
-.ubook .subtitle {
-  color: #9ec0ff;
 }
 
 .case-content {
@@ -760,7 +764,7 @@ nav {
 }
 .case-content .bullet-list li:not(:last-child),
 .case-content .numbered-list li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .case-content .numbered-list {
   list-style: decimal;
@@ -945,18 +949,6 @@ nav {
   border-radius: --border-radius;
 }
 
-.ubook-button {
-  background: #9ec0ff;
-}
-
-.mitalla-button {
-  background: #bbd4ec;
-}
-
-.dfg-button {
-  background: #ff8080;
-}
-
 .file.scnd-button {
   text-decoration: underline;
   margin-top: 1rem;
@@ -1121,19 +1113,6 @@ nav {
   .file.mitalla-button:hover,
   .file.dfg-button:hover {
     background: transparent;
-  }
-  .ubook-button:hover {
-    color: #9ec0ff;
-    box-shadow: 0px 0px 0px 2px #9ec0ff inset;
-  }
-  .mitalla-button:hover {
-    color: #bbd4ec;
-    box-shadow: 0px 0px 0px 2px #bbd4ec inset;
-  }
-  .dfg-button:hover {
-    color: #ff8080;
-    box-shadow: 0px 0px 0px 2px #ff8080 inset;
-    border: yellow;
   }
 }
 footer {

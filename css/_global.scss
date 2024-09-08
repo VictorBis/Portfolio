@@ -17,28 +17,28 @@ body {
 }
 
 h1 {
-  @include font(5, $base-mobile, 1.125);
+  @include font(4, $base-mobile, 1.125);
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
   color: var(--white);
 }
 
 h2 {
-  @include font(4, $base-mobile, 1.275);
+  @include font(3, $base-mobile, 1.275);
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-title);
   color: var(--white);
 }
 
 h3 {
-  @include font(3, $base-mobile, 1.275);
+  @include font(2, $base-mobile, 1.375);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
   color: var(--white);
 }
 
 h4 {
-  @include font(2, $base-mobile, 1.375);
+  @include font(1, $base-mobile, 1.375);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text-bold);
   color: var(--white);
@@ -102,8 +102,8 @@ a {
   }
 }
 
-/* Desktop */
-@media screen and (min-width: 1300px) {
+/* Tablet */
+@media screen and (min-width: 600px) {
   h1 {
     @include font(5, $base-desktop, 1.125);
     letter-spacing: -1px;
@@ -134,7 +134,10 @@ a {
   .company {
     @include font(1, $base-desktop, 1.5);
   }
+}
 
+/* Desktop */
+@media screen and (min-width: 1300px) {
   body {
     margin: 0 5rem;
   }

@@ -1,6 +1,5 @@
-$mequeda: #bbd4ec;
-$ubook: #9ec0ff;
-$dfg: #ff8080;
+$alight-app: #99beff;
+$dfg: #ff9999;
 $gray-bg: #333333;
 
 .project-thumbnail {
@@ -22,6 +21,10 @@ $gray-bg: #333333;
 }
 .case-intro a {
   margin-top: 1rem;
+}
+
+.bullet-after-text{
+  margin: 0.5rem 0;
 }
 
 .brief {
@@ -61,12 +64,18 @@ $gray-bg: #333333;
   }
 }
 
+.alightapp {
+  & .subtitle {
+    color: $alight-app;
+  }
+}
+
 .full-width-img-container, .card, .image-container{
     background-color: $gray-bg;
   }
 
 .image-container{
-    border-radius: var(--border-radius);
+    border-radius: 0.5rem;
     &.max-height-650{
       max-height: 650px;
       overflow-y: scroll;
@@ -74,18 +83,6 @@ $gray-bg: #333333;
   }
 .block{
   display: block;
-}
-
-.mequeda {
-  & .subtitle {
-    color: $mequeda;
-  }
-}
-
-.ubook {
-  & .subtitle {
-    color: $ubook;
-  }
 }
 
 .case-content {
@@ -129,7 +126,7 @@ $gray-bg: #333333;
     padding-left: 1.1rem;
 
     & li:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -328,18 +325,6 @@ $gray-bg: #333333;
   border-radius: --border-radius;
 }
 
-.ubook-button {
-  background: $ubook;
-}
-
-.mitalla-button {
-  background: $mequeda;
-}
-
-.dfg-button {
-  background: $dfg;
-}
-
 .file.scnd-button {
   text-decoration: underline;
   margin-top: 1rem;
@@ -524,19 +509,5 @@ $gray-bg: #333333;
     &:hover {
       background: transparent;
     }
-  }
-  .ubook-button:hover {
-    color: $ubook;
-    box-shadow: 0px 0px 0px 2px $ubook inset;
-  }
-  .mitalla-button:hover {
-    color: $mequeda;
-    box-shadow: 0px 0px 0px 2px $mequeda inset;
-  }
-
-  .dfg-button:hover {
-    color: $dfg;
-    box-shadow: 0px 0px 0px 2px $dfg inset;
-    border: yellow;
   }
 }
