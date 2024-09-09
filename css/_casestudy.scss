@@ -462,11 +462,11 @@ $gray-bg: #333333;
 /* Desktop */
 @media screen and (min-width: 1300px) {
   .case-study {
-    width: 80%;
+    max-width: 1000px;
   }
 
   .project-thumbnail {
-    width: 80%;
+    max-width: 1000px;
   }
 
   .case-content {

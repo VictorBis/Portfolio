@@ -98,7 +98,7 @@
   .text {
     & .big-text {
       @include font(5, $base-mobile, 1.125);
-      width: 80%;
+      max-width: 1100px;
       margin: auto;
       text-align: center;
       transform: translateX(-1rem);
@@ -189,7 +189,7 @@
   }
 
   .portfolio {
-    width: 80%;
+    max-width: 1000px;
     margin: auto;
     padding: 1rem 0rem 4rem 0rem;
   }

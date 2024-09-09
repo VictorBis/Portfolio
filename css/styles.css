@@ -457,7 +457,7 @@ nav {
   .text .big-text {
     font-size: 3.1573345183rem;
     line-height: 3.5520013331rem;
-    width: 80%;
+    max-width: 1100px;
     margin: auto;
     text-align: center;
     transform: translateX(-1rem);
@@ -538,7 +538,7 @@ nav {
     transform: translateX(1rem);
   }
   .portfolio {
-    width: 80%;
+    max-width: 1000px;
     margin: auto;
     padding: 1rem 0rem 4rem 0rem;
   }
@@ -647,7 +647,7 @@ nav {
 /* Desktop */
 @media screen and (min-width: 1300px) {
   .personal-info {
-    width: 80%;
+    max-width: 1000px;
   }
 }
 .project-thumbnail {
@@ -1075,10 +1075,10 @@ nav {
 /* Desktop */
 @media screen and (min-width: 1300px) {
   .case-study {
-    width: 80%;
+    max-width: 1000px;
   }
   .project-thumbnail {
-    width: 80%;
+    max-width: 1000px;
   }
   .case-content.full-width .image-container {
     width: 100%;
