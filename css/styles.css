@@ -822,6 +822,7 @@ nav {
   padding: 1rem;
   border-radius: var(--border-radius);
   align-self: stretch;
+  width: 100%;
 }
 .columns-container .column.full-width-img-container {
   width: 100%;
