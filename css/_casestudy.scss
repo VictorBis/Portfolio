@@ -257,7 +257,8 @@ $gray-bg: #333333;
       }
 
       & video {
-        border-radius: 0.5rem;
+        width: 100%;
+        height: auto;
       }
 
       & .no-padding {
@@ -509,5 +510,20 @@ $gray-bg: #333333;
     &:hover {
       background: transparent;
     }
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 900px) {
+  .columns-container .column.full-width-img-container.phone {
+    padding: 3rem 8rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .columns-container .column.full-width-img-container.phone {
+    padding: 1.5rem 6rem;
   }
 }

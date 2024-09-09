@@ -219,15 +219,39 @@
                     <h2 class="subtitle">Major changes</h2>
                     <h3 class="summary">Despite the constraint against major component changes, some required adjustments to enhance the overall experience, and we successfully secured&nbsp;exceptions
                     </h3>
-                    <p>The previous website had significant accessibility issues, notably poor text-background contrast. 
-                        I ensured our components met the basic accessibility standards such as using colors with a minimum AA contrast ratio, 
-                        providing alt text for images, and ensuring touch targets were at least 44x44&nbsp;pixels.
+                    <p>To enhance the mobile app experience, we made some significant component changes. Some were easily approved with our rationale, others 
+                        required testing and data to prove their value, while a few were&nbsp;denied. <br><br>
+                        One successful approval, after demonstrating its effectiveness, was the quick&nbsp;links.
                     </p>
                     <div class="columns-container after-text">
-                        <div class="column full-width-img-container">
+                        <div class="column half-width">
+                            <h3 class="left-aligned">The quick links section could become too large, making some content harder to&nbsp;access</h3>
+                            <p class="left-aligned">On landing and deeper pages, the full quick links list is displayed. Depending on the page and client, 
+                                this section can be too large, sometimes offering little value and pushing content down, making it harder to&nbsp;reach.
+                            </p>
+                        </div>
+                        <div class="column half-width full-width-img-container phone">
                             <div class="image-container">
-                                <img width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/DFG/a11y.png" alt="A11y examples">
+                                <img class="no-border-radius" width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Thrive-QL.png" alt="Previous layout of the quick links">
                             </div>
+                        </div>
+                    </div>
+                    <div class="columns-container after-text reverse">
+                        <div class="column half-width full-width-img-container phone description">
+                            <div class="image-container">
+                                <video width="338" height="662" poster="../images/Atom/Images/Projects/AlightMobile/QL.png" autoplay loop playsinline muted lazy="loading" class="no-padding" alt="New layout of the quick links">
+                                    <source src="../images/Atom/Images/Projects/AlightMobile/Videos/QL.mov">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="column half-width">
+                            <h3 class="left-aligned">After two rounds of testing, we arrived at a&nbsp;solution</h3>
+                            <p class="left-aligned">To save space, we replaced quick link cards with horizontal chips and conducted usability testing on this&nbsp;approach. <br><br>
+                                The first round of testing was generally positive, but about 35% of users didn’t notice they could scroll when the chips fit perfectly on the screen. 
+                                This challenge was complex due to the variability in chip length and device screen&nbsp;size.<br><br>
+                                We addressed this by adding an animation during loading to visually cue users that the section was scrollable. 
+                                The second round of testing showed a reduction in users who missed the horizontal scroll&nbsp;feature.
+                            </p>
                         </div>
                     </div>
                 </div>
