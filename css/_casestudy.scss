@@ -1,5 +1,6 @@
 $alight-app: #99beff;
 $dfg: #ff9999;
+$wa: #aeeae5;
 $gray-bg: #333333;
 
 .project-thumbnail {
@@ -67,6 +68,12 @@ $gray-bg: #333333;
 .alightapp {
   & .subtitle {
     color: $alight-app;
+  }
+}
+
+.wa {
+  & .subtitle {
+    color: $wa;
   }
 }
 
