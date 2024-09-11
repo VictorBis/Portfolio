@@ -840,7 +840,7 @@ nav {
   margin: 0.5rem 0;
 }
 .columns-container .column h3 + p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .columns-container .column h4 {
   font-size: 4.2087269129rem;
@@ -863,7 +863,7 @@ nav {
   font-weight: 300;
 }
 .columns-container .column.half-width li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .columns-container .column .image-container {
   display: flex;
@@ -1060,7 +1060,7 @@ nav {
     text-align: left;
   }
   .columns-container .column.half-width li:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .columns-container .column.left-aligned {
     text-align: left;

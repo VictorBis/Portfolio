@@ -211,7 +211,7 @@ $gray-bg: #333333;
     }
 
     & h3 + p {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
 
     & h4 {
@@ -235,7 +235,7 @@ $gray-bg: #333333;
 
     &.half-width {
       & li:not(:last-child) {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
     }
 
@@ -443,7 +443,7 @@ $gray-bg: #333333;
           text-align: left;
         }
         & li:not(:last-child) {
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         }
       }
 
