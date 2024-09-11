@@ -147,8 +147,8 @@
                     <h3 class="summary">How might we make the assessment easy and engaging for Worklife users so that they complete the entire questionnaire without dropping off?
                     </h3>
                     <p>The assessment is a lengthy questionnaire, with some pillars asking for sensitive information, increasing the likelihood of user drop-off. 
-                        However, gathering this data is crucial for delivering a more personalized and engaging experience, which enhances user satisfaction, 
-                        improves client outcomes, and potentially attracts new&nbsp;users.
+                        However, gathering all this data is crucial for the algorithm to deliver a more personalized and engaging experience, which enhances user satisfaction, 
+                        improves client outcomes, and potentially attracts new&nbsp;clients.
                     </p>
                     <div class="columns-container after-text">
                         <div class="column full-width-img-container">
@@ -174,56 +174,76 @@
             </section>
             <section>
                 <div class="case-content">
-                    <h2 class="subtitle">Constraints</h2>
-                    <h3 class="summary">Before starting, we needed to clarify our&nbsp;boundaries
+                    <h2 class="subtitle">Scope</h2>
+                    <h3 class="summary">Before starting, we needed a clear definition of our&nbsp;requirements
                     </h3>
-                    <p>When defining the project scope, the following main constraints were&nbsp;established:
-                    </p>
+                    <p>After meeting with the PM, we defined the fundamental requirements of the project as&nbsp;follows:</p>
                     <ul class="bullet-list bullet-after-text">
-                        <li>Align with AWLDS's vision and web platform&nbsp;foundations.
+                        <li>
+                            Design an assessment that allows users to navigate through all predefined questions and gain insights from their&nbsp;answers.
                         </li>
                         <li>
-                            Maintain current typography sizes and&nbsp;spacing.
+                            Ensure that all predefined questions, which are integral to the algorithm, are included in the final&nbsp;product.
                         </li>
-                        <li>Preserve screen structure and feature&nbsp;flows.
-                        </li>
-                        <li>Avoid major component changes to ensure smooth&nbsp;development.
+                        <li>
+                            Focus solely on the assessment; the scope does not cover the flow leading users to it, how users are invited to complete it, or how results are reflected on the&nbsp;platform.
                         </li>
                     </ul>
-                    <p>While some constraints limited optimal solutions for certain components, we secured exceptions by effectively presenting our rationale to key&nbsp;stakeholders.
-                    </p>
                 </div>
                 <div class="case-content">
-                    <h2 class="subtitle">AWLDS</h2>
-                    <h3 class="summary">Our first step was to familiarize ourselves with AWLDS, assess what's defined, and identify the&nbsp;gaps</h3>
-                    <p>By conducting a component audit, we compared all components from the current app and AWLDS, identifying how they translated 
-                        to the new system, recognizing patterns, and determining components that lacked equivalents and needed to be&nbsp;created.
+                    <h2 class="subtitle">User Research</h2>
+                    <h3 class="summary">Is this something people are willing to do? Surprisingly,&nbsp;yes</h3>
+                    <p>At first, we were hesitant about the product. It’s a lengthy assessment with sensitive questions 
+                        about users' lives and habits, and the likelihood of drop-off was&nbsp;high. <br><br>
+                        A survey with 200 participants had already been conducted, and after reviewing the results, we 
+                        found that despite the personal nature of the questionnaire, users were likely to complete it if 
+                        it provided personalized&nbsp;content.
                     </p>
-                    <div class="columns-container after-text">
-                        <div class="column full-width-img-container">
-                            <div class="image-container">
-                                <img class="no-border-radius" width="2594" height="3197" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Component audit.png" alt="Comparission of the form controls from Thrive to AWLDS">
-                            </div>
+                    <div class="columns-container after-text align-top">
+                        <div class="column half-width card">
+                            <h4>82%</h4>
+                            <p>stated they would likely take part in a finance and health survey to receive personalized content</p>
+                        </div>
+                        <div class="column half-width card">
+                            <h4>91%</h4>
+                            <p>stated they would likely answer a question about their drinking habits</p>
+                        </div>
+                        <div class="column half-width card">
+                            <h4>76%</h4>
+                            <p>stated they would likely answer a question about their recreational drug habits</p>
                         </div>
                     </div>
                 </div>
                 <div class="case-content">
-                    <h2 class="subtitle">Explorations</h2>
-                    <h3 class="summary">After identifying the missing components, we began exploring their transition to AWLDS, holding regular design 
-                        reviews with the design system team to ensure alignment with the overall&nbsp;vision
+                    <h2 class="subtitle">Strategy</h2>
+                    <h3 class="summary">Designing a form can be messy, so we followed a strategy based on four key&nbsp;pillars
                     </h3>
-                    <p>We explored various design options based on our interpretation of the system and available references. Starting with small changes, 
-                        we then developed alternatives more aligned with the new system’s vision, even if they represented major shifts. By reviewing components 
-                        in context rather than isolation, we ensured harmony and&nbsp;consistency. <br><br> 
-                        Once we selected the best options, they were presented to the team for evaluation, final selection, or 
-                        further iteration before handing them off to the&nbsp;developers.
+                    <p>The book <i>Forms that Work</i> by Caroline Jarrett and Gerry Gaffney was invaluable for this project. We largely adhered to their strategies and recommendations throughout the assessment design process.
                     </p>
-                    <div class="columns-container after-text">
-                        <div class="column full-width-img-container">
-                            <div class="image-container">
-                                <img class="no-border-radius" width="3082" height="1690" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Explorations.png" alt="Explorations done for the dashboard">
-                            </div>
+                    <div class="columns-container align-top space-between">
+                        <div class="column half-width card">
+                            <p class="emoji">🤝</p>
+                            <h4 class="insight">Relationship</h4>
+                            <p>Encouraging people to participate and asking the right&nbsp;information</p>
                         </div>
+                        <div class="column half-width card">
+                                <p class="emoji">💬</p>
+                                <h4 class="insight">Conversation</h4>
+                                <p>Simplifying questions, writing clear instructions, selecting appropriate form controls, and streamlining the form&nbsp;flow
+                                </p>
+                        </div>
+                        <div class="column half-width card">
+                            <p class="emoji">🎨</p>
+                            <h4 class="insight">Appereance</h4>
+                            <p>Refining details and making the form look&nbsp;easy
+                            </p>
+                    </div>
+                    <div class="column half-width card">
+                        <p class="emoji">🔍</p>
+                        <h4 class="insight">Testing</h4>
+                        <p>Testing the previous work and iterating based on&nbsp;feedback
+                        </p>
+                </div>
                     </div>
                 </div>
                 <div class="case-content">
