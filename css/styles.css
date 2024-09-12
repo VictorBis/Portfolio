@@ -1014,7 +1014,7 @@ nav {
     order: 0;
   }
   .columns-container .column.full-width-img-container {
-    padding: 3rem;
+    padding: 2rem;
   }
   .columns-container .column.card {
     padding: 1.5rem;
@@ -1128,7 +1128,7 @@ ol li {
 /* Tablet */
 @media screen and (min-width: 900px) {
   .columns-container .column.full-width-img-container.phone {
-    padding: 3rem 8rem;
+    padding: 2rem 8rem;
   }
 }
 /* Mobile */
