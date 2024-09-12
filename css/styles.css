@@ -903,7 +903,7 @@ nav {
   font-weight: 300;
 }
 .columns-container .column .image-container .reduced-illustration {
-  width: 15rem;
+  width: 9rem;
   height: auto;
 }
 .columns-container .column .image-container .reduced-image {
@@ -1005,7 +1005,7 @@ nav {
     flex-direction: row;
   }
   .project-thumbnail {
-    padding: 3rem;
+    padding: 2rem;
   }
   .columns-container {
     margin: 2rem 0 0.5rem 0;
