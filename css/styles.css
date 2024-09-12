@@ -1056,7 +1056,7 @@ nav {
   .columns-container .column.half-width {
     width: 47%;
   }
-  .columns-container .column.half-width ul li {
+  .columns-container .column.half-width ul li, .columns-container .column.half-width ol li {
     text-align: left;
   }
   .columns-container .column.half-width li:not(:last-child) {
@@ -1121,6 +1121,10 @@ nav {
     background: transparent;
   }
 }
+ol li {
+  list-style: decimal;
+}
+
 /* Tablet */
 @media screen and (min-width: 900px) {
   .columns-container .column.full-width-img-container.phone {

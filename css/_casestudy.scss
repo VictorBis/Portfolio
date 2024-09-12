@@ -439,7 +439,7 @@ $gray-bg: #333333;
 
       &.half-width {
         width: 47%;
-        & ul li {
+        & ul li, ol li {
           text-align: left;
         }
         & li:not(:last-child) {
@@ -521,6 +521,9 @@ $gray-bg: #333333;
   }
 }
 
+ol li{
+  list-style: decimal;
+}
 
 /* Tablet */
 @media screen and (min-width: 900px) {
