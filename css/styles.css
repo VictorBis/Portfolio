@@ -519,7 +519,7 @@ nav {
     line-height: 2.061984375rem;
   }
   .projects {
-    gap: 9rem;
+    gap: 5rem;
   }
   .projects .reverse {
     order: initial;
