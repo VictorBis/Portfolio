@@ -490,7 +490,7 @@ nav {
   .project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
   }
   .project .desc {
     display: flex;
@@ -519,7 +519,7 @@ nav {
     line-height: 2.061984375rem;
   }
   .projects {
-    gap: 5rem;
+    gap: 4rem;
   }
   .projects .reverse {
     order: initial;
@@ -639,7 +639,7 @@ nav {
     flex-direction: row;
   }
   .personal-info img.my-photo {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
     align-self: baseline;
     margin-top: 1.5rem;
   }
@@ -987,10 +987,23 @@ nav {
   transform: translateX(1rem);
 }
 
+.two-column-container {
+  margin-top: 2.5rem;
+}
+
+ul li, ol li {
+  text-align: left;
+}
+
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph .bar-line {
     min-width: 8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columns-container {
+    gap: 1rem;
   }
 }
 /* Tablet */
@@ -1054,7 +1067,7 @@ nav {
     width: 50%;
   }
   .columns-container .column.half-width {
-    width: 47%;
+    width: calc(50% - 1rem);
   }
   .columns-container .column.half-width ul li, .columns-container .column.half-width ol li {
     text-align: left;
@@ -1070,6 +1083,9 @@ nav {
   }
   .columns-container p + .column {
     margin-top: 2rem;
+  }
+  .two-column-container {
+    margin-top: 4rem;
   }
 }
 .screen-desc {

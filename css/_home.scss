@@ -135,7 +135,7 @@
   .project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
     & .desc {
       @include flex(center, left, column);
       margin: 0;
@@ -164,7 +164,7 @@
   }
 
   .projects {
-    gap: 5rem;
+    gap: 4rem;
     & .reverse {
       order: initial;
     }

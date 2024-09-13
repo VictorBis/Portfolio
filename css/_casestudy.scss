@@ -359,6 +359,13 @@ $gray-bg: #333333;
   }
 }
 
+.two-column-container{
+  margin-top: 2.5rem;
+}
+ul li, ol li {
+  text-align: left;
+}
+
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph {
@@ -367,6 +374,13 @@ $gray-bg: #333333;
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .columns-container{
+    gap: 1rem;
+  }
+}
+
 /* Tablet */
 @media screen and (min-width: 600px) {
   .case-study {
@@ -438,7 +452,7 @@ $gray-bg: #333333;
       }
 
       &.half-width {
-        width: 47%;
+        width: calc(50% - 1rem);
         & ul li, ol li {
           text-align: left;
         }
@@ -460,6 +474,12 @@ $gray-bg: #333333;
       margin-top: 2rem;
     }
   }
+
+  .two-column-container{
+    margin-top: 4rem;
+  }
+  
+
 }
 
 .screen-desc {
