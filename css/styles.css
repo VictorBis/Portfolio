@@ -710,11 +710,15 @@ nav {
 }
 
 .alightapp .subtitle {
-  color: #99beff;
+  color: hsl(60, 76%, 70%);
 }
 
 .wa .subtitle {
   color: #aeeae5;
+}
+
+.ds .subtitle {
+  color: #99beff;
 }
 
 .full-width-img-container, .card, .image-container {
