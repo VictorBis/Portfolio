@@ -265,10 +265,11 @@
                             <h3 class="left-aligned">Taking advantage of branching in&nbsp;Figma</h3>
                             <ol class="bullet-list bullet-after-text">
                                 <li>
-                                    To easily identify the request, create a branch with the naming convention <strong>[Jira Ticket]&nbsp;-&nbsp;[Component Name]</strong>.
+                                    To easily identify the request, create a branch with the naming convention [Jira Ticket]&nbsp;-&nbsp;[Component Name].
                                 </li>
                                 <li>
-                                    For component updates, copy an instance of the current component, then modify its properties to visualize how changes affect the current&nbsp;version.
+                                    For component updates, copy an instance of the current component, then modify its properties to visualize how 
+                                    later on changes affect the current&nbsp;version.
                                 </li>
                                 <li>
                                     Build the component using defined variables, auto-layout, and properties with established naming&nbsp;conventions.
@@ -290,66 +291,98 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columns-container after-text reverse two-column-container">
-                        <div class="column half-width full-width-img-container phone description">
-                            <div class="image-container">
-                                <video width="338" height="662" poster="../images/Atom/Images/Projects/AlightMobile/QL.png" autoplay loop playsinline muted lazy="loading" class="no-padding" alt="New layout of the quick links">
-                                    <source src="../images/Atom/Images/Projects/AlightMobile/Videos/QL.mov">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="column half-width">
-                            <h3 class="left-aligned">After two rounds of testing, we arrived at a&nbsp;solution</h3>
-                            <p class="left-aligned">To save space, we replaced quick link cards with horizontal chips and conducted usability testing on this&nbsp;approach. <br><br>
-                                The first round of testing was generally positive, but about 35% of users didn’t notice they could scroll when the chips fit perfectly on the screen. 
-                                This challenge was complex due to the variability in chip length and device screen&nbsp;size.<br><br>
-                                We addressed this by adding an animation during loading to visually cue users that the section was scrollable. 
-                                The second round of testing showed a reduction in users who missed the horizontal scroll&nbsp;feature.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section>
                 <div class="case-content">
-                    <h2 class="subtitle">Accessibility</h2>
-                    <h3 class="summary">Along with transitioning the app to AWLDS, a key objective was to address existing accessibility&nbsp;issues
+                    <h2 class="subtitle">Library</h2>
+                    <h3 class="summary">For the library, I established guidelines for building components to ensure a consistent and optimal user&nbsp;experience
                     </h3>
-                    <p>Accessibility became a core value of AWLDS. Fortunately, there were already efforts in place to identify and resolve accessibility&nbsp;issues. <br><br>
-                        These efforts focused on two main areas: the level access list and dynamic&nbsp;typography.</p>
+                    <p>Components from the current app library worked well but didn't use the latest Figma features, like properties, leading 
+                        to inconsistencies compared to the web library. Additionally, research findings indicated several areas for&nbsp;improvement.
+                    </p>
                         <div class="columns-container after-text">
                             <div class="column half-width">
-                                <h3 class="left-aligned">The app was audited by a11y experts, and we made fixes based on their&nbsp;findings</h3>
-                                <p class="left-aligned">The experts gave us a list of violations and recommendations. 
-                                    We prioritized these issues by severity and addressed them with our a11y team. 
-                                    Some were already fixed, while others needed more&nbsp;effort. <br><br>
-                                    One complex issue was the 401(k) graph, which lacked alt text. Given the difficulty of 
-                                    conveying all chart data through alt text, we added a table view that describes the 
-                                    information, making it accessible to screen&nbsp;readers.
+                                <h3 class="left-aligned">Files</h3>
+                                <p class="left-aligned">Having the app's flows in one place was valuable but having it along with the components 
+                                    added complexity to file management and&nbsp;maitenance. <br><br>
+                                    To simplify, two files were created: one for the component library, containing all app components, and another 
+                                    for the app flows, maintained through the team collaboration. When designs are handed off, they will be added to the app 
+                                    file by the designer to keep it always up to&nbsp;date.
                                 </p>
                             </div>
                             <div class="column half-width full-width-img-container phone description">
                                 <div class="image-container">
-                                    <video width="338" height="662" poster="../images/Atom/Images/Projects/AlightMobile/401k.png" autoplay loop playsinline muted lazy="loading" class="no-padding" alt="New layout of the 401k chart">
-                                        <source src="../images/Atom/Images/Projects/AlightMobile/Videos/401k.mov">
-                                    </video>
+                                    <img width="3082" height="1690" lazy="loading" src="../images/Atom/Images/Projects/DS/Files.png" alt="Thumbnails of the two files created">
                                 </div>
                             </div>
                         </div>
                         <div class="columns-container after-text reverse two-column-container">
                             <div class="column half-width full-width-img-container description">
                                 <div class="image-container">
-                                    <img width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Table.png" alt="Dynamic typography applied in the promos component">
+                                    <img class="no-border-radius" width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/DS/File structure.png" alt="Library file structure">
                                 </div>
                             </div>
                             <div class="column half-width">
-                                <h3 class="left-aligned">Through research and collaboration with the dev team, we defined sizes and behavior for dynamic&nbsp;typography
+                                <h3 class="left-aligned">File&nbsp;Structure
                                 </h3>
-                                <p class="left-aligned">Few apps support dynamic typography, but by reviewing and testing the available ones, we identified how it works 
-                                    and common&nbsp;practices.<br><br>
-                                    Since supporting all levels required extensive testing, which the dev team couldn't manage at the time, we grouped some 
-                                    levels to use the same&nbsp;behavior.
+                                <p class="left-aligned">With guidelines and flows moved out of the component library, the file became more 
+                                    streamlined and allowed for better&nbsp;structure. <br><br>
+                                    To maintain consistency with the web library, each component now has its own page. An improvement was the 
+                                    addition of sections, which designers mentioned it helped them to locate components quicker. Sections were ordered from 
+                                    simpler to more complex, and reflecting the future organization of the documentation&nbsp;platform.
                                 </p>
+                            </div>
+                        </div>
+                        <div class="columns-container after-text two-column-container">
+                            <div class="column half-width">
+                                <h3 class="left-aligned">Page&nbsp;Structure</h3>
+                                <p class="left-aligned">The component structure I defined for the web library had been effective, so we kept 
+                                    the same approach. Designers valued having guidance and components within the same file, but 
+                                    maintaining this setup was&nbsp;challenging. <br><br>
+
+                                    To strike a balance, we included key details around each component, such as available properties, 
+                                    management tips, and links to main resources. This was documented and a template was&nbsp;created.
+                                </p>
+                            </div>
+                            <div class="column half-width full-width-img-container description">
+                                <div class="image-container">
+                                    <img class="no-border-radius" width="3082" height="1690" lazy="loading" src="../images/Atom/Images/Projects/DS/Page Structure.png" alt="Frames for the page structure">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns-container after-text reverse two-column-container">
+                            <div class="column half-width full-width-img-container description">
+                                <div class="image-container">
+                                    <img class="no-border-radius" width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/DS/File structure.png" alt="Library file structure">
+                                </div>
+                            </div>
+                            <div class="column half-width">
+                                <h3 class="left-aligned">Naming&nbsp;Convention
+                                </h3>
+                                <p class="left-aligned">The web library's inconsistent naming caused confusion, 
+                                    so I established and documented standards to closely align Figma and&nbsp;code.
+                                </p>
+                                <ul class="bullet-list bullet-after-text">
+                                    <li>
+                                        All elements must use&nbsp;camelCase.
+                                    </li>
+                                    <li>
+                                        Components follow the convention&nbsp;f-[componentName].
+                                    </li>
+                                    <li>
+                                        Helper components follow the standard convention, but begin with a "." to prevent them from being&nbsp;published.
+                                    </li>
+                                    <li>
+                                        Boolean properties begin with a verb like "is" or&nbsp;"has".
+                                    </li>
+                                    <li>
+                                        Figma-only properties, like states, begin with a&nbsp;"_".
+                                    </li>
+                                    <li>
+                                        Common property names and values, like variant, _state, size, and _breakpoint, were standardized to ensure consistency across all&nbsp;components.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                 </div>
