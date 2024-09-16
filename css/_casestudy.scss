@@ -1,4 +1,4 @@
-$alight-app: hsl(60, 76%, 70%);
+$alight-app: #eded78;
 $ds: #99beff;
 $dfg: #ff9999;
 $wa: #aeeae5;
@@ -299,6 +299,11 @@ $gray-bg: #333333;
       & .reduced-image-25 {
         width: 25rem;
         height: auto;
+      }
+
+      & .reduced-image-3 {
+        width: auto;
+        height: 3rem;
       }
 
       & .reduced-illustration-comment {

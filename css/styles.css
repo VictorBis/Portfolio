@@ -710,7 +710,7 @@ nav {
 }
 
 .alightapp .subtitle {
-  color: hsl(60, 76%, 70%);
+  color: #eded78;
 }
 
 .wa .subtitle {
@@ -917,6 +917,10 @@ nav {
 .columns-container .column .image-container .reduced-image-25 {
   width: 25rem;
   height: auto;
+}
+.columns-container .column .image-container .reduced-image-3 {
+  width: auto;
+  height: 3rem;
 }
 .columns-container .column .image-container .reduced-illustration-comment {
   height: 20rem;
