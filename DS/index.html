@@ -108,6 +108,7 @@
                         <p>1 Design System Designer</p>
                         <p>1 Product Designer</p>
                         <p>1 A11Y Specialist</p>
+                        <p>1 UX Researcher</p>
                     </div>
                 </div>
             </section>
@@ -185,40 +186,107 @@
                 <div class="case-content">
                     <h2 class="subtitle">User Interviews</h2>
                     <h3 class="summary">To understand designers' needs and their experience with the current library and guidelines, 
-                        interviews were conducted with designers from different teams and seniority levels
+                        interviews were conducted with designers from different teams and seniority&nbsp;levels
                     </h3>
-                    <p>We explored various design options based on our interpretation of the system and available references. Starting with small changes, 
-                        we then developed alternatives more aligned with the new system’s vision, even if they represented major shifts. By reviewing components 
-                        in context rather than isolation, we ensured harmony and&nbsp;consistency. <br><br> 
-                        Once we selected the best options, they were presented to the team for evaluation, final selection, or 
-                        further iteration before handing them off to the&nbsp;developers.
+                    <p>
+                        Six designers were interviewed, divided into three groups: slightly, moderately, and highly familiar with the 
+                        Mobile App Library. The goal was to understand their needs, preferences, challenges with the current library, 
+                        and gather specific insights on file structure, component organization, and guideline clarity. The key findings&nbsp;were:
                     </p>
-                    <div class="columns-container after-text">
-                        <div class="column full-width-img-container">
-                            <div class="image-container">
-                                <img class="no-border-radius" width="3082" height="1690" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Explorations.png" alt="Explorations done for the dashboard">
-                            </div>
+                    <ul class="bullet-list bullet-after-text">
+                        <li>
+                            Unclear section titles forced designers to explore them to grasp its&nbsp;content.
+                        </li>
+                        <li>
+                            Some component guidelines were detailed and useful, while others lacked sufficient&nbsp;content.
+                        </li>
+                        <li>
+                            Shared components like buttons and checkboxes were hard to distinguish between web and&nbsp;app.
+                        </li>
+                        <li>
+                            Consolidating all references in one place was crucial for easily accessing app flows and finding&nbsp;inspiration.
+                        </li>
+                    </ul> <br>
+                    <p>Although the web design system wasn't the main focus of the research, designers offered valuable feedback that we could use. Key points&nbsp;included:
+                    </p>
+                    <ul class="bullet-list bullet-after-text">
+                        <li>
+                            Inconsistencies across the library, guidelines, and code caused usability&nbsp;issues.
+                        </li>
+                        <li>
+                            Some components failed in certain scenarios, requiring designers to fix them&nbsp;manually.
+                        </li>
+                        <li>
+                            Important sections were missing from the guidelines of some&nbsp;components.
+                        </li>
+                        <li>
+                            Labels and comments on components in progress were often missed, leading to their use in final designs.
+                        </li>
+                    </ul> 
+                </div>
+                <div class="case-content">
+                    <h2 class="subtitle">Strategy</h2>
+                    <h3 class="summary">Based on the collected information, we defined which areas and aspects to focus&nbsp;on
+                    </h3>
+                    <p>Using interview results and product objectives, we identified key areas to address in order to achieve 
+                        the overall goal and enhance the current&nbsp;experience.
+                    </p>
+                    <div class="columns-container after-text align-top">
+                        <div class="column half-width card">
+                            <p class="emoji">⚒️</p>
+                            <h4 class="insight">Work Process</h4>
+                            <p>Establish a process for creating and documenting&nbsp;components.</p>
                         </div>
+                        <div class="column half-width card">
+                                <p class="emoji">❖</p>
+                                <h4 class="insight">Library</h4>
+                                <p>Create a well-organized library with clear sections that include all the app's&nbsp;components.
+                                </p>
+                        </div>
+                    <div class="column half-width card">
+                        <p class="emoji">📖</p>
+                        <h4 class="insight">Documentation</h4>
+                        <p>Ensure all component documentation is consistent and addresses user&nbsp;needs.
+                        </p>
+                </div>
                     </div>
                 </div>
                 <div class="case-content">
-                    <h2 class="subtitle">Major Changes</h2>
-                    <h3 class="summary">Despite the constraint against major component changes, some required adjustments to enhance the overall experience, and we successfully secured&nbsp;exceptions
+                    <h2 class="subtitle">Work Process</h2>
+                    <h3 class="summary">Since the design system team had a well-defined documentation process that worked well, 
+                        I focused on establishing the component creation&nbsp;process
                     </h3>
-                    <p>To enhance the mobile app experience, we made some significant component changes. Some were easily approved with our rationale, others 
-                        required testing and data to prove their value, while a few were&nbsp;denied. <br><br>
-                        One successful approval, after demonstrating its effectiveness, was the quick&nbsp;links.
+                    <p>My goal was to establish a process for creating and adding new components to the mobile app library. 
+                        This aimed to have a clear path to follow, prevent in-progress work from appearing in the main file and reduce the chances of 
+                        publishing components with&nbsp;errors.
                     </p>
                     <div class="columns-container after-text">
                         <div class="column half-width">
-                            <h3 class="left-aligned">The quick links section could become too large, making some content harder to&nbsp;access</h3>
-                            <p class="left-aligned">On landing and deeper pages, the full quick links list is displayed. Depending on the page and client, 
-                                this section can be too large, sometimes offering little value and pushing content down, making it harder to&nbsp;reach.
-                            </p>
+                            <h3 class="left-aligned">Taking advantage of branching in&nbsp;Figma</h3>
+                            <ol class="bullet-list bullet-after-text">
+                                <li>
+                                    To easily identify the request, create a branch with the naming convention <strong>[Jira Ticket]&nbsp;-&nbsp;[Component Name]</strong>.
+                                </li>
+                                <li>
+                                    For component updates, copy an instance of the current component, then modify its properties to visualize how changes affect the current&nbsp;version.
+                                </li>
+                                <li>
+                                    Build the component using defined variables, auto-layout, and properties with established naming&nbsp;conventions.
+                                </li>
+                                <li>
+                                    Test the component by modifying its width, height (if applicable), and property values. If possible, have designers test it as&nbsp;well.
+                                </li>
+                                <li>
+                                    Add Victor Molina as&nbsp;reviewer.
+                                </li>
+                                <li>
+                                    If no changes are needed, merge the branch into the main branch and publish&nbsp;it.
+                                </li>
+                            </ol>
                         </div>
                         <div class="column half-width full-width-img-container phone">
                             <div class="image-container">
-                                <img class="no-border-radius" width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/AlightMobile/Thrive-QL.png" alt="Previous layout of the quick links">
+                                <img class="no-border-radius" width="1562" height="1011" lazy="loading" src="../images/Atom/Images/Projects/DS/Branch.png" alt="Branch process diagram">
                             </div>
                         </div>
                     </div>
