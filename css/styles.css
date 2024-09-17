@@ -1037,8 +1037,8 @@ ul li, ol li {
   .columns-container .column.full-width-img-container {
     padding: 2rem;
   }
-  .columns-container .column.full-width-img-container.padding-left-only {
-    padding: 0 0 0 2rem;
+  .columns-container .column.full-width-img-container.padding-right-only {
+    padding: 0 2rem 0 0;
   }
   .columns-container .column.card {
     padding: 1.5rem;
@@ -1162,6 +1162,12 @@ ol li {
 @media screen and (max-width: 600px) {
   .columns-container .column.full-width-img-container.phone {
     padding: 1.5rem 6rem;
+  }
+  .columns-container .column.full-width-img-container.padding-right-only {
+    padding: 0 1.5rem 0 0;
+  }
+  .columns-container .column .image-container .reduced-image-3 {
+    height: auto;
   }
 }
 footer {
