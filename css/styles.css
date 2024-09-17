@@ -1037,6 +1037,9 @@ ul li, ol li {
   .columns-container .column.full-width-img-container {
     padding: 2rem;
   }
+  .columns-container .column.full-width-img-container.padding-left-only {
+    padding: 0 0 0 2rem;
+  }
   .columns-container .column.card {
     padding: 1.5rem;
   }
