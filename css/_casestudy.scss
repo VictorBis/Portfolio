@@ -544,6 +544,12 @@ ul li, ol li {
       & .insight {
         @include font(2, $base-desktop, 1.5);
       }
+      &.desktop-mockup{
+        width: 70%;
+      }
+    }
+    &.desktop-mockup{
+      flex-wrap: nowrap;
     }
   }
 

@@ -1137,6 +1137,12 @@ ul li, ol li {
     font-size: 1.499625rem;
     line-height: 2.2494375rem;
   }
+  .columns-container .column.desktop-mockup {
+    width: 70%;
+  }
+  .columns-container.desktop-mockup {
+    flex-wrap: nowrap;
+  }
   .file.ubook-button,
   .file.mitalla-button,
   .file.dfg-button {
