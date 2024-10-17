@@ -378,6 +378,11 @@ ul li, ol li {
   text-align: left;
 }
 
+.web-video{
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
 /* Small Phone */
 @media screen and (max-width: 340px) {
   .graph {
